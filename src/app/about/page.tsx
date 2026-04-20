@@ -277,8 +277,8 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {outcomes.map((o) => (
-              <div key={o.value} className="bg-white/10 border border-white/20 rounded-2xl p-8 text-center">
-                <span className="block font-heading font-black text-3xl text-white mb-2">{o.value}</span>
+              <div key={o.value} className="bg-white/10 border border-white/20 rounded-2xl p-5 sm:p-8 text-center">
+                <span className="block font-heading font-black text-xl sm:text-3xl text-white mb-2">{o.value}</span>
                 <span className="text-white/60 text-sm">{o.sub}</span>
               </div>
             ))}
@@ -301,16 +301,9 @@ export default function AboutPage() {
 
           {/* Coach 1 — Darrell */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
-            {/* Photo placeholder */}
-            <div className="bg-navy-50 border border-navy/10 rounded-2xl overflow-hidden aspect-square flex flex-col items-center justify-center gap-4">
-              <div className="w-28 h-28 rounded-full bg-navy/10 flex items-center justify-center">
-                <svg className="w-14 h-14 text-navy/25" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
-                </svg>
-              </div>
-              <p className="text-navy/30 font-heading font-semibold text-sm uppercase tracking-wider">
-                Photo Coming Soon
-              </p>
+            {/* Photo — Darrell */}
+            <div className="rounded-2xl overflow-hidden aspect-square">
+              <img src="/images/coach-darrell.jpg" alt="Darrell Thompson — Head Coach" className="w-full h-full object-cover object-top" />
             </div>
 
             {/* Bio */}
@@ -403,16 +396,9 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Photo placeholder — right */}
-            <div className="lg:order-2 bg-navy-50 border border-navy/10 rounded-2xl overflow-hidden aspect-square flex flex-col items-center justify-center gap-4">
-              <div className="w-28 h-28 rounded-full bg-navy/10 flex items-center justify-center">
-                <svg className="w-14 h-14 text-navy/25" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
-                </svg>
-              </div>
-              <p className="text-navy/30 font-heading font-semibold text-sm uppercase tracking-wider">
-                Photo Coming Soon
-              </p>
+            {/* Photo — Amory */}
+            <div className="lg:order-2 rounded-2xl overflow-hidden aspect-square">
+              <img src="/images/coach-amory.jpg" alt="Amory Thompson — Kids Head Coach" className="w-full h-full object-cover object-top" />
             </div>
           </div>
 
@@ -450,18 +436,20 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="mt-10 flex gap-4">
-                <a href={GHL_TRIAL_LINK} className="btn-primary">Book Free Trial</a>
+                <a href={GHL_TRIAL_LINK} className="btn-primary">Request My Founding Spot</a>
                 <Link href="/contact" className="btn-outline">Get Directions</Link>
               </div>
             </div>
-            <div className="bg-navy-light/20 border border-white/10 rounded-2xl overflow-hidden h-80 flex items-center justify-center">
-              <div className="text-center">
-                <svg className="w-12 h-12 text-white/20 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6-10l6-3m0 0l4.553 2.276A1 1 0 0121 7.382v10.764a1 1 0 01-1.447.894L15 17m0-13v13" />
-                </svg>
-                <p className="text-white/40 text-sm font-heading font-semibold uppercase tracking-wider">Map Embed Coming Soon</p>
-                <p className="text-white/30 text-xs mt-1">1726 Montgomery St, Unit 8, Oroville, CA</p>
-              </div>
+            <div className="rounded-2xl overflow-hidden h-80 border border-white/10">
+              <iframe
+                src="https://maps.google.com/maps?q=1726+Montgomery+St+Unit+8,+Oroville,+CA+95965&output=embed&z=15"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                title="Strata Strength Lab location"
+              />
             </div>
           </div>
         </div>

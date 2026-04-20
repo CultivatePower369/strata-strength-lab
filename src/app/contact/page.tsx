@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     'Contact Strata Strength Lab in Oroville, CA. Find our location, ask questions about programs, or book your first free trial class.',
 }
 
-const GHL_TRIAL_LINK = '#trial'
 
 export default function ContactPage() {
   return (
@@ -43,7 +42,7 @@ export default function ContactPage() {
       {/* Contact Content */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
+          <div className="max-w-2xl mx-auto">
 
             {/* Info */}
             <div>
@@ -73,6 +72,23 @@ export default function ContactPage() {
                       className="text-brand-orange text-sm font-heading font-semibold hover:underline mt-2 inline-block"
                     >
                       Get Directions →
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex gap-5 items-start">
+                  <div className="w-12 h-12 bg-navy/5 border border-navy/10 rounded-xl flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-bold text-navy text-base mb-1">Phone</h3>
+                    <a
+                      href="tel:+15308548731"
+                      className="text-gray-600 text-sm hover:text-brand-orange transition-colors"
+                    >
+                      (530) 854-8731
                     </a>
                   </div>
                 </div>
@@ -111,131 +127,18 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map placeholder */}
-              <div className="mt-10 bg-navy-50 border border-navy/10 rounded-2xl overflow-hidden h-64 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <svg className="w-10 h-10 text-navy/20 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6-10l6-3m0 0l4.553 2.276A1 1 0 0121 7.382v10.764a1 1 0 01-1.447.894L15 17m0-13v13" />
-                  </svg>
-                  <p className="text-navy/40 text-sm font-heading font-semibold uppercase tracking-wider">
-                    Map Embed Coming Soon
-                  </p>
-                  <a
-                    href="https://maps.google.com/?q=1726+Montgomery+Street+Unit+8+Oroville+CA+95965"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-brand-orange text-sm font-heading font-semibold hover:underline mt-3 inline-block"
-                  >
-                    Open in Google Maps →
-                  </a>
-                </div>
+              {/* Google Maps Embed */}
+              <div className="mt-10 rounded-2xl overflow-hidden h-64 border border-navy/10">
+                <iframe
+                  src="https://maps.google.com/maps?q=1726+Montgomery+St+Unit+8,+Oroville,+CA+95965&output=embed&z=15"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  title="Strata Strength Lab location"
+                />
               </div>
-            </div>
-
-            {/* Contact Form / CTA */}
-            <div>
-              <span className="section-label">Start the Conversation</span>
-              <h2 className="section-heading mb-3">
-                Book Your <span className="text-brand-orange">Free Trial</span>
-              </h2>
-              <p className="text-gray-600 mb-8">
-                The fastest way to get started is to book your free trial class
-                below. Want to ask a question first? Fill out the form and a
-                coach will reach back out within 24 hours.
-              </p>
-
-              <a href={GHL_TRIAL_LINK} className="btn-primary w-full text-center block text-base py-5 mb-8">
-                Book Free Trial Class Now
-              </a>
-
-              <div className="relative flex items-center gap-4 my-8">
-                <div className="flex-1 h-px bg-gray-200" />
-                <span className="text-gray-400 text-sm font-heading font-semibold uppercase tracking-widest">
-                  or send a message
-                </span>
-                <div className="flex-1 h-px bg-gray-200" />
-              </div>
-
-              {/* Simple contact form — wire to GHL or Formspree when ready */}
-              <form
-                action="#"
-                method="POST"
-                className="space-y-5"
-                aria-label="Contact form"
-              >
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-sm font-heading font-semibold text-navy mb-1.5" htmlFor="first_name">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      id="first_name"
-                      name="first_name"
-                      required
-                      className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy/30 focus:border-navy transition-all"
-                      placeholder="Jane"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-heading font-semibold text-navy mb-1.5" htmlFor="last_name">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      id="last_name"
-                      name="last_name"
-                      required
-                      className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy/30 focus:border-navy transition-all"
-                      placeholder="Smith"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-heading font-semibold text-navy mb-1.5" htmlFor="email">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy/30 focus:border-navy transition-all"
-                    placeholder="jane@email.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-heading font-semibold text-navy mb-1.5" htmlFor="phone">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy/30 focus:border-navy transition-all"
-                    placeholder="(530) 555-0000"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-heading font-semibold text-navy mb-1.5" htmlFor="message">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    required
-                    className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy/30 focus:border-navy transition-all resize-none"
-                    placeholder="Tell us about your athlete — age, interests, goals..."
-                  />
-                </div>
-                <button type="submit" className="btn-primary w-full text-base py-4">
-                  Send Message
-                </button>
-                <p className="text-gray-400 text-xs text-center">
-                  We typically respond within a few hours during business hours.
-                </p>
-              </form>
             </div>
           </div>
         </div>

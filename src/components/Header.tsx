@@ -38,8 +38,8 @@ export default function Header() {
           <Image
             src="/images/logo.png"
             alt="Strata Strength Lab"
-            width={50}
-            height={50}
+            width={90}
+            height={90}
             className="transition-transform duration-200 group-hover:scale-105"
             priority
           />
@@ -72,7 +72,7 @@ export default function Header() {
           href={GHL_TRIAL_LINK}
           className="hidden md:inline-block btn-primary text-sm px-6 py-3"
         >
-          Book Free Trial
+          Request My Founding Spot
         </a>
 
         {/* Mobile Hamburger */}
@@ -118,7 +118,7 @@ export default function Header() {
             className="block text-center btn-primary mt-4 text-sm"
             onClick={() => setMenuOpen(false)}
           >
-            Book Free Trial
+            Request My Founding Spot
           </a>
         </div>
       </div>

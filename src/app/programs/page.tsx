@@ -22,6 +22,7 @@ const GHL_TRIAL_LINK = '#trial'
 const programs = [
   {
     id: 'ninja-warrior',
+    href: '/programs/ninja-warrior',
     emoji: '🏃',
     title: 'Ninja Warrior Obstacle Training',
     tagline: 'Move through the challenge.',
@@ -39,6 +40,7 @@ const programs = [
   },
   {
     id: 'climbing',
+    href: '/programs/climbing-wall',
     emoji: '🧗',
     title: 'Climbing Wall & Grip Development',
     tagline: 'Grip strength. Problem-solving. Real capability.',
@@ -56,6 +58,7 @@ const programs = [
   },
   {
     id: 'forge-protocol',
+    href: '/programs/forge-protocol',
     emoji: '⚒️',
     title: 'The Forge Protocol — Strength Training',
     tagline: 'Strength earned through structure.',
@@ -73,6 +76,7 @@ const programs = [
   },
   {
     id: 'sports-performance',
+    href: '/programs/sports-performance',
     emoji: '⚡',
     title: 'Functional Fitness for Sports',
     tagline: 'Train movements. Perform on game day.',
@@ -90,6 +94,7 @@ const programs = [
   },
   {
     id: 'mobility',
+    href: '/programs/mobility',
     emoji: '🧘',
     title: 'Mobility & Movement',
     tagline: 'Move better. Stay in the game.',
@@ -107,6 +112,7 @@ const programs = [
   },
   {
     id: 'open-mat',
+    href: '/programs/open-mat',
     emoji: '🕐',
     title: 'Open Mat',
     tagline: 'Your time. Coach on the floor.',
@@ -124,6 +130,7 @@ const programs = [
   },
   {
     id: 'birthday-parties',
+    href: '/programs/birthday-parties',
     emoji: '🎉',
     title: 'Birthday Parties',
     tagline: 'The most active party in Oroville.',
@@ -183,9 +190,14 @@ export default function ProgramsPage() {
                 <p className="text-gray-600 leading-relaxed mt-5 text-base">
                   {p.description}
                 </p>
-                <a href={GHL_TRIAL_LINK} className="btn-primary mt-8 inline-block">
-                  Try a Free Class
-                </a>
+                <div className="flex flex-wrap gap-3 mt-8">
+                  <a href={GHL_TRIAL_LINK} className="btn-primary inline-block">
+                    Try a Free Class
+                  </a>
+                  <Link href={p.href} className="btn-outline-navy inline-block">
+                    Learn More →
+                  </Link>
+                </div>
               </div>
 
               {/* Details card */}

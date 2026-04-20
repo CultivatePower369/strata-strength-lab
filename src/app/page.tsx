@@ -16,7 +16,8 @@ const programs = [
     icon: '🏃',
     title: 'Ninja Warrior Obstacle Training',
     description:
-      'Our structured obstacle course system develops coordination, grip, agility, and body control through progressive coached challenges. Not free play — purposeful obstacle training from toddlers to teens.',
+      'Structured obstacle training that builds coordination, grip strength, body control, and confidence. Coached and progressive from toddlers to teens — your child will surprise themselves.',
+    href: '/programs/ninja-warrior',
     color: 'bg-navy/5 border-navy/10',
     accent: 'text-navy',
   },
@@ -24,7 +25,8 @@ const programs = [
     icon: '🧗',
     title: 'Climbing Wall & Grip Training',
     description:
-      'The climbing wall is a core training tool at Strata. It builds grip strength, pulling power, core stability, and spatial awareness in ways no machine can replicate — coached and progressive for all levels.',
+      'The climbing wall builds grip strength, pulling power, core stability, and spatial awareness in ways no machine can replicate. Coached and progressive for all levels.',
+    href: '/programs/climbing-wall',
     color: 'bg-brand-blue/5 border-brand-blue/10',
     accent: 'text-brand-blue',
   },
@@ -32,7 +34,8 @@ const programs = [
     icon: '⚒️',
     title: 'The Forge Protocol — Strength',
     description:
-      "Strata's structured strength system built on foundational movement patterns — squat, hinge, push, pull, carry — applied with discipline and progressive overload. Toddlers to teens. No random workouts.",
+      "20+ years in the making. Structured strength built on foundational movement patterns — squat, hinge, push, pull, carry — with progressive overload and real standards. Ages 6 through 18.",
+    href: '/programs/forge-protocol',
     color: 'bg-brand-orange/5 border-brand-orange/10',
     accent: 'text-brand-orange',
   },
@@ -40,7 +43,8 @@ const programs = [
     icon: '⚡',
     title: 'Functional Fitness for Sports',
     description:
-      'Speed, power, agility, and coordination training that translates directly to any sport. Purposeful multi-sport athletic development that shows up on game day.',
+      'Speed, power, agility, and coordination training that shows up on game day — whatever sport your child plays. Build the athletic foundation that makes them better at everything.',
+    href: '/programs/sports-performance',
     color: 'bg-navy/5 border-navy/10',
     accent: 'text-navy',
   },
@@ -48,7 +52,8 @@ const programs = [
     icon: '🧘',
     title: 'Mobility & Movement',
     description:
-      'Deliberate movement training that builds active flexibility, joint control, and body awareness — keeping athletes healthy and performing across every season.',
+      'Athletes who move well get injured less and perform better. Deliberate mobility training that keeps your child healthy through full seasons and long careers.',
+    href: '/programs/mobility',
     color: 'bg-brand-blue/5 border-brand-blue/10',
     accent: 'text-brand-blue',
   },
@@ -56,7 +61,8 @@ const programs = [
     icon: '🎉',
     title: 'Birthday Parties',
     description:
-      'Private facility use for 2 hours — obstacle course, climbing wall, relay races, and coached activities. The most active birthday party in Oroville.',
+      'Private 2-hour facility rental — obstacle course, climbing wall, relay races, and a coach running everything. The most active birthday party in Oroville.',
+    href: '/programs/birthday-parties',
     color: 'bg-brand-orange/5 border-brand-orange/10',
     accent: 'text-brand-orange',
   },
@@ -82,19 +88,19 @@ const pillars = [
 
 const testimonials = [
   {
-    name: 'Parent – Oroville, CA',
+    name: 'Charles Whalley',
     quote:
-      "My son has completely transformed in just a few months. His confidence on and off the field is night and day. Best investment we've made.",
+      "I've been strength training with Darrell for over six years. During that time, I've gone from an average martial artist to an above-average amateur MMA fighter. The strength training has played a huge role in that progression. It's helped me develop real, usable strength, improve my conditioning, and perform at a higher level in both jiu-jitsu competition and MMA. More than anything, it's elevated me not just as an athlete, but as a martial artist and fighter. I feel stronger, more capable, and more prepared every time I step on the mat or into competition.",
   },
   {
-    name: 'Parent – Oroville, CA',
+    name: 'John Thompson',
     quote:
-      "The coaches actually care about every kid. It's not just exercise — it's teaching them how to work hard and believe in themselves.",
+      "Darrell and his family have been an integral part of my kids development. His strength and conditioning program over the last 12+ years has helped them develop into great young men.",
   },
   {
-    name: 'Parent – Oroville, CA',
+    name: 'More reviews coming soon',
     quote:
-      "My daughter begs to come to class. She's stronger, more flexible, and absolutely loves the climbing. We're never leaving.",
+      "We are just getting started. Check back soon for more from our athletes and families.",
   },
 ]
 
@@ -130,14 +136,13 @@ export default function HomePage() {
             <span className="text-brand-orange">from the Start.</span>
           </h1>
           <p className="mt-6 text-white/75 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            Ninja Warrior obstacle training, climbing wall development, and
-            structured strength programming for toddlers through teens in
-            Oroville, CA. This is not a traditional gym — it is a development
-            environment built around real-world capability.
+            Your child leaves stronger, more confident, and more capable than when they walked in.
+            Ninja Warrior obstacle training, climbing wall development, and the Forge Protocol strength system
+            for toddlers through teens in Oroville, CA — coached, structured, and built to last.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-5">
-              Book Your Free Trial Class
+              Request My Founding Spot
             </a>
             <Link href="/programs" className="btn-outline text-base px-10 py-5">
               See Our Programs
@@ -167,18 +172,22 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {programs.map((p) => (
-              <div
+              <Link
                 key={p.title}
-                className={`card border ${p.color} p-7 group hover:-translate-y-1`}
+                href={p.href}
+                className={`card border ${p.color} p-7 group hover:-translate-y-1 block`}
               >
                 <span className="text-4xl block mb-4">{p.icon}</span>
                 <h3 className={`font-heading font-bold text-xl mb-3 ${p.accent}`}>
                   {p.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   {p.description}
                 </p>
-              </div>
+                <span className={`text-sm font-heading font-bold ${p.accent} group-hover:underline`}>
+                  Learn More →
+                </span>
+              </Link>
             ))}
           </div>
 
@@ -186,6 +195,48 @@ export default function HomePage() {
             <Link href="/programs" className="btn-outline-navy">
               Explore All Programs
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── FOUNDING 30 ──────────────────────────────────────── */}
+      <section className="py-24 bg-navy-dark relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 right-0 w-72 h-72 bg-brand-orange/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-72 h-72 bg-brand-blue/5 rounded-full blur-3xl" />
+        </div>
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="section-label text-brand-orange">Pre-Opening Offer · Limited Availability</span>
+          <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white leading-tight mt-2 mb-6">
+            The Founding 30 Is{' '}
+            <span className="text-brand-orange">Now Open.</span>
+          </h2>
+          <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed mb-10">
+            Before we open our doors, we are reserving spots for 30 founding families —
+            early access, founding member pricing locked in before public enrollment,
+            and priority placement as class schedules are built. Once the 30 are filled,
+            this offer closes.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+            <Link href="/founding-30" className="btn-primary text-base px-10 py-5">
+              Claim Your Founding Spot
+            </Link>
+            <span className="font-heading font-bold text-xs tracking-widest uppercase text-white/40">
+              Only 30 spots · First come, first served
+            </span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 text-left">
+            {[
+              { icon: '🔒', title: 'Founding Pricing', body: 'Lock in your rate before public enrollment opens.' },
+              { icon: '📅', title: 'Priority Placement', body: 'First pick of class times before we open to the public.' },
+              { icon: '🏅', title: 'Founding Member Status', body: 'Be recognized as part of the original group that launched Strata.' },
+            ].map((item) => (
+              <div key={item.title} className="bg-white/5 border border-white/10 rounded-xl p-6">
+                <span className="text-2xl block mb-3">{item.icon}</span>
+                <h3 className="font-heading font-bold text-white text-base mb-2">{item.title}</h3>
+                <p className="text-white/55 text-sm leading-relaxed">{item.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -285,10 +336,10 @@ export default function HomePage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="section-label">What Parents Are Saying</span>
+            <span className="section-label">What People Are Saying</span>
             <h2 className="section-heading">
               Real Results,{' '}
-              <span className="text-brand-orange">Real Families</span>
+              <span className="text-brand-orange">Real Athletes</span>
             </h2>
           </div>
 
@@ -372,11 +423,11 @@ export default function HomePage() {
             Your Athlete&apos;s Journey Starts Here.
           </h2>
           <p className="mt-4 text-white/80 text-lg">
-            Claim your free trial class — no commitment, no pressure, just
-            an hour that could change everything.
+            Only 30 founding spots available. Claim yours before we open
+            and lock in founding member pricing for life.
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-outline mt-10 text-lg px-12 py-5">
-            Book My Free Trial Class
+            Request My Founding Spot
           </a>
           <p className="mt-4 text-white/50 text-sm">
             1726 Montgomery Street, Unit 8 · Oroville, CA 95965

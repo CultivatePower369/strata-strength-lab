@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Montserrat, Inter } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import SiteLayout from '@/components/SiteLayout'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -26,20 +25,6 @@ export const metadata: Metadata = {
   },
   description:
     'Strata Strength Lab offers Ninja Warrior obstacle training, climbing wall classes, and the Forge Protocol strength system for toddlers through teens in Oroville, CA. Book your free trial.',
-  keywords: [
-    'Ninja Warrior training Oroville CA',
-    'obstacle training gym Oroville',
-    'youth strength training Oroville',
-    'youth strength and conditioning Oroville',
-    'kids obstacle course training',
-    'grip strength and climbing training',
-    'Forge Protocol strength training',
-    'climbing wall gym Oroville',
-    'toddler fitness classes Oroville',
-    'Strata Strength Lab',
-    'teen strength training Oroville',
-    'youth fitness Butte County',
-  ],
   openGraph: {
     title: 'Strata Strength Lab | Ninja Warrior & Strength Training in Oroville, CA',
     description:
@@ -77,6 +62,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://stratastrengthlab.com',
   },
+  icons: {
+    icon: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
 }
 
 const localBusinessSchema = {
@@ -86,7 +75,7 @@ const localBusinessSchema = {
   description:
     'Ninja Warrior obstacle training, climbing wall development, and the Forge Protocol structured strength system for toddlers through teens in Oroville, CA.',
   url: 'https://stratastrengthlab.com',
-  telephone: '',
+  telephone: '+1-530-854-8731',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '1726 Montgomery Street, Unit 8',
@@ -135,9 +124,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <SiteLayout>{children}</SiteLayout>
       </body>
     </html>
   )
