@@ -25,11 +25,31 @@ jobs:
         run: npm run build
 
       - name: Push built files to deploy branch
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          cd out
-          git init
-          git config user.email "info@cultivatepower.net"
-          git config user.name "CultivatePower369"
+          git config --global user.email "info@cultivatepower.net"
+          git config --global user.name "CultivatePower369"
+          REPO="https://CultivatePower369:${GH_TOKEN}@github.com/CultivatePower369/strata-strength-lab.git"
+
+          # Clone existing deploy branch (or init fresh if it doesn't exist)
+          if git clone --depth 1 --branch deploy "$REPO" /tmp/deploy 2>/dev/null; then
+            echo "Cloned existing deploy branch"
+          else
+            mkdir /tmp/deploy
+            cd /tmp/deploy
+            git init
+            git checkout -b deploy
+            git remote add origin "$REPO"
+            cd -
+          fi
+
+          # Replace all files with new build output
+          find /tmp/deploy -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+          cp -r out/. /tmp/deploy/
+
+          # Commit and push (normal push, preserves history)
+          cd /tmp/deploy
           git add -A
-          git commit -m "Deploy $(date +'%Y-%m-%d %H:%M:%S')"
-          git push --force https://CultivatePower369:${{ secrets.GH_TOKEN }}@github.com/CultivatePower369/strata-strength-lab.git HEAD:deploy
+          git diff --cached --quiet || git commit -m "Deploy $(date +'%Y-%m-%d %H:%M:%S')"
+          git push origin deploy
