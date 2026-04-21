@@ -29,10 +29,14 @@ export default function BirthdayPartyForm() {
     }
 
     try {
+      const params = new URLSearchParams()
+      Object.entries(data).forEach(([key, value]) => params.append(key, value))
+
       await fetch(GHL_WEBHOOK_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString(),
       })
       setSubmitted(true)
     } catch {
