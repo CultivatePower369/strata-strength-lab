@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 // ─── Replace with your GoHighLevel funnel URL when ready ──────────────────────
-const GHL_PARTY_LINK = '#book'
+const GHL_PARTY_LINK = 'https://go.valentorcrm.com/widget/booking/2ozwtZ7mcdAdLAlGH9e9'
 
 export default function BirthdayPartiesPage() {
   return (
@@ -32,7 +32,7 @@ export default function BirthdayPartiesPage() {
             Give your child a party that feels exciting, organized, and easy for parents. We handle the energy. You enjoy the day.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={GHL_PARTY_LINK} className="btn-primary text-base px-10 py-4">Book a Party</a>
+            <a href={GHL_PARTY_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary text-base px-10 py-4">Book a Party</a>
             <a href="#pricing" className="btn-outline text-base px-10 py-4">View Pricing</a>
           </div>
           <p className="mt-4 text-white/40 text-sm">Simple pricing · Coach-led · Easy to book</p>
@@ -350,7 +350,7 @@ export default function BirthdayPartiesPage() {
           <p className="text-white/60 text-base max-w-xl mx-auto mb-8">
             If you want a birthday party that feels active, exciting, and organized, Strata Strength Lab is a great fit. Pick your date, tell us about your group, and we&apos;ll help you put it together.
           </p>
-          <a href="#book" className="btn-primary text-lg px-12 py-5 inline-block">
+          <a href={GHL_PARTY_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-12 py-5 inline-block">
             Book a Party
           </a>
           <p className="text-white/40 text-sm mt-4">Or call us at <a href="tel:+15308548731" className="text-brand-orange hover:underline">(530) 854-8731</a></p>
