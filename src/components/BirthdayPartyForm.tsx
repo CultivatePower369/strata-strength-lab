@@ -6,45 +6,6 @@ const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/SV7vHrEyLdHc
 
 export default function BirthdayPartyForm() {
   const [submitted, setSubmitted] = useState(false)
-  const [error, setError] = useState(false)
-  const [loading, setLoading] = useState(false)
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setLoading(true)
-    setError(false)
-
-    const form = e.currentTarget
-    const data = {
-      parent_name: (form.elements.namedItem('parent_name') as HTMLInputElement).value,
-      email: (form.elements.namedItem('email') as HTMLInputElement).value,
-      phone: (form.elements.namedItem('phone') as HTMLInputElement).value,
-      child_name: (form.elements.namedItem('child_name') as HTMLInputElement).value,
-      child_age: (form.elements.namedItem('child_age') as HTMLInputElement).value,
-      kids_count: (form.elements.namedItem('kids_count') as HTMLInputElement).value,
-      preferred_date: (form.elements.namedItem('preferred_date') as HTMLInputElement).value,
-      preferred_time: (form.elements.namedItem('preferred_time') as HTMLSelectElement).value,
-      addons: (form.elements.namedItem('addons') as HTMLSelectElement).value,
-      notes: (form.elements.namedItem('notes') as HTMLTextAreaElement).value,
-    }
-
-    try {
-      const params = new URLSearchParams()
-      Object.entries(data).forEach(([key, value]) => params.append(key, value))
-
-      await fetch(GHL_WEBHOOK_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: params.toString(),
-      })
-      setSubmitted(true)
-    } catch {
-      setError(true)
-    } finally {
-      setLoading(false)
-    }
-  }
 
   if (submitted) {
     return (
@@ -58,7 +19,16 @@ export default function BirthdayPartyForm() {
 
   return (
     <div className="card p-8 sm:p-10">
-      <form onSubmit={handleSubmit} className="space-y-5" aria-label="Party booking form">
+      {/* Hidden iframe absorbs the form POST response so the page doesn't navigate */}
+      <iframe name="party_frame" title="form-target" className="hidden" />
+      <form
+        action={GHL_WEBHOOK_URL}
+        method="POST"
+        target="party_frame"
+        onSubmit={() => setTimeout(() => setSubmitted(true), 800)}
+        className="space-y-5"
+        aria-label="Party booking form"
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
             <label className="block text-sm font-heading font-semibold text-navy mb-1.5" htmlFor="parent_name">Parent Name</label>
@@ -131,11 +101,8 @@ export default function BirthdayPartyForm() {
           <textarea id="notes" name="notes" rows={3} placeholder="Anything else we should know?"
             className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy/30 focus:border-navy transition-all resize-none" />
         </div>
-        {error && (
-          <p className="text-red-500 text-sm text-center">Something went wrong. Please call us at (530) 854-8731.</p>
-        )}
-        <button type="submit" disabled={loading} className="btn-primary w-full text-base py-4 disabled:opacity-60">
-          {loading ? 'Sending...' : 'Request My Party Date'}
+        <button type="submit" className="btn-primary w-full text-base py-4">
+          Request My Party Date
         </button>
         <p className="text-gray-400 text-xs text-center">We&apos;ll follow up to confirm availability and details.</p>
       </form>
