@@ -24,14 +24,12 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Deploy to Cloudways via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          server: ${{ secrets.SFTP_HOST }}
-          username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORD }}
-          port: '22'
-          local_path: './out/*'
-          remote_path: '/public_html'
-          delete_remote_files: true
-          sftp_only: true
+      - name: Push built files to deploy branch
+        run: |
+          cd out
+          git init
+          git config user.email "info@cultivatepower.net"
+          git config user.name "CultivatePower369"
+          git add -A
+          git commit -m "Deploy $(date +'%Y-%m-%d %H:%M:%S')"
+          git push --force https://CultivatePower369:${{ secrets.GH_TOKEN }}@github.com/CultivatePower369/strata-strength-lab.git HEAD:deploy
