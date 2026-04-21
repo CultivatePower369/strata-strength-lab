@@ -8,23 +8,11 @@ export const metadata: Metadata = {
     'Climbing wall and grip development training for kids and teens in Oroville, CA. Build upper body strength, core stability, focus, and spatial awareness through coached progressive climbing.',
 }
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stratastrengthlab.com' },
-    { '@type': 'ListItem', position: 2, name: 'Programs', item: 'https://stratastrengthlab.com/programs' },
-    { '@type': 'ListItem', position: 3, name: 'Climbing Wall & Grip Training', item: 'https://stratastrengthlab.com/programs/climbing-wall' },
-  ],
-}
-
 const GHL_TRIAL_LINK = '#trial'
 
 export default function ClimbingWallPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-
       {/* Hero */}
       <section className="bg-hero-pattern pt-32 pb-20 relative overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%)' }} />

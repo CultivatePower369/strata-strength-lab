@@ -9,24 +9,12 @@ export const metadata: Metadata = {
     'Active, coach-led birthday parties for kids in Oroville, CA. Simple pricing, structured fun, and easy to book. Standard parties from $299.',
 }
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stratastrengthlab.com' },
-    { '@type': 'ListItem', position: 2, name: 'Programs', item: 'https://stratastrengthlab.com/programs' },
-    { '@type': 'ListItem', position: 3, name: 'Birthday Parties', item: 'https://stratastrengthlab.com/programs/birthday-parties' },
-  ],
-}
-
 // ─── Replace with your GoHighLevel funnel URL when ready ──────────────────────
 const GHL_PARTY_LINK = '#book'
 
 export default function BirthdayPartiesPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-
       {/* ─── HERO ──────────────────────────────────────────────────────────── */}
       <section className="bg-hero-pattern pt-32 pb-20 relative overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%)' }} />

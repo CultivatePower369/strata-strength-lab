@@ -8,23 +8,11 @@ export const metadata: Metadata = {
     'Structured Ninja Warrior obstacle training for toddlers through teens in Oroville, CA. Your child builds coordination, grip strength, body control, and real confidence — coached and progressive.',
 }
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stratastrengthlab.com' },
-    { '@type': 'ListItem', position: 2, name: 'Programs', item: 'https://stratastrengthlab.com/programs' },
-    { '@type': 'ListItem', position: 3, name: 'Ninja Warrior Training', item: 'https://stratastrengthlab.com/programs/ninja-warrior' },
-  ],
-}
-
 const GHL_TRIAL_LINK = '#trial'
 
 export default function NinjaWarriorPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-
       {/* Hero */}
       <section className="bg-hero-pattern pt-32 pb-20 relative overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%)' }} />

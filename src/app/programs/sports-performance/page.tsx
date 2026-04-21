@@ -8,23 +8,11 @@ export const metadata: Metadata = {
     'Sports performance training for youth athletes in Oroville, CA. Speed, agility, power, and coordination training that shows up on game day — for any sport, any level.',
 }
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stratastrengthlab.com' },
-    { '@type': 'ListItem', position: 2, name: 'Programs', item: 'https://stratastrengthlab.com/programs' },
-    { '@type': 'ListItem', position: 3, name: 'Functional Fitness for Sports', item: 'https://stratastrengthlab.com/programs/sports-performance' },
-  ],
-}
-
 const GHL_TRIAL_LINK = '#trial'
 
 export default function SportsPerformancePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-
       {/* Hero */}
       <section className="bg-hero-pattern pt-32 pb-20 relative overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%)' }} />

@@ -2,15 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stratastrengthlab.com' },
-    { '@type': 'ListItem', position: 2, name: 'Programs', item: 'https://stratastrengthlab.com/programs' },
-  ],
-}
-
 export const metadata: Metadata = {
   title: 'Programs',
   description:
@@ -151,10 +142,6 @@ const programs = [
 export default function ProgramsPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
       {/* Hero */}
       <section className="bg-hero-pattern pt-32 pb-20 relative overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%)' }} />

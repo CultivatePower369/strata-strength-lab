@@ -3,15 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stratastrengthlab.com' },
-    { '@type': 'ListItem', position: 2, name: 'About', item: 'https://stratastrengthlab.com/about' },
-  ],
-}
-
 export const metadata: Metadata = {
   title: 'About Us',
   description:
@@ -57,11 +48,6 @@ const outcomes = [
 export default function AboutPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-
       {/* ─── HERO ─────────────────────────────────────────────── */}
       <section className="bg-hero-pattern pt-32 pb-24 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">

@@ -11,25 +11,8 @@ interface FAQProps {
 }
 
 export default function FAQ({ items, heading = 'Frequently Asked Questions', label = 'FAQ', dark = false }: FAQProps) {
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: items.map((item) => ({
-      '@type': 'Question',
-      name: item.q,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.a,
-      },
-    })),
-  }
-
   return (
     <section className={`py-20 ${dark ? 'bg-navy-dark' : 'bg-navy-50'}`}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span className={`section-label ${dark ? 'text-brand-blue' : ''}`}>{label}</span>
