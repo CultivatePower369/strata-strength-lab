@@ -77,19 +77,25 @@ export default function Header() {
           </Link>
 
           {/* Programs Dropdown */}
-          <div ref={dropdownRef} className="relative">
+          <div ref={dropdownRef} className="relative flex items-center gap-1">
+            <Link
+              href="/programs"
+              className="text-white/80 hover:text-white font-heading font-semibold text-sm uppercase tracking-wider transition-colors duration-200 relative group"
+            >
+              Programs
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-200 group-hover:w-full" />
+            </Link>
             <button
               onClick={() => setProgramsOpen(!programsOpen)}
-              className="flex items-center gap-1 text-white/80 hover:text-white font-heading font-semibold text-sm uppercase tracking-wider transition-colors duration-200 relative group"
+              aria-label="Toggle programs menu"
+              className="text-white/80 hover:text-white transition-colors duration-200 p-0.5"
             >
-              <Link href="/programs" onClick={(e) => e.stopPropagation()}>Programs</Link>
               <svg
                 className={`w-3.5 h-3.5 transition-transform duration-200 ${programsOpen ? 'rotate-180' : ''}`}
                 fill="none" stroke="currentColor" viewBox="0 0 24 24"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
               </svg>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-200 group-hover:w-full" />
             </button>
 
             {programsOpen && (
