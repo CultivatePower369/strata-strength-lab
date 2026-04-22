@@ -98,9 +98,9 @@ const testimonials = [
       "Darrell and his family have been an integral part of my kids development. His strength and conditioning program over the last 12+ years has helped them develop into great young men.",
   },
   {
-    name: 'More reviews coming soon',
+    name: 'Parent of Strata Athletes',
     quote:
-      "We are just getting started. Check back soon for more from our athletes and families.",
+      "What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do — not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn't expecting. This place is different.",
   },
 ]
 

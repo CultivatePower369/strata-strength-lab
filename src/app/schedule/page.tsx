@@ -10,64 +10,55 @@ export const metadata: Metadata = {
 
 const GHL_TRIAL_LINK = '#trial'
 
-// Update these times once your schedule is finalized
+const weekdayClasses = [
+  { time: '10:00 AM – 11:00 AM', name: 'Little Movers', ages: 'Ages 1–3' },
+  { time: '11:00 AM – 12:00 PM', name: 'Little Builders', ages: 'Ages 3–5' },
+  { time: '4:00 PM – 5:00 PM',   name: 'Youth Athlete Development', ages: 'Ages 6–12' },
+  { time: '5:00 PM – 6:00 PM',   name: 'Youth Ninja & Climbing', ages: 'Ages 6–12' },
+  { time: '6:00 PM – 7:00 PM',   name: 'Teen Athlete Development', ages: 'Ages 13–17' },
+  { time: '7:00 PM – 8:00 PM',   name: 'Teen Ninja & Climbing', ages: 'Ages 13–17' },
+]
+
 const schedule = [
-  {
-    day: 'Monday',
-    classes: [
-      { time: '4:00 PM – 5:00 PM', name: 'Youth Strength', ages: '6–12', spots: 'Open' },
-      { time: '5:00 PM – 6:00 PM', name: 'Youth Climbing', ages: '6–17', spots: 'Open' },
-      { time: '6:00 PM – 7:00 PM', name: 'Sports Performance', ages: '12–17', spots: 'Open' },
-    ],
-  },
-  {
-    day: 'Tuesday',
-    classes: [
-      { time: '4:00 PM – 5:00 PM', name: 'Mobility & Movement', ages: '6–17', spots: 'Open' },
-      { time: '5:00 PM – 6:00 PM', name: 'Youth Strength', ages: '6–12', spots: 'Open' },
-    ],
-  },
-  {
-    day: 'Wednesday',
-    classes: [
-      { time: '4:00 PM – 5:00 PM', name: 'Youth Climbing', ages: '6–17', spots: 'Open' },
-      { time: '5:00 PM – 6:00 PM', name: 'Sports Performance', ages: '12–17', spots: 'Open' },
-      { time: '6:00 PM – 7:00 PM', name: 'Open Mat', ages: 'Members only', spots: 'Open' },
-    ],
-  },
-  {
-    day: 'Thursday',
-    classes: [
-      { time: '4:00 PM – 5:00 PM', name: 'Youth Strength', ages: '6–12', spots: 'Open' },
-      { time: '5:00 PM – 6:00 PM', name: 'Mobility & Movement', ages: '6–17', spots: 'Open' },
-    ],
-  },
+  { day: 'Monday',    classes: weekdayClasses },
+  { day: 'Tuesday',   classes: weekdayClasses },
+  { day: 'Wednesday', classes: weekdayClasses },
+  { day: 'Thursday',  classes: weekdayClasses },
   {
     day: 'Friday',
     classes: [
-      { time: '4:00 PM – 6:00 PM', name: 'Open Mat', ages: 'Members only', spots: 'Open' },
+      { time: '3:00 PM – 5:00 PM',  name: 'Birthday Party', ages: 'Private booking' },
+      { time: '5:30 PM – close',     name: 'Open Gym', ages: 'All ages' },
     ],
   },
   {
     day: 'Saturday',
     classes: [
-      { time: '9:00 AM – 10:00 AM', name: 'Youth Strength', ages: '6–12', spots: 'Open' },
-      { time: '10:00 AM – 11:00 AM', name: 'Youth Climbing', ages: '6–17', spots: 'Open' },
-      { time: '11:00 AM – 12:00 PM', name: 'Sports Performance', ages: '12–17', spots: 'Open' },
+      { time: '8:30 AM – 10:00 AM', name: 'Open Gym', ages: 'All ages' },
+      { time: '10:00 AM – 12:00 PM', name: 'Birthday Party', ages: 'Private booking' },
+      { time: '12:00 PM – 2:00 PM',  name: 'Birthday Party', ages: 'Private booking' },
+      { time: '2:00 PM – 4:00 PM',   name: 'Birthday Party', ages: 'Private booking' },
     ],
   },
   {
     day: 'Sunday',
-    classes: [],
+    classes: [
+      { time: '10:00 AM – 12:00 PM', name: 'Birthday Party', ages: 'Private booking' },
+      { time: '12:00 PM – 2:00 PM',  name: 'Birthday Party', ages: 'Private booking' },
+      { time: '2:00 PM – 4:00 PM',   name: 'Birthday Party', ages: 'Private booking' },
+    ],
   },
 ]
 
 const classColors: Record<string, string> = {
-  'Youth Strength': 'bg-navy/10 text-navy border-navy/20',
-  'Youth Climbing': 'bg-brand-blue/10 text-brand-blue-dark border-brand-blue/20',
-  'Sports Performance': 'bg-brand-orange/10 text-brand-orange-dark border-brand-orange/20',
-  'Mobility & Movement': 'bg-purple-50 text-purple-700 border-purple-200',
-  'Open Mat': 'bg-gray-100 text-gray-600 border-gray-200',
+  'Little Movers': 'bg-purple-50 text-purple-700 border-purple-200',
+  'Little Builders': 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  'Youth Athlete Development': 'bg-navy/10 text-navy border-navy/20',
+  'Youth Ninja & Climbing': 'bg-brand-blue/10 text-brand-blue-dark border-brand-blue/20',
+  'Teen Athlete Development': 'bg-navy/20 text-navy border-navy/30',
+  'Teen Ninja & Climbing': 'bg-brand-blue/20 text-brand-blue-dark border-brand-blue/30',
+  'Birthday Party': 'bg-brand-orange/10 text-brand-orange-dark border-brand-orange/20',
+  'Open Gym': 'bg-gray-100 text-gray-600 border-gray-200',
 }
 
 export default function SchedulePage() {
@@ -128,7 +119,7 @@ export default function SchedulePage() {
                           {cls.name}
                         </p>
                         <p className="text-xs opacity-80">{cls.time}</p>
-                        <p className="text-xs opacity-60 mt-1">Ages {cls.ages}</p>
+                        <p className="text-xs opacity-60 mt-1">{cls.ages}</p>
                       </div>
                     ))
                   )}
@@ -157,7 +148,7 @@ export default function SchedulePage() {
                       >
                         <div>
                           <p className="font-heading font-bold text-sm">{cls.name}</p>
-                          <p className="text-xs opacity-70 mt-0.5">Ages {cls.ages}</p>
+                          <p className="text-xs opacity-70 mt-0.5">{cls.ages}</p>
                         </div>
                         <p className="text-xs font-heading font-semibold opacity-80 text-right">
                           {cls.time}

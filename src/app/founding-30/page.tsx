@@ -23,10 +23,10 @@ const offerPoints = [
 ]
 
 const programs = [
-  { name: 'Little Builders', detail: 'Ages 3–4' },
-  { name: 'Foundation',      detail: '2× per week' },
-  { name: 'Forge',           detail: '3× per week' },
-  { name: 'Athlete',         detail: 'Unlimited' },
+  { name: 'Little Movers',   detail: 'Ages 1–3' },
+  { name: 'Little Builders', detail: 'Ages 3–5' },
+  { name: 'Youth Athletes',  detail: 'Ages 6–12' },
+  { name: 'Teen Athletes',   detail: 'Ages 13–17' },
 ]
 
 const audience = [
