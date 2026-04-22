@@ -83,20 +83,20 @@ const benefits = [
 // ─── TESTIMONIALS: swap these placeholders with real parent quotes ─────────────
 const testimonials = [
   {
-    initials: 'JM',
-    quote: 'My son has been training with Darrell for two years. The difference in his confidence and how he carries himself is night and day. I can\'t wait to see what a dedicated strength program does for him.',
-    name: 'Parent — [Name]',
-    role: 'Cultivate Power family',
+    initials: 'CW',
+    quote: "I've been strength training with Darrell for over six years. During that time, I've gone from an average martial artist to an above-average amateur MMA fighter. The strength training has played a huge role in that progression. It's helped me develop real, usable strength, improve my conditioning, and perform at a higher level in both jiu-jitsu competition and MMA. More than anything, it's elevated me not just as an athlete, but as a martial artist and fighter. I feel stronger, more capable, and more prepared every time I step on the mat or into competition.",
+    name: 'Charles Whalley',
+    role: 'Athlete & MMA competitor',
   },
   {
-    initials: 'AT',
-    quote: 'We\'ve been looking for something like this in Oroville for years — a real structured program where a coach is actually paying attention to my kid. We signed up the same day we heard about it.',
-    name: 'Parent — [Name]',
-    role: 'Local family, two kids enrolled',
+    initials: 'JT',
+    quote: "Darrell and his family have been an integral part of my kids development. His strength and conditioning program over the last 12+ years has helped them develop into great young men.",
+    name: 'John Thompson',
+    role: 'Parent of Strata athletes',
   },
   {
     initials: 'RV',
-    quote: 'What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do — not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn\'t expecting. This place is different.',
+    quote: "What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do — not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn't expecting. This place is different.",
     name: 'Ric "Daddy5" Vaj',
     role: 'Parent of Strata athletes',
   },
