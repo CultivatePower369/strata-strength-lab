@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 const programDropdown = [
   { label: 'Ninja Warrior', href: '/programs/ninja-warrior' },
-  { label: 'Climbing Wall', href: '/programs/climbing-wall' },
-  { label: 'Sports Performance', href: '/programs/sports-performance' },
+  { label: 'Climbing Rock Wall', href: '/programs/climbing-wall' },
+  { label: 'Forge Protocol', href: '/programs/forge-protocol' },
   { label: 'Birthday Parties', href: '/programs/birthday-parties' },
 ]
 

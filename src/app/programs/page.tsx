@@ -15,9 +15,9 @@ const programs = [
     id: 'ninja-warrior',
     href: '/programs/ninja-warrior',
     emoji: '🏃',
-    title: 'Ninja Warrior Obstacle Training',
+    title: 'Ninja Warrior Obstacle Course',
     tagline: 'Move through the challenge.',
-    description: `Our Ninja Warrior obstacle training is the centerpiece of what makes Strata unique. Athletes navigate a structured obstacle course system that develops coordination, grip strength, agility, body control, and mental resilience simultaneously. This is not an open play area — it is coached, progressive, and purposeful. Each obstacle teaches a physical skill, and athletes advance through progressions as they master each challenge. The result is a genuinely capable, confident athlete who knows how to move under pressure.`,
+    description: `Our Ninja Warrior obstacle course is the centerpiece of what makes Strata unique. Athletes navigate a structured obstacle course system that develops coordination, grip strength, agility, body control, and mental resilience simultaneously. This is not an open play area — it is coached, progressive, and purposeful. Each obstacle teaches a physical skill, and athletes advance through progressions as they master each challenge. The result is a genuinely capable, confident athlete who knows how to move under pressure.`,
     details: [
       'Full obstacle course with progressive challenge levels',
       'Develops grip, agility, coordination, and body control',
@@ -33,9 +33,9 @@ const programs = [
     id: 'climbing',
     href: '/programs/climbing-wall',
     emoji: '🧗',
-    title: 'Climbing Wall & Grip Development',
+    title: 'Climbing Rock Wall',
     tagline: 'Grip strength. Problem-solving. Real capability.',
-    description: `The climbing wall at Strata is not a bonus — it is a core training tool. Rock climbing builds grip strength, upper-body pulling power, core stability, and spatial awareness in ways that no machine or barbell can replicate. Athletes learn to read the wall, plan their movement, and execute under fatigue. This climbing-inspired approach to grip and movement development carries over directly to every other thing we train. Beginners start with fundamentals. Advanced athletes tackle technical routes and timed challenges. Everyone improves.`,
+    description: `The climbing rock wall at Strata is not a bonus — it is a core training tool. Rock climbing builds grip strength, upper-body pulling power, core stability, and spatial awareness in ways that no machine or barbell can replicate. Athletes learn to read the wall, plan their movement, and execute under fatigue. This climbing-inspired approach to grip and movement development carries over directly to every other thing we train. Beginners start with fundamentals. Advanced athletes tackle technical routes and timed challenges. Everyone improves.`,
     details: [
       'Coached climbing sessions for all levels',
       'Grip strength and pulling power development',
@@ -51,69 +51,15 @@ const programs = [
     id: 'forge-protocol',
     href: '/programs/forge-protocol',
     emoji: '⚒️',
-    title: 'The Forge Protocol — Strength Training',
-    tagline: 'Strength earned through structure.',
-    description: `The Forge Protocol is Strata's structured strength training system. Built around the foundational movement patterns — squat, hinge, push, pull, and carry — it applies discipline, repetition, and progressive overload to develop real-world functional strength across every age group we serve. This is not a circuit class. It is not random exercise. It is a system where movement quality is established first, load is added when the pattern is earned, and intensity is built on a foundation that holds. Youth strength training done right — with purpose and a standard.`,
+    title: 'Forge Protocol / Sports Attribute Development',
+    tagline: 'Strength earned through structure. Performance built to transfer.',
+    description: `The Forge Protocol is Strata's structured strength and athletic development system. Built around the foundational movement patterns — squat, hinge, push, pull, and carry — it applies discipline, repetition, and progressive overload to develop real-world functional strength. Sports attribute development layers on top: speed mechanics, explosive power, agility, and multi-directional conditioning that transfers directly to game day performance. This is not a circuit class or generic gym workout. It is a system where movement quality comes first, load and intensity are earned, and every athlete leaves more capable than when they walked in.`,
     details: [
-      'Squat, hinge, push, pull, carry — foundational patterns',
-      'Movement quality established before load is added',
-      'Structured progressive overload — not random workouts',
+      'Squat, hinge, push, pull, carry — foundational movement patterns',
+      'Speed, agility, and explosive power development',
+      'Progressive overload — movement quality before load',
       'Age-appropriate programming from toddlers through teens',
-      'Builds bone density, joint stability, and real strength',
-    ],
-    color: 'border-brand-orange',
-    accent: 'bg-brand-orange',
-    textAccent: 'text-brand-orange',
-  },
-  {
-    id: 'sports-performance',
-    href: '/programs/sports-performance',
-    emoji: '⚡',
-    title: 'Functional Fitness for Sports',
-    tagline: 'Train movements. Perform on game day.',
-    description: `Whatever sport your athlete plays, functional fitness training at Strata makes them better at it. We train the athletic qualities that transfer across every sport — speed mechanics, explosive power, agility, coordination, and conditioning. This is not generic gym class. It is purposeful multi-sport athletic development that shows up in how athletes move, react, and sustain effort when it counts.`,
-    details: [
-      'Speed and agility mechanics training',
-      'Explosive power development — jumps, throws, sprints',
-      'Multi-directional movement and change of direction',
-      'Energy system development and conditioning',
-      'Applicable to any sport: baseball, soccer, basketball, wrestling, and more',
-    ],
-    color: 'border-navy',
-    accent: 'bg-navy',
-    textAccent: 'text-navy',
-  },
-  {
-    id: 'mobility',
-    href: '/programs/mobility',
-    emoji: '🧘',
-    title: 'Mobility & Movement',
-    tagline: 'Move better. Stay in the game.',
-    description: `Durable athletes don't just train hard — they move well. Our mobility and movement sessions build the active flexibility, joint control, and body awareness that keep athletes healthy and performing across a full season and a full career. This is not a stretching class. It is deliberate movement training that complements every other thing we do at Strata.`,
-    details: [
-      'Active flexibility and joint mobility work',
-      'Breath control and body awareness development',
-      'Recovery techniques and soft tissue work',
-      'Reduces risk of common overuse and acute injuries',
-      'Pairs with all programs — recommended for every athlete',
-    ],
-    color: 'border-brand-blue',
-    accent: 'bg-brand-blue',
-    textAccent: 'text-brand-blue-dark',
-  },
-  {
-    id: 'open-mat',
-    href: '/programs/open-mat',
-    emoji: '🕐',
-    title: 'Open Mat',
-    tagline: 'Your time. Coach on the floor.',
-    description: `Open Mat is supervised free training time available to all active Strata members. Come in, work on skills from class, run the obstacle course, climb the wall, or put in extra strength work. A coach is always present to guide, spot, and answer questions. Open Mat is where athletes who want more go to get it.`,
-    details: [
-      'Available to all active members',
-      'Coach-supervised at all times',
-      'Full facility access — obstacles, climbing wall, strength equipment',
-      'Reinforce class skills at your own pace',
-      'No structured programming — athlete-directed with coach available',
+      'Applicable to any sport — builds athletes, not just fitness',
     ],
     color: 'border-brand-orange',
     accent: 'bg-brand-orange',
@@ -148,14 +94,14 @@ export default function ProgramsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <span className="section-label text-brand-blue">What We Offer</span>
           <h1 className="font-heading font-black text-4xl sm:text-5xl md:text-6xl text-white mt-2 leading-tight">
-            Seven Programs.<br />
+            Four Programs.<br />
             <span className="text-brand-orange">One Standard.</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
             Every program at Strata is structured, coached, and built with
-            purpose. No random workouts. No filler. From Ninja Warrior obstacle
-            training to the Forge Protocol — this is strength and movement
-            development done right — toddlers to teens, every level.
+            purpose. No random workouts. No filler. Ninja Warrior obstacle
+            training, climbing rock wall, the Forge Protocol, and birthday
+            parties — toddlers to teens, every level.
           </p>
         </div>
       </section>
