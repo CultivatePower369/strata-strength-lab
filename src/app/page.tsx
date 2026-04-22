@@ -98,7 +98,7 @@ const testimonials = [
       "Darrell and his family have been an integral part of my kids development. His strength and conditioning program over the last 12+ years has helped them develop into great young men.",
   },
   {
-    name: 'Parent of Strata Athletes',
+    name: 'Ric "Daddy5" Vaj',
     quote:
       "What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do — not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn't expecting. This place is different.",
   },
@@ -164,7 +164,7 @@ export default function HomePage() {
               <span className="text-brand-orange">Forge Protocol Strength.</span>
             </h2>
             <p className="section-subheading max-w-2xl mx-auto">
-              Three core disciplines. Seven program tracks. Every session
+              Three core disciplines. Four program tracks. Every session
               is structured, coached, and built to develop real capability
               in young athletes from toddlers through teens.
             </p>
@@ -311,7 +311,7 @@ export default function HomePage() {
             <div className="grid grid-cols-2 gap-6">
               {[
                 { value: 'Toddlers', label: 'to Teens' },
-                { value: '7', label: 'Program Tracks' },
+                { value: '4', label: 'Program Tracks' },
                 { value: 'Small', label: 'Class Sizes' },
                 { value: 'Free', label: 'First Trial Class' },
               ].map((stat) => (

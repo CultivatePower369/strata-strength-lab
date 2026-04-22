@@ -95,10 +95,10 @@ const testimonials = [
     role: 'Local family, two kids enrolled',
   },
   {
-    initials: 'RK',
-    quote: 'What we noticed first was the culture. The coaches actually know the kids. My daughter started standing taller, trying harder. That\'s what we were looking for.',
-    name: 'Parent — [Name]',
-    role: 'Youth athlete parent',
+    initials: 'RV',
+    quote: 'What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do — not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn\'t expecting. This place is different.',
+    name: 'Ric "Daddy5" Vaj',
+    role: 'Parent of Strata athletes',
   },
 ]
 
