@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 import BirthdayPartyForm from '@/components/BirthdayPartyForm'
@@ -276,12 +277,14 @@ export default function BirthdayPartiesPage() {
               </p>
             </div>
             <div>
-              {/* ─── SWAP: Replace this placeholder with a real party action photo ─── */}
-              <div className="rounded-2xl bg-navy/5 border-2 border-dashed border-navy/20 h-72 flex items-center justify-center">
-                <div className="text-center text-navy/40">
-                  <span className="text-5xl block mb-2">📸</span>
-                  <p className="font-heading font-semibold text-sm">Kids in action photo goes here</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/kids-ninja-warrior.jpg"
+                  alt="Kids on the Ninja Warrior obstacle course at Strata Strength Lab"
+                  width={800}
+                  height={534}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

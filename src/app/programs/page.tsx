@@ -124,12 +124,20 @@ export default function ProgramsPage() {
                   {p.description}
                 </p>
                 <div className="flex flex-wrap gap-3 mt-8">
-                  <a href={GHL_TRIAL_LINK} className="btn-primary inline-block">
-                    Try a Free Class
-                  </a>
-                  <Link href={p.href} className="btn-outline-navy inline-block">
-                    Learn More →
-                  </Link>
+                  {p.id === 'birthday-parties' ? (
+                    <Link href={p.href} className="btn-primary inline-block">
+                      Book Your Birthday Party
+                    </Link>
+                  ) : (
+                    <>
+                      <a href={GHL_TRIAL_LINK} className="btn-primary inline-block">
+                        Try a Free Class
+                      </a>
+                      <Link href={p.href} className="btn-outline-navy inline-block">
+                        Learn More →
+                      </Link>
+                    </>
+                  )}
                 </div>
               </div>
 
