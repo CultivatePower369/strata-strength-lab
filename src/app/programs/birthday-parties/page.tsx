@@ -49,12 +49,14 @@ export default function BirthdayPartiesPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              {/* ─── SWAP: Replace this placeholder with a real party photo ─── */}
-              <div className="rounded-2xl bg-navy/5 border-2 border-dashed border-navy/20 h-72 flex items-center justify-center">
-                <div className="text-center text-navy/40">
-                  <span className="text-5xl block mb-2">📸</span>
-                  <p className="font-heading font-semibold text-sm">Party photo goes here</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/kids-climbing.jpg"
+                  alt="Kids climbing the rock wall at Strata Strength Lab birthday party"
+                  width={800}
+                  height={600}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="space-y-4">
