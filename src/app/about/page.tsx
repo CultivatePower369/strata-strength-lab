@@ -288,7 +288,7 @@ export default function AboutPage() {
           {/* Coach 1 — Darrell */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
             {/* Photo — Darrell */}
-            <div className="rounded-2xl overflow-hidden aspect-square">
+            <div className="w-64 h-64 rounded-full overflow-hidden mx-auto lg:mx-0">
               <img src="/images/coach-darrell.jpg" alt="Darrell Thompson — Head Coach" className="w-full h-full object-cover object-top" />
             </div>
 
@@ -383,7 +383,7 @@ export default function AboutPage() {
             </div>
 
             {/* Photo — Amory */}
-            <div className="lg:order-2 rounded-2xl overflow-hidden aspect-square">
+            <div className="lg:order-2 w-64 h-64 rounded-full overflow-hidden mx-auto lg:mx-0">
               <img src="/images/coach-amory.jpg" alt="Amory Thompson — Kids Head Coach" className="w-full h-full object-cover object-top" />
             </div>
           </div>

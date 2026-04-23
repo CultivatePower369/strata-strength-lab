@@ -44,6 +44,13 @@ export default function Header() {
           : 'bg-transparent py-4'
       }`}
     >
+      {/* Pre-launch banner */}
+      <Link
+        href="/founding-30"
+        className="block w-full bg-brand-orange text-white text-center py-2 px-4 text-xs font-heading font-semibold tracking-wide hover:bg-brand-orange/90 transition-colors"
+      >
+        Now Pre-Launching: Founding 30 — Be Among the First Families to Join →
+      </Link>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
@@ -126,7 +133,7 @@ export default function Header() {
 
         {/* CTA Button */}
         <a href={GHL_TRIAL_LINK} className="hidden md:inline-block btn-primary text-sm px-6 py-3">
-          Request My Founding Spot
+          Claim My Child&apos;s Founding Spot
         </a>
 
         {/* Mobile Hamburger */}
@@ -205,7 +212,7 @@ export default function Header() {
             className="block text-center btn-primary mt-4 text-sm"
             onClick={() => setMenuOpen(false)}
           >
-            Request My Founding Spot
+            Claim My Child&apos;s Founding Spot
           </a>
         </div>
       </div>

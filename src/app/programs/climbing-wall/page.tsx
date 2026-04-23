@@ -27,7 +27,7 @@ export default function ClimbingWallPage() {
             The climbing wall is one of the most effective athletic development tools available for young athletes. It builds grip strength, pulling power, core stability, spatial awareness, and mental focus — all at once, all through play that feels like anything but training.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Book a Free Trial Class</a>
+            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Claim My Child&apos;s Founding Spot</a>
             <Link href="/schedule" className="btn-outline text-base px-10 py-4">View Class Schedule</Link>
           </div>
         </div>
@@ -72,10 +72,10 @@ export default function ClimbingWallPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { label: 'Grip Strength', sub: 'Developed through every session' },
-                { label: 'Full Body', sub: 'Upper, core, and lower chain' },
-                { label: 'All Levels', sub: 'Beginners to advanced' },
                 { label: 'All Ages', sub: 'Toddlers through teens' },
+                { label: 'All Levels', sub: 'Beginners to advanced' },
+                { label: 'Real-World Movement', sub: 'Grip, pull, core, and balance' },
+                { label: 'Progress at Your Pace', sub: 'Every athlete advances' },
               ].map((s) => (
                 <div key={s.label} className="bg-white rounded-xl p-6 text-center shadow-sm border border-navy/5">
                   <span className="block font-heading font-black text-navy text-lg mb-1">{s.label}</span>
@@ -95,7 +95,7 @@ export default function ClimbingWallPage() {
           </h2>
           <p className="text-white/80 text-lg mb-8">Book a free trial class. No experience needed. Coaches handle everything.</p>
           <a href={GHL_TRIAL_LINK} className="inline-block bg-white text-brand-blue font-heading font-black text-lg px-12 py-4 rounded-xl hover:bg-navy-dark hover:text-white transition-colors duration-200">
-            Book Your Free Trial Class
+            Claim My Child&apos;s Founding Spot
           </a>
         </div>
       </section>

@@ -12,11 +12,11 @@ export default function Footer() {
       <div className="bg-brand-orange py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-heading font-bold text-xl text-white text-center md:text-left">
-            Ready to build something great?{' '}
-            <span className="text-navy-dark">Start with a free trial class.</span>
+            Only 30 founding spots available.{' '}
+            <span className="text-navy-dark">Claim yours before we open.</span>
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-outline shrink-0">
-            Book Free Trial
+            Claim My Child&apos;s Founding Spot
           </a>
         </div>
       </div>
@@ -43,9 +43,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed max-w-sm">
-              Building strong, confident, and resilient young athletes through
-              science-backed training in strength, mobility, climbing, and
-              sports performance.
+              Building strong, confident, and capable kids.
             </p>
             <div className="flex gap-4 mt-6">
               {/* Social placeholders — add real links when ready */}
@@ -54,9 +52,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-orange transition-colors duration-200 flex items-center justify-center"
+                className="w-10 h-10 rounded-full bg-white/20 hover:bg-brand-orange transition-colors duration-200 flex items-center justify-center"
               >
-                <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
                 </svg>
               </a>
@@ -65,9 +63,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-orange transition-colors duration-200 flex items-center justify-center"
+                className="w-10 h-10 rounded-full bg-white/20 hover:bg-brand-orange transition-colors duration-200 flex items-center justify-center"
               >
-                <svg className="w-4 h-4 fill-none stroke-white stroke-2" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 fill-none stroke-white stroke-2" viewBox="0 0 24 24">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                   <circle cx="12" cy="12" r="4" />
                   <circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none" />
@@ -103,9 +101,12 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-heading font-bold text-white text-sm uppercase tracking-widest mb-5">
-              Find Us
+            <h3 className="font-heading font-bold text-white text-sm uppercase tracking-widest mb-1">
+              Opening Soon in Oroville
             </h3>
+            <p className="text-white/40 text-xs leading-relaxed mb-5">
+              Currently building out our space — join the Founding 30 for early access and founding member pricing.
+            </p>
             <ul className="space-y-4">
               <li className="flex gap-3">
                 <svg

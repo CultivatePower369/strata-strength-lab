@@ -120,14 +120,6 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%)' }} />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-32">
-          <Image
-            src="/images/logo.png"
-            alt="Strata Strength Lab"
-            width={140}
-            height={140}
-            className="mx-auto mb-8 drop-shadow-2xl"
-            priority
-          />
           <span className="section-label text-brand-blue">
             Oroville, CA · Strength &amp; Movement Training
           </span>
@@ -136,13 +128,11 @@ export default function HomePage() {
             <span className="text-brand-orange">from the Start.</span>
           </h1>
           <p className="mt-6 text-white/75 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            Your child leaves stronger, more confident, and more capable than when they walked in.
-            Ninja Warrior obstacle training, climbing wall development, and the Forge Protocol strength system
-            for toddlers through teens in Oroville, CA — coached, structured, and built to last.
+            Structured strength training, climbing, and obstacle-based development for toddlers through teens.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-5">
-              Request My Founding Spot
+              Claim My Child&apos;s Founding Spot
             </a>
             <Link href="/programs" className="btn-outline text-base px-10 py-5">
               See Our Programs
@@ -219,7 +209,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <Link href="/founding-30" className="btn-primary text-base px-10 py-5">
-              Claim Your Founding Spot
+              Claim My Child&apos;s Founding Spot
             </Link>
             <span className="font-heading font-bold text-xs tracking-widest uppercase text-white/40">
               Only 30 spots · First come, first served
@@ -302,7 +292,7 @@ export default function HomePage() {
                   Meet Our Team
                 </Link>
                 <a href={GHL_TRIAL_LINK} className="btn-primary">
-                  Start Today
+                  Claim My Child&apos;s Founding Spot
                 </a>
               </div>
             </div>
@@ -427,7 +417,7 @@ export default function HomePage() {
             and lock in founding member pricing for life.
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-outline mt-10 text-lg px-12 py-5">
-            Request My Founding Spot
+            Claim My Child&apos;s Founding Spot
           </a>
           <p className="mt-4 text-white/50 text-sm">
             1726 Montgomery Street, Unit 8 · Oroville, CA 95965

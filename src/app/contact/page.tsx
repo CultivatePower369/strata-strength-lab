@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
@@ -15,13 +16,12 @@ export default function ContactPage() {
       <section className="bg-hero-pattern pt-32 pb-20 relative overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%)' }} />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <span className="section-label text-brand-blue">Get In Touch</span>
+          <span className="section-label text-brand-orange">Now Pre-Launching in Oroville</span>
           <h1 className="font-heading font-black text-4xl sm:text-5xl md:text-6xl text-white mt-2 leading-tight">
-            Let&apos;s <span className="text-brand-orange">Connect</span>
+            Something Powerful <span className="text-brand-orange">Is Being Built</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-xl mx-auto">
-            Questions about programs, scheduling, or birthday parties? We&apos;d
-            love to hear from you. Reach out and a coach will get back to you fast.
+            We&apos;re currently building out our space. Join the Founding 30 to be among the first families inside.
           </p>
         </div>
       </section>
@@ -33,10 +33,18 @@ export default function ContactPage() {
 
             {/* Info */}
             <div>
-              <span className="section-label">Find Us</span>
-              <h2 className="section-heading mb-8">
+              <span className="section-label">Get In Touch</span>
+              <h2 className="section-heading mb-4">
                 Visit Strata in <span className="text-brand-orange">Oroville</span>
               </h2>
+              <div className="mb-8 bg-brand-orange/10 border border-brand-orange/20 rounded-xl p-5">
+                <p className="text-brand-orange-dark text-sm font-heading font-semibold leading-relaxed">
+                  We&apos;re currently building out our space — the facility is coming together fast. Join the Founding 30 to lock in early access and founding member pricing before we open to the public.
+                </p>
+                <Link href="/founding-30" className="inline-block mt-3 text-sm font-heading font-bold text-brand-orange hover:underline">
+                  Learn about the Founding 30 →
+                </Link>
+              </div>
 
               <div className="space-y-6">
                 <div className="flex gap-5 items-start">

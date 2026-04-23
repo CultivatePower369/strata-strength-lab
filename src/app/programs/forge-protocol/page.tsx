@@ -24,11 +24,13 @@ export default function ForgeProtocolPage() {
             Real Strength. <span className="text-brand-orange">Built Right.</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
-            The Forge Protocol is the structured strength training system created by Head Coach Darrell Thompson over 20+ years of training athletes. Built on foundational movement patterns — squat, hinge, push, pull, carry — applied with discipline and progressive overload for ages 6 through 18.
+            Built from 20+ years of training athletes and martial artists to move, perform, and compete at a higher level.
+          </p>
+          <p className="mt-3 text-white/50 text-sm max-w-xl mx-auto">
+            Every Strata coach is trained in this method to deliver consistent, high-quality instruction.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Book a Free Trial Class</a>
-            <Link href="/about" className="btn-outline text-base px-10 py-4">Meet Coach Darrell</Link>
+            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Claim My Child&apos;s Founding Spot</a>
           </div>
         </div>
       </section>
@@ -92,7 +94,7 @@ export default function ForgeProtocolPage() {
           </h2>
           <p className="text-white/80 text-lg mb-8">Book a free trial class and let them experience the Forge Protocol firsthand.</p>
           <a href={GHL_TRIAL_LINK} className="inline-block bg-white text-brand-orange font-heading font-black text-lg px-12 py-4 rounded-xl hover:bg-navy-dark hover:text-white transition-colors duration-200">
-            Book Your Free Trial Class
+            Claim My Child&apos;s Founding Spot
           </a>
         </div>
       </section>

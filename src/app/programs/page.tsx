@@ -107,13 +107,13 @@ export default function ProgramsPage() {
       </section>
 
       {/* Programs */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {programs.map((p, i) => (
             <div
               key={p.id}
               id={p.id}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-start ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-start py-16 ${i !== programs.length - 1 ? 'border-b border-gray-100' : ''} ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
             >
               {/* Content */}
               <div className={i % 2 === 1 ? 'lg:order-2' : ''}>
@@ -131,7 +131,7 @@ export default function ProgramsPage() {
                   ) : (
                     <>
                       <a href={GHL_TRIAL_LINK} className="btn-primary inline-block">
-                        Try a Free Class
+                        Claim My Child&apos;s Founding Spot
                       </a>
                       <Link href={p.href} className="btn-outline-navy inline-block">
                         Learn More →
@@ -161,6 +161,50 @@ export default function ProgramsPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Strata Levels */}
+      <section className="py-20 bg-navy-dark">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="section-label text-brand-orange">How Athletes Progress</span>
+          <h2 className="font-heading font-black text-3xl md:text-4xl text-white leading-tight mt-2 mb-4">
+            The Strata Levels System
+          </h2>
+          <p className="text-white/60 text-base max-w-2xl mx-auto mb-12">
+            Every athlete progresses through the Strata system at their own pace — no shortcuts, no ceiling.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                level: 'Level 1',
+                name: 'Foundation',
+                color: 'border-brand-blue',
+                accent: 'text-brand-blue',
+                body: 'Movement fundamentals, body awareness, and coordination basics. This is where every athlete starts — regardless of age or experience.',
+              },
+              {
+                level: 'Level 2',
+                name: 'Development',
+                color: 'border-brand-orange',
+                accent: 'text-brand-orange',
+                body: 'Progressive loading, skill refinement, and increasing challenge. Athletes here have the basics locked in and are building real strength.',
+              },
+              {
+                level: 'Level 3',
+                name: 'Performance',
+                color: 'border-white/40',
+                accent: 'text-white',
+                body: 'Advanced programming, sport-specific attributes, and competition-level preparation. Earned through consistent work at levels 1 and 2.',
+              },
+            ].map((l) => (
+              <div key={l.level} className={`bg-white/5 border-t-4 ${l.color} rounded-xl p-7 text-left`}>
+                <p className={`font-heading font-bold text-xs uppercase tracking-widest mb-1 ${l.accent}`}>{l.level}</p>
+                <h3 className="font-heading font-black text-white text-xl mb-3">{l.name}</h3>
+                <p className="text-white/55 text-sm leading-relaxed">{l.body}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -206,12 +250,12 @@ export default function ProgramsPage() {
             Not Sure Where to Start?
           </h2>
           <p className="mt-4 text-white/80 text-lg">
-            Book a free trial class and we&apos;ll help you find the perfect program
+            Claim your founding spot and we&apos;ll help you find the perfect program
             for your athlete.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a href={GHL_TRIAL_LINK} className="btn-outline text-lg px-10 py-5">
-              Book Free Trial Class
+              Claim My Child&apos;s Founding Spot
             </a>
             <Link href="/schedule" className="btn-outline text-lg px-10 py-5">
               View Schedule

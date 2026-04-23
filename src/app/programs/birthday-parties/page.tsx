@@ -297,9 +297,12 @@ export default function BirthdayPartiesPage() {
       <section className="py-20 bg-navy-dark">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="section-label text-brand-orange">Good Fit</span>
-          <h2 className="font-heading font-black text-3xl md:text-4xl text-white leading-tight mb-10">
+          <h2 className="font-heading font-black text-3xl md:text-4xl text-white leading-tight mb-4">
             Who These Parties Are <span className="text-brand-orange">Great For</span>
           </h2>
+          <p className="text-white/60 text-base max-w-2xl mx-auto mb-10">
+            Perfect for birthdays, celebrations, team events, or any time you want to bring kids together for a high-energy, unforgettable experience.
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
             {[
               { icon: '🏃', text: 'Kids who love to move and stay active' },
