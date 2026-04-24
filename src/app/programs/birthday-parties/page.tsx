@@ -361,7 +361,7 @@ export default function BirthdayPartiesPage() {
           <a href={GHL_PARTY_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-12 py-5 inline-block">
             Book a Party
           </a>
-          <p className="text-white/40 text-sm mt-4">Or call us at <a href="tel:+15308548731" className="text-brand-orange hover:underline">(530) 854-8731</a></p>
+          <p className="text-white/40 text-sm mt-4">Or call us at <a href="tel:+15309222600" className="text-brand-orange hover:underline">(530) 922-2600</a></p>
         </div>
       </section>
     </>

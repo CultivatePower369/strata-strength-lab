@@ -148,10 +148,10 @@ export default function Footer() {
                   />
                 </svg>
                 <a
-                  href="tel:+15308548731"
+                  href="tel:+15309222600"
                   className="text-white/60 hover:text-brand-orange text-sm transition-colors duration-200"
                 >
-                  (530) 854-8731
+                  (530) 922-2600
                 </a>
               </li>
               <li className="flex gap-3">

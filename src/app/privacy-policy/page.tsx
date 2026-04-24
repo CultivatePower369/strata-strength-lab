@@ -55,7 +55,7 @@ export default function PrivacyPolicyPage() {
             <li><strong>Message Frequency:</strong> Message frequency varies. You may receive up to 4–8 messages per month.</li>
             <li><strong>Message &amp; Data Rates:</strong> Message and data rates may apply depending on your mobile carrier and plan.</li>
             <li><strong>Opt-Out:</strong> Reply <strong>STOP</strong> to any message to opt out at any time. You will receive a single confirmation and no further messages will be sent.</li>
-            <li><strong>Help:</strong> Reply <strong>HELP</strong> or contact us at <a href="mailto:info@stratastrengthlab.com" className="text-brand-orange hover:underline">info@stratastrengthlab.com</a> or <a href="tel:+15308548731" className="text-brand-orange hover:underline">(530) 854-8731</a>.</li>
+            <li><strong>Help:</strong> Reply <strong>HELP</strong> or contact us at <a href="mailto:info@stratastrengthlab.com" className="text-brand-orange hover:underline">info@stratastrengthlab.com</a> or <a href="tel:+15309222600" className="text-brand-orange hover:underline">(530) 922-2600</a>.</li>
             <li><strong>No Sharing for Marketing:</strong> We do not sell, rent, or share your phone number or SMS opt-in data with third parties for their marketing purposes.</li>
           </ul>
 
@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
             <p><strong>Cultivate Power Fighting Arts, LLC DBA Strata Strength Lab</strong></p>
             <p>1726 Montgomery Street, Unit 8</p>
             <p>Oroville, CA 95965</p>
-            <p><a href="tel:+15308548731" className="text-brand-orange hover:underline">(530) 854-8731</a></p>
+            <p><a href="tel:+15309222600" className="text-brand-orange hover:underline">(530) 922-2600</a></p>
             <p><a href="mailto:info@stratastrengthlab.com" className="text-brand-orange hover:underline">info@stratastrengthlab.com</a></p>
           </div>
 

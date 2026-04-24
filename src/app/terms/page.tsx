@@ -79,7 +79,7 @@ export default function TermsPage() {
             <p><strong>Cultivate Power Fighting Arts, LLC DBA Strata Strength Lab</strong></p>
             <p>1726 Montgomery Street, Unit 8</p>
             <p>Oroville, CA 95965</p>
-            <p><a href="tel:+15308548731" className="text-brand-orange hover:underline">(530) 854-8731</a></p>
+            <p><a href="tel:+15309222600" className="text-brand-orange hover:underline">(530) 922-2600</a></p>
             <p><a href="mailto:info@stratastrengthlab.com" className="text-brand-orange hover:underline">info@stratastrengthlab.com</a></p>
           </div>
 

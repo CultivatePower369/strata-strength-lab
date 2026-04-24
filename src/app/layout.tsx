@@ -75,7 +75,7 @@ const localBusinessSchema = {
   description:
     'Ninja Warrior obstacle training, climbing wall development, and the Forge Protocol structured strength system for toddlers through teens in Oroville, CA.',
   url: 'https://stratastrengthlab.com',
-  telephone: '+1-530-854-8731',
+  telephone: '+1-530-922-2600',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '1726 Montgomery Street, Unit 8',
