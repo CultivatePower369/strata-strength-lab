@@ -18,7 +18,12 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
   const isClean = CLEAN_ROUTES.some((r) => pathname.startsWith(r))
 
   if (isClean) {
-    return <main>{children}</main>
+    return (
+      <>
+        <main>{children}</main>
+        <TrialModal />
+      </>
+    )
   }
 
   return (

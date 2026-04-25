@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
@@ -70,18 +71,29 @@ export default function ClimbingWallPage() {
                 <p>At Strata, climbing is a core training tool — not an afterthought. Every session is coached with progressions tailored to your child&apos;s current ability and clear goals for what comes next.</p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { label: 'All Ages', sub: 'Toddlers through teens' },
-                { label: 'All Levels', sub: 'Beginners to advanced' },
-                { label: 'Real-World Movement', sub: 'Grip, pull, core, and balance' },
-                { label: 'Progress at Your Pace', sub: 'Every athlete advances' },
-              ].map((s) => (
-                <div key={s.label} className="bg-white rounded-xl p-6 text-center shadow-sm border border-navy/5">
-                  <span className="block font-heading font-black text-navy text-lg mb-1">{s.label}</span>
-                  <span className="text-gray-500 text-xs">{s.sub}</span>
-                </div>
-              ))}
+            <div className="space-y-4">
+              <div className="rounded-xl overflow-hidden">
+                <Image
+                  src="/images/kid-climber.webp"
+                  alt="Young athlete climbing the rock wall at Strata Strength Lab"
+                  width={800}
+                  height={600}
+                  className="w-full h-72 object-cover"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { label: 'All Ages', sub: 'Toddlers through teens' },
+                  { label: 'All Levels', sub: 'Beginners to advanced' },
+                  { label: 'Real-World Movement', sub: 'Grip, pull, core, and balance' },
+                  { label: 'Progress at Your Pace', sub: 'Every athlete advances' },
+                ].map((s) => (
+                  <div key={s.label} className="bg-white rounded-xl p-4 text-center shadow-sm border border-navy/5">
+                    <span className="block font-heading font-black text-navy text-sm mb-1">{s.label}</span>
+                    <span className="text-gray-500 text-xs">{s.sub}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

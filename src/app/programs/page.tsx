@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
@@ -33,6 +34,7 @@ const programs = [
     id: 'climbing',
     href: '/programs/climbing-wall',
     emoji: '🧗',
+    image: '/images/kid-climber.webp',
     title: 'Climbing Rock Wall',
     tagline: 'Grip strength. Problem-solving. Real capability.',
     description: `The climbing rock wall at Strata is not a bonus — it is a core training tool. Rock climbing builds grip strength, upper-body pulling power, core stability, and spatial awareness in ways that no machine or barbell can replicate. Athletes learn to read the wall, plan their movement, and execute under fatigue. This climbing-inspired approach to grip and movement development carries over directly to every other thing we train. Beginners start with fundamentals. Advanced athletes tackle technical routes and timed challenges. Everyone improves.`,
@@ -142,7 +144,19 @@ export default function ProgramsPage() {
               </div>
 
               {/* Details card */}
-              <div className={`border-l-4 ${p.color} bg-navy-50 rounded-xl p-8 ${i % 2 === 1 ? 'lg:order-1' : ''}`}>
+              <div className={`${i % 2 === 1 ? 'lg:order-1' : ''} space-y-4`}>
+                {p.image && (
+                  <div className="rounded-xl overflow-hidden">
+                    <Image
+                      src={p.image}
+                      alt={p.title}
+                      width={800}
+                      height={600}
+                      className="w-full h-64 object-cover"
+                    />
+                  </div>
+                )}
+              <div className={`border-l-4 ${p.color} bg-navy-50 rounded-xl p-8`}>
                 <h3 className="font-heading font-bold text-navy text-sm uppercase tracking-widest mb-5">
                   What to Expect
                 </h3>
@@ -158,6 +172,7 @@ export default function ProgramsPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
               </div>
             </div>
           ))}
