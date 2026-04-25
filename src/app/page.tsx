@@ -119,9 +119,9 @@ export default function HomePage() {
         {/* Diagonal bottom edge */}
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%)' }} />
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-32">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-40 sm:pt-32 md:pt-24 pb-32">
           <span className="section-label text-brand-blue">
-            Oroville, CA · Strength &amp; Movement Training
+            Oroville, CA · Ninja Warrior &amp; Climbing Wall
           </span>
           <h1 className="font-heading font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight mt-2">
             Built Strong<br />
