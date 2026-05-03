@@ -1,65 +1,15 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Class Schedule',
+  title: 'Class Schedule — Coming Soon',
   description:
-    'View the Strata Strength Lab class schedule for youth strength, climbing, mobility, and sports performance classes in Oroville, CA.',
+    'Strata Strength Lab is opening soon in Oroville, CA. Class schedule will be published before we open. Claim your founding spot now.',
 }
 
 const GHL_TRIAL_LINK = '#trial'
 
-const weekdayClasses = [
-  { time: '10:00 AM – 11:00 AM', name: 'Little Movers', ages: 'Ages 1–3' },
-  { time: '11:00 AM – 12:00 PM', name: 'Little Builders', ages: 'Ages 3–5' },
-  { time: '4:00 PM – 5:00 PM',   name: 'Youth Athlete Development', ages: 'Ages 6–12' },
-  { time: '5:00 PM – 6:00 PM',   name: 'Youth Ninja & Climbing', ages: 'Ages 6–12' },
-  { time: '6:00 PM – 7:00 PM',   name: 'Teen Athlete Development', ages: 'Ages 13–17' },
-  { time: '7:00 PM – 8:00 PM',   name: 'Teen Ninja & Climbing', ages: 'Ages 13–17' },
-]
-
-const schedule = [
-  { day: 'Monday',    classes: weekdayClasses },
-  { day: 'Tuesday',   classes: weekdayClasses },
-  { day: 'Wednesday', classes: weekdayClasses },
-  { day: 'Thursday',  classes: weekdayClasses },
-  {
-    day: 'Friday',
-    classes: [
-      { time: '3:00 PM – 5:00 PM',  name: 'Birthday Party', ages: 'Private booking' },
-      { time: '5:30 PM – close',     name: 'Open Gym', ages: 'All ages' },
-    ],
-  },
-  {
-    day: 'Saturday',
-    classes: [
-      { time: '8:30 AM – 10:00 AM', name: 'Open Gym', ages: 'All ages' },
-      { time: '10:00 AM – 12:00 PM', name: 'Birthday Party', ages: 'Private booking' },
-      { time: '12:00 PM – 2:00 PM',  name: 'Birthday Party', ages: 'Private booking' },
-      { time: '2:00 PM – 4:00 PM',   name: 'Birthday Party', ages: 'Private booking' },
-    ],
-  },
-  {
-    day: 'Sunday',
-    classes: [
-      { time: '10:00 AM – 12:00 PM', name: 'Birthday Party', ages: 'Private booking' },
-      { time: '12:00 PM – 2:00 PM',  name: 'Birthday Party', ages: 'Private booking' },
-      { time: '2:00 PM – 4:00 PM',   name: 'Birthday Party', ages: 'Private booking' },
-    ],
-  },
-]
-
-const classColors: Record<string, string> = {
-  'Little Movers': 'bg-purple-50 text-purple-700 border-purple-200',
-  'Little Builders': 'bg-emerald-50 text-emerald-700 border-emerald-200',
-  'Youth Athlete Development': 'bg-navy/10 text-navy border-navy/20',
-  'Youth Ninja & Climbing': 'bg-brand-blue/10 text-brand-blue-dark border-brand-blue/20',
-  'Teen Athlete Development': 'bg-navy/20 text-navy border-navy/30',
-  'Teen Ninja & Climbing': 'bg-brand-blue/20 text-brand-blue-dark border-brand-blue/30',
-  'Birthday Party': 'bg-brand-orange/10 text-brand-orange-dark border-brand-orange/20',
-  'Open Gym': 'bg-gray-100 text-gray-600 border-gray-200',
-}
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 export default function SchedulePage() {
   return (
@@ -73,8 +23,8 @@ export default function SchedulePage() {
             Class <span className="text-brand-orange">Schedule</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
-            Find the right class for your athlete. All classes are coach-led,
-            small group, and open to new members. First class is always free.
+            We&apos;re still building out our space. Full class times will be published
+            before we open — founding members get first pick.
           </p>
         </div>
       </section>
@@ -83,10 +33,10 @@ export default function SchedulePage() {
       <div className="bg-brand-orange/10 border-b border-brand-orange/20 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-brand-orange-dark text-sm font-heading font-semibold text-center sm:text-left">
-            📅 Schedule subject to change as we open. Book a free trial and we&apos;ll confirm your class time.
+            Founding members get priority placement — first pick of class times before public enrollment opens.
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-primary text-sm px-6 py-2 shrink-0">
-            Request My Founding Spot
+            Claim My Child&apos;s Founding Spot
           </a>
         </div>
       </div>
@@ -95,134 +45,49 @@ export default function SchedulePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Desktop table */}
+          {/* Desktop */}
           <div className="hidden lg:block overflow-x-auto">
             <div className="grid grid-cols-7 gap-4 min-w-[900px]">
-              {schedule.map((day) => (
-                <div key={day.day} className="space-y-3">
-                  <div className={`text-center py-3 rounded-lg font-heading font-bold text-sm uppercase tracking-wider ${
-                    day.day === 'Sunday' ? 'bg-gray-100 text-gray-400' : 'bg-navy-dark text-white'
-                  }`}>
-                    {day.day}
+              {days.map((day) => (
+                <div key={day} className="space-y-3">
+                  <div className="text-center py-3 rounded-lg font-heading font-bold text-sm uppercase tracking-wider bg-navy-dark text-white">
+                    {day}
                   </div>
-                  {day.classes.length === 0 ? (
-                    <div className="text-center py-8 text-gray-300 text-sm font-heading font-semibold">
-                      Closed
-                    </div>
-                  ) : (
-                    day.classes.map((cls) => (
-                      <div
-                        key={`${day.day}-${cls.time}`}
-                        className={`rounded-lg border p-3 text-center ${classColors[cls.name] ?? 'bg-gray-50 text-gray-700 border-gray-200'}`}
-                      >
-                        <p className="font-heading font-bold text-xs leading-snug mb-1">
-                          {cls.name}
-                        </p>
-                        <p className="text-xs opacity-80">{cls.time}</p>
-                        <p className="text-xs opacity-60 mt-1">{cls.ages}</p>
-                      </div>
-                    ))
-                  )}
+                  <div className="rounded-lg border bg-gray-50 border-gray-200 p-3 text-center">
+                    <p className="font-heading font-bold text-xs text-gray-400 leading-snug">
+                      Coming Soon
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Mobile list */}
-          <div className="lg:hidden space-y-6">
-            {schedule.map((day) => (
-              <div key={day.day}>
-                <h3 className={`font-heading font-bold text-sm uppercase tracking-widest mb-3 ${
-                  day.day === 'Sunday' ? 'text-gray-400' : 'text-navy'
-                }`}>
-                  {day.day}
-                </h3>
-                {day.classes.length === 0 ? (
-                  <p className="text-gray-400 text-sm pl-4 border-l-2 border-gray-200">Closed</p>
-                ) : (
-                  <div className="space-y-2">
-                    {day.classes.map((cls) => (
-                      <div
-                        key={`${day.day}-${cls.time}-mobile`}
-                        className={`rounded-lg border p-4 flex justify-between items-center ${classColors[cls.name] ?? 'bg-gray-50 text-gray-700 border-gray-200'}`}
-                      >
-                        <div>
-                          <p className="font-heading font-bold text-sm">{cls.name}</p>
-                          <p className="text-xs opacity-70 mt-0.5">{cls.ages}</p>
-                        </div>
-                        <p className="text-xs font-heading font-semibold opacity-80 text-right">
-                          {cls.time}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                )}
+          {/* Mobile */}
+          <div className="lg:hidden space-y-4">
+            {days.map((day) => (
+              <div key={day} className="rounded-lg border border-gray-200 p-4 flex justify-between items-center">
+                <p className="font-heading font-bold text-sm text-navy">{day}</p>
+                <p className="text-xs font-heading font-semibold text-gray-400">Coming Soon</p>
               </div>
             ))}
           </div>
 
-          {/* Legend */}
-          <div className="mt-12 pt-8 border-t border-gray-100">
-            <p className="font-heading font-bold text-xs uppercase tracking-widest text-gray-400 mb-4">
-              Class Legend
-            </p>
-            <div className="flex flex-wrap gap-3">
-              {Object.entries(classColors).map(([name, classes]) => (
-                <span
-                  key={name}
-                  className={`text-xs font-heading font-semibold px-3 py-1.5 rounded-full border ${classes}`}
-                >
-                  {name}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
-
-      <FAQ
-        heading="Schedule FAQ"
-        label="Quick Answers"
-        items={[
-          {
-            q: 'How do I sign up for a class?',
-            a: "Book your first free trial class using the button on this page. After your trial, we'll get you set up with the right membership for your schedule.",
-          },
-          {
-            q: 'Can my child try more than one program?',
-            a: "Absolutely. Many of our athletes attend multiple classes per week. We'll recommend the right combination based on their goals and age.",
-          },
-          {
-            q: 'What should my child wear?',
-            a: "Comfortable athletic wear and athletic shoes. For climbing sessions, we'll let you know about footwear when you book.",
-          },
-          {
-            q: 'What if a class is full?',
-            a: "Contact us and we'll add your athlete to the waitlist or find an equivalent time slot that works.",
-          },
-          {
-            q: 'How long are classes?',
-            a: 'Most group classes are 60 minutes. Open Mat sessions are 90–120 minutes depending on the day.',
-          },
-          {
-            q: 'Are birthday party bookings on this schedule?',
-            a: "Birthday parties are private bookings on weekends. Use the contact form and we'll get availability details to you quickly.",
-          },
-        ]}
-      />
 
       {/* CTA */}
       <section className="py-20 bg-navy-dark">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading font-black text-3xl md:text-4xl text-white">
-            Ready to get on the schedule?
+            Want to know your class time before anyone else?
           </h2>
           <p className="text-white/60 mt-3 text-base">
-            Your first class is free. Pick a time and let&apos;s get started.
+            Founding members choose their schedule before we open to the public.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary">
-              Request My Founding Spot
+              Claim My Child&apos;s Founding Spot
             </a>
             <Link href="/contact" className="btn-outline">
               Have a Question?
