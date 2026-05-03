@@ -10,6 +10,11 @@ export const metadata: Metadata = {
 }
 
 const GHL_TRIAL_LINK = '#trial'
+// Separate link for the secondary "updates only" opt-in — connect to a different GHL form when ready
+const GHL_UPDATES_LINK = '#trial'
+
+// Update this number as founding spots are claimed
+const SPOTS_CLAIMED = 0
 
 const programs = [
   {
@@ -34,7 +39,7 @@ const programs = [
     icon: '⚒️',
     title: 'The Forge Protocol — Strength',
     description:
-      "20+ years in the making. Structured strength built on foundational movement patterns — squat, hinge, push, pull, carry — with progressive overload and real standards. Ages 6 through 18.",
+      '20+ years in the making. Structured strength built on foundational movement patterns — squat, hinge, push, pull, carry — with progressive overload and real standards. Ages 6 through 18.',
     href: '/programs/forge-protocol',
     color: 'bg-brand-orange/5 border-brand-orange/10',
     accent: 'text-brand-orange',
@@ -86,11 +91,12 @@ const pillars = [
   },
 ]
 
+// Ric Vaj leads — his testimonial matches the parent avatar exactly
 const testimonials = [
   {
-    name: 'Charles Whalley',
+    name: 'Ric "Daddy5" Vaj',
     quote:
-      "I've been strength training with Darrell for over six years. During that time, I've gone from an average martial artist to an above-average amateur MMA fighter. The strength training has played a huge role in that progression. It's helped me develop real, usable strength, improve my conditioning, and perform at a higher level in both jiu-jitsu competition and MMA. More than anything, it's elevated me not just as an athlete, but as a martial artist and fighter. I feel stronger, more capable, and more prepared every time I step on the mat or into competition.",
+      "What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do — not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn't expecting. This place is different.",
   },
   {
     name: 'John Thompson',
@@ -98,13 +104,15 @@ const testimonials = [
       "Darrell and his family have been an integral part of my kids development. His strength and conditioning program over the last 12+ years has helped them develop into great young men.",
   },
   {
-    name: 'Ric "Daddy5" Vaj',
+    name: 'Charles Whalley',
     quote:
-      "What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do — not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn't expecting. This place is different.",
+      "I've been strength training with Darrell for over six years. During that time, I've gone from an average martial artist to an above-average amateur MMA fighter. The strength training has played a huge role in that progression. It's helped me develop real, usable strength, improve my conditioning, and perform at a higher level in both jiu-jitsu competition and MMA. More than anything, it's elevated me not just as an athlete, but as a martial artist and fighter. I feel stronger, more capable, and more prepared every time I step on the mat or into competition.",
   },
 ]
 
 export default function HomePage() {
+  const spotsRemaining = 30 - SPOTS_CLAIMED
+
   return (
     <>
       {/* ─── HERO ─────────────────────────────────────────────── */}
@@ -128,18 +136,24 @@ export default function HomePage() {
             <span className="text-brand-orange">from the Start.</span>
           </h1>
           <p className="mt-6 text-white/75 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            Structured strength training, climbing, and obstacle-based development for toddlers through teens.
+            Finally, a training environment your kid will actually want to come back to — structured strength, climbing, and Ninja Warrior obstacle development for toddlers through teens.
           </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <p className="mt-3 text-white/45 text-sm font-medium tracking-wide">
+            Built by Coach Darrell Thompson — 20+ years training athletes in Butte County
+          </p>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-5">
               Claim My Child&apos;s Founding Spot
             </a>
-            <Link href="/programs" className="btn-outline text-base px-10 py-5">
+            <Link
+              href="/programs"
+              className="text-white/65 hover:text-white text-sm font-heading font-semibold underline underline-offset-4 transition-colors duration-200"
+            >
               See Our Programs
             </Link>
           </div>
-          <p className="mt-5 text-white/40 text-sm">
-            No commitment · Free first class · Toddlers to Teens
+          <p className="mt-4 text-white/40 text-sm">
+            $64.50 holds your spot · $129/mo locked for life · All-access to every program
           </p>
         </div>
       </section>
@@ -197,29 +211,60 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="section-label text-brand-orange">Pre-Opening Offer · Limited Availability</span>
-          <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white leading-tight mt-2 mb-6">
+          <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white leading-tight mt-2 mb-4">
             The Founding 30 Is{' '}
             <span className="text-brand-orange">Now Open.</span>
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed mb-10">
+
+          {/* Price anchor */}
+          <div className="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-5 bg-white/5 border border-white/10 rounded-xl px-6 py-3 mb-6">
+            <span className="text-white/45 text-sm line-through">Regular all-access rate: $199/mo</span>
+            <span className="text-brand-orange font-heading font-black text-lg">Founding rate: $129/mo — locked for life</span>
+          </div>
+
+          <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed mb-6">
             Before we open our doors, we are reserving spots for 30 founding families —
             early access, founding member pricing locked in before public enrollment,
-            and priority placement as class schedules are built. Once the 30 are filled,
-            this offer closes.
+            and priority placement as class schedules are built.{' '}
+            <strong className="text-white">All-access to every program.</strong>{' '}
+            Once the 30 are filled, this offer closes.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+
+          {/* Spots counter */}
+          <div className="inline-block bg-white/5 border border-white/10 rounded-lg px-5 py-2 mb-8">
+            <span className="text-white/55 text-sm font-medium">
+              <span className="text-brand-orange font-heading font-black text-base">{SPOTS_CLAIMED}</span>
+              {' '}of 30 spots claimed &nbsp;·&nbsp;{' '}
+              <span className="text-white font-semibold">{spotsRemaining} remaining</span>
+            </span>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-3">
             <Link href="/founding-30" className="btn-primary text-base px-10 py-5">
               Claim My Child&apos;s Founding Spot
             </Link>
-            <span className="font-heading font-bold text-xs tracking-widest uppercase text-white/40">
-              Only 30 spots · First come, first served
-            </span>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 text-left">
+          <p className="text-white/40 text-sm mb-10">
+            $64.50 holds your spot today · $129/mo starts at opening · All-access · Locked for life
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-4 text-left">
             {[
-              { icon: '🔒', title: 'Founding Pricing', body: 'Lock in your rate before public enrollment opens.' },
-              { icon: '📅', title: 'Priority Placement', body: 'First pick of class times before we open to the public.' },
-              { icon: '🏅', title: 'Founding Member Status', body: 'Be recognized as part of the original group that launched Strata.' },
+              {
+                icon: '🔒',
+                title: 'Founding Rate: $129/mo',
+                body: '$64.50 holds your spot today. Rate locked for life — never goes up, no matter what public pricing becomes.',
+              },
+              {
+                icon: '📅',
+                title: 'Priority Placement',
+                body: 'First pick of class times before we open to the public. You build your schedule before anyone else.',
+              },
+              {
+                icon: '🏅',
+                title: 'All-Access Membership',
+                body: 'Ninja Warrior, Climbing Wall, Forge Protocol, Sports Performance — every program, one rate.',
+              },
             ].map((item) => (
               <div key={item.title} className="bg-white/5 border border-white/10 rounded-xl p-6">
                 <span className="text-2xl block mb-3">{item.icon}</span>
@@ -260,6 +305,14 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+
+          {/* CTA at emotional peak — don't let desire cool off */}
+          <div className="text-center mt-16">
+            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-5">
+              Claim My Child&apos;s Founding Spot
+            </a>
+            <p className="mt-3 text-white/35 text-sm">$129/mo · All-access · Locked for life</p>
+          </div>
         </div>
       </section>
 
@@ -274,18 +327,16 @@ export default function HomePage() {
                 <span className="text-brand-orange">Movement Training Facility</span>
               </h2>
               <p className="text-gray-600 leading-relaxed mt-5">
-                Strata Strength Lab is not a traditional gym. It is a development
-                environment built around Ninja Warrior obstacle training, a
-                climbing wall, and the Forge Protocol structured strength system
-                — designed for young athletes from toddlers through teens who
-                want to build real capability, not just go through the motions.
+                Strata Strength Lab is built on 20+ years of coaching athletes across Butte County.
+                Coach Darrell Thompson developed the Forge Protocol to fill a gap he kept
+                seeing — kids who were active but untrained, and programs that didn&apos;t hold
+                their attention long enough to build anything real.
               </p>
               <p className="text-gray-600 leading-relaxed mt-4">
-                The name Strata reflects the method. Geology builds its
-                strongest formations under pressure, over time, one layer on top
-                of another. That is how we build athletes — with structure,
-                repetition, and a standard that does not bend. Layer by layer.
-                Rep by rep. Until it holds under anything.
+                If your kid has tried leagues, classes, or other programs and didn&apos;t stick —
+                this is a different environment entirely. Ninja Warrior obstacle training
+                and a climbing wall aren&apos;t workouts kids dread. They&apos;re challenges kids
+                come back for. The strength and development happen in the process.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link href="/about" className="btn-outline-navy">
@@ -302,8 +353,8 @@ export default function HomePage() {
               {[
                 { value: 'Toddlers', label: 'to Teens' },
                 { value: '4', label: 'Program Tracks' },
-                { value: 'Small', label: 'Class Sizes' },
-                { value: 'Free', label: 'First Trial Class' },
+                { value: 'Max 12', label: 'Athletes Per Class' },
+                { value: '20+', label: 'Years Coaching' },
               ].map((stat) => (
                 <div
                   key={stat.label}
@@ -369,12 +420,20 @@ export default function HomePage() {
             a: 'Strata Strength Lab is a youth strength and movement training facility in Oroville, CA. We offer Ninja Warrior obstacle training, climbing wall development, and the Forge Protocol structured strength system for toddlers through teens. This is not a traditional gym — it is a development environment built around real-world capability.',
           },
           {
+            q: 'What if my kid has never stayed with a program before?',
+            a: "Most of the kids who come to Strata have tried other programs — leagues, gym classes, martial arts — and didn't stick. The difference here is the environment. Obstacle training and climbing are inherently engaging. Kids don't feel like they're working out — they feel like they're conquering something. The discipline and strength build in the process.",
+          },
+          {
+            q: 'What is the Founding 30 offer?',
+            a: 'The Founding 30 is a pre-opening offer for 30 families who want to lock in before we open our doors. Founding members get all-access to every program at $129/mo — locked for life regardless of what public pricing becomes. A $64.50 deposit holds your spot. No additional charges until we open.',
+          },
+          {
             q: 'What is the Forge Protocol?',
             a: "The Forge Protocol is Strata's structured strength training system. Built around foundational movement patterns — squat, hinge, push, pull, carry — with progressive overload and a strict movement quality standard. Strength earned through structure, not shortcuts.",
           },
           {
             q: 'What age groups do you serve?',
-            a: 'Strata serves toddlers through teens — from our youngest athletes just starting to develop movement skills, all the way through high school age. Classes are grouped by age and ability so every athlete trains at the right level.',
+            a: 'Strata serves ages 1 through teens. Our Little Builders program is designed for ages 1–4 with age-appropriate movement development. From there, we group athletes by age and ability all the way through high school so every athlete trains at the right level.',
           },
           {
             q: 'Is strength training safe for kids?',
@@ -395,6 +454,26 @@ export default function HomePage() {
         ]}
       />
 
+      {/* ─── SECONDARY OPT-IN ─────────────────────────────────── */}
+      <section className="py-20 bg-navy-50 border-t border-navy/10">
+        <div className="max-w-2xl mx-auto px-4 text-center">
+          <span className="section-label">Not Ready to Commit Yet?</span>
+          <h2 className="font-heading font-black text-2xl sm:text-3xl text-navy leading-tight mt-2 mb-3">
+            Get Opening Updates &amp; Early Pricing Info
+          </h2>
+          <p className="text-gray-500 text-base mb-8">
+            We&apos;ll send you class schedules, program details, and founding spot availability —
+            no pressure, no spam.
+          </p>
+          <a href={GHL_UPDATES_LINK} className="btn-outline-navy text-base px-10 py-4">
+            Send Me Updates
+          </a>
+          <p className="mt-4 text-gray-400 text-sm">
+            (530) 922-2600 &nbsp;·&nbsp; info@stratastrengthlab.com
+          </p>
+        </div>
+      </section>
+
       {/* ─── BOTTOM CTA ───────────────────────────────────────── */}
       <section className="py-24 bg-cta-pattern relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
@@ -413,14 +492,13 @@ export default function HomePage() {
             Your Athlete&apos;s Journey Starts Here.
           </h2>
           <p className="mt-4 text-white/80 text-lg">
-            Only 30 founding spots available. Claim yours before we open
-            and lock in founding member pricing for life.
+            Only {spotsRemaining} founding spots available. Lock in $129/mo all-access before we open — for life.
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-outline mt-10 text-lg px-12 py-5">
             Claim My Child&apos;s Founding Spot
           </a>
           <p className="mt-4 text-white/50 text-sm">
-            1726 Montgomery Street, Unit 8 · Oroville, CA 95965
+            1726 Montgomery Street, Unit 8 · Oroville, CA 95965 · (530) 922-2600
           </p>
         </div>
       </section>
