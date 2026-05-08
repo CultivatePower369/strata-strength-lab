@@ -37,7 +37,7 @@ export default function TrialModal() {
       onClick={close}
     >
       <div
-        className="bg-white rounded-2xl overflow-hidden w-[90vw] max-w-[550px] relative shadow-2xl"
+        className="bg-white rounded-2xl overflow-hidden w-[92vw] max-w-[440px] relative shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
