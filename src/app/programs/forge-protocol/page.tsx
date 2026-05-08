@@ -43,7 +43,7 @@ export default function ForgeProtocolPage() {
             <h2 className="section-heading">Five Patterns. <span className="text-brand-orange">Every Athlete.</span></h2>
             <p className="section-subheading max-w-2xl mx-auto">The Forge Protocol builds strength on five foundational movement patterns that every human body is designed to perform and that every sport demands.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
               { pattern: 'Squat', icon: '🦵', desc: 'Lower body power, knee stability, and athletic base.' },
               { pattern: 'Hinge', icon: '⚡', desc: 'Hip strength, posterior chain development, and injury prevention.' },

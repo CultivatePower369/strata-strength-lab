@@ -188,7 +188,7 @@ export default function AboutPage() {
                 can lift before they&apos;re ready.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {[
                 { label: 'Movement quality first', icon: '✓' },
                 { label: 'Load added after mastery', icon: '✓' },
@@ -295,7 +295,7 @@ export default function AboutPage() {
             {/* Bio */}
             <div>
               <p className="section-label">Head Coach &amp; Co-Owner</p>
-              <h3 className="font-heading font-black text-4xl text-navy-dark mt-1 mb-2">
+              <h3 className="font-heading font-black text-3xl sm:text-4xl text-navy-dark mt-1 mb-2">
                 Darrell Thompson
               </h3>
               <div className="flex flex-wrap gap-2 mb-7">
@@ -342,7 +342,7 @@ export default function AboutPage() {
             {/* Bio — left on this card */}
             <div className="lg:order-1">
               <p className="section-label">Kids&apos; Head Coach</p>
-              <h3 className="font-heading font-black text-4xl text-navy-dark mt-1 mb-2">
+              <h3 className="font-heading font-black text-3xl sm:text-4xl text-navy-dark mt-1 mb-2">
                 Amory Thompson
               </h3>
               <div className="flex flex-wrap gap-2 mb-7">
@@ -421,7 +421,7 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-              <div className="mt-10 flex gap-4">
+              <div className="mt-10 flex flex-wrap gap-4">
                 <a href={GHL_TRIAL_LINK} className="btn-primary">Request My Founding Spot</a>
                 <Link href="/contact" className="btn-outline">Get Directions</Link>
               </div>
