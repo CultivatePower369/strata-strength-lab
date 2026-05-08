@@ -105,7 +105,7 @@ export default function Footer() {
               Opening Soon in Oroville
             </h3>
             <p className="text-white/40 text-xs leading-relaxed mb-5">
-              Currently building out our space — join the Founding 30 for early access and founding member pricing.
+              Currently building out our space. Join the Founding 30 for early access and founding member pricing.
             </p>
             <ul className="space-y-4">
               <li className="flex gap-3">

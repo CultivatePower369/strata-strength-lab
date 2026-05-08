@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy for Strata Strength Lab — Cultivate Power Fighting Arts, LLC DBA Strata Strength Lab.',
+  description: 'Privacy Policy for Strata Strength Lab. Cultivate Power Fighting Arts, LLC DBA Strata Strength Lab.',
 }
 
 export default function PrivacyPolicyPage() {
@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
           </div>
           <ul className="text-gray-600 space-y-3 mt-4 list-disc pl-6">
             <li><strong>Opt-In:</strong> You may opt in to SMS communications by submitting your phone number through our contact form, booking form, or by texting us directly and indicating your consent.</li>
-            <li><strong>Message Frequency:</strong> Message frequency varies. You may receive up to 4–8 messages per month.</li>
+            <li><strong>Message Frequency:</strong> Message frequency varies. You may receive up to 4 to 8 messages per month.</li>
             <li><strong>Message &amp; Data Rates:</strong> Message and data rates may apply depending on your mobile carrier and plan.</li>
             <li><strong>Opt-Out:</strong> Reply <strong>STOP</strong> to any message to opt out at any time. You will receive a single confirmation and no further messages will be sent.</li>
             <li><strong>Help:</strong> Reply <strong>HELP</strong> or contact us at <a href="mailto:info@stratastrengthlab.com" className="text-brand-orange hover:underline">info@stratastrengthlab.com</a> or <a href="tel:+15309222600" className="text-brand-orange hover:underline">(530) 922-2600</a>.</li>

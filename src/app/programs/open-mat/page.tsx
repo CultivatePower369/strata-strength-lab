@@ -24,7 +24,7 @@ export default function OpenMatPage() {
             Your Training. <span className="text-brand-orange">Your Pace.</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
-            Open Mat gives athletes structured access to all of Strata&apos;s equipment — obstacle course, climbing wall, and strength training area — with coaches on hand to answer questions, correct movement, and guide practice. Built for athletes who want extra repetitions outside of their regular class schedule.
+            Open Mat gives athletes structured access to all of Strata&apos;s equipment: obstacle course, climbing wall, and strength training area. Coaches are on hand to answer questions, correct movement, and guide practice. Built for athletes who want extra repetitions outside of their regular class schedule.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Book a Free Trial</a>
@@ -43,7 +43,7 @@ export default function OpenMatPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { icon: '🏗️', title: 'Full Facility Access', body: 'Obstacle course, climbing wall, and strength training area are all available during Open Mat sessions.' },
-              { icon: '👨‍🏫', title: 'Coaches On-Site', body: 'Open Mat is not unsupervised free time. Coaches are present to guide, correct, and answer questions — athletes get the benefit of coaching without a structured class format.' },
+              { icon: '👨‍🏫', title: 'Coaches On-Site', body: 'Open Mat is not unsupervised free time. Coaches are present to guide, correct, and answer questions. Athletes get the benefit of coaching without a structured class format.' },
               { icon: '📈', title: 'Extra Repetitions', body: 'The fastest way to improve is more quality practice. Open Mat gives athletes a second or third training opportunity each week to reinforce skills from class.' },
             ].map((item) => (
               <div key={item.title} className="card p-8 border border-navy/10 text-center">
@@ -71,7 +71,7 @@ export default function OpenMatPage() {
         heading="Open Mat FAQ"
         label="Questions"
         items={[
-          { q: 'Who is Open Mat for?', a: 'Open Mat is best for athletes who are already enrolled in at least one regular class and want additional practice time. It is not the best first introduction to Strata — a free trial class in a structured program is a better starting point.' },
+          { q: 'Who is Open Mat for?', a: 'Open Mat is best for athletes who are already enrolled in at least one regular class and want additional practice time. It is not the best first introduction to Strata. A free trial class in a structured program is a better starting point.' },
           { q: 'Is there a coach at Open Mat?', a: 'Yes. Strata coaches are present during all Open Mat sessions to supervise, assist, and provide guidance. Athletes are not left on their own.' },
           { q: 'Can my child attend Open Mat without a regular class membership?', a: 'Contact us to discuss the best option for your athlete. We want every child training with the right structure for their current level.' },
           { q: 'What equipment is available during Open Mat?', a: 'All of it. The full obstacle course, climbing wall, and strength training equipment are available during Open Mat hours. Check the schedule for specific Open Mat times.' },

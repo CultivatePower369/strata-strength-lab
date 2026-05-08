@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Founding 30 — Join Strata Strength Lab Before We Open | Oroville, CA',
+  title: 'Founding 30: Join Strata Strength Lab Before We Open | Oroville, CA',
   description:
     'Be one of the first 30 families to join Strata Strength Lab in Oroville, CA. Claim founding member access, early pricing, and priority placement before public enrollment opens.',
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const GHL_FOUNDING_LINK = '#claim'
 
 const offerPoints = [
-  'Access as one of our first 30 families — part of the founding group',
+  'Access as one of our first 30 families as part of the founding group',
   'Founding member pricing locked in before public enrollment opens',
   'Priority placement as class schedules are built and finalized',
   'First pick of available time slots before we open to the public',
@@ -23,16 +23,16 @@ const offerPoints = [
 ]
 
 const programs = [
-  { name: 'Little Movers',   detail: 'Ages 1–3' },
-  { name: 'Little Builders', detail: 'Ages 3–5' },
-  { name: 'Youth Athletes',  detail: 'Ages 6–12' },
-  { name: 'Teen Athletes',   detail: 'Ages 13–17' },
+  { name: 'Little Movers',   detail: 'Ages 1 to 3' },
+  { name: 'Little Builders', detail: 'Ages 3 to 5' },
+  { name: 'Youth Athletes',  detail: 'Ages 6 to 12' },
+  { name: 'Teen Athletes',   detail: 'Ages 13 to 17' },
 ]
 
 const audience = [
   {
     icon: '🧒',
-    text: 'Parents who want their child in a coached, structured environment — not just supervised activity',
+    text: 'Parents who want their child in a coached, structured environment. Not just supervised activity',
   },
   {
     icon: '⚽',
@@ -48,7 +48,7 @@ const audience = [
   },
   {
     icon: '🎯',
-    text: 'Parents who want to see real, measurable progress — not just a tired kid at the end of the day',
+    text: 'Parents who want to see real, measurable progress. Not just a tired kid at the end of the day',
   },
 ]
 
@@ -56,17 +56,17 @@ const benefits = [
   {
     icon: '📈',
     title: 'Progress You Can Actually See',
-    body: 'Your child isn\'t just burning energy — they\'re building real strength, learning how to move better, and getting more capable every week. You\'ll notice the difference.',
+    body: 'Your child isn\'t just burning energy. They\'re building real strength, learning how to move better, and getting more capable every week. You\'ll notice the difference.',
   },
   {
     icon: '🎯',
     title: 'Structure, Not Just Activity',
-    body: 'Every session has a purpose. Coached progressions, movement standards, and a system designed around where your child is right now — not a one-size class.',
+    body: 'Every session has a purpose. Coached progressions, movement standards, and a system designed around where your child is right now. Not a one-size class.',
   },
   {
     icon: '🧠',
     title: 'Confidence That Transfers',
-    body: 'When a kid figures out they can do hard things — that confidence doesn\'t stay in the gym. It shows up in school, in sports, and in how they carry themselves.',
+    body: 'When a kid figures out they can do hard things, that confidence doesn\'t stay in the gym. It shows up in school, in sports, and in how they carry themselves.',
   },
   {
     icon: '🛡️',
@@ -76,7 +76,7 @@ const benefits = [
   {
     icon: '🏆',
     title: 'Athletic Development That Shows Up on Game Day',
-    body: 'The foundation built here — strength, coordination, body control — makes your child better at every sport they play and every physical challenge they face.',
+    body: 'The foundation built here: strength, coordination, body control. It makes your child better at every sport they play and every physical challenge they face.',
   },
 ]
 
@@ -96,7 +96,7 @@ const testimonials = [
   },
   {
     initials: 'RV',
-    quote: "What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do — not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn't expecting. This place is different.",
+    quote: "What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do. Not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn't expecting. This place is different.",
     name: 'Ric "Daddy5" Vaj',
     role: 'Parent of Strata athletes',
   },
@@ -117,14 +117,6 @@ export default function Founding30Page() {
               height={44}
               className="rounded-lg"
             />
-            <div className="leading-tight">
-              <span className="block font-heading font-black text-white text-base tracking-wide">
-                STRATA STRENGTH LAB
-              </span>
-              <span className="block font-heading font-semibold text-brand-orange text-[10px] tracking-widest uppercase">
-                Oroville, CA
-              </span>
-            </div>
           </Link>
           <a href={GHL_FOUNDING_LINK} className="btn-primary text-sm px-5 py-3">
             Claim a Founding Spot
@@ -159,7 +151,7 @@ export default function Founding30Page() {
               <div className="w-16 h-1.5 bg-brand-orange rounded-full mb-7" />
 
               <p className="text-white/75 text-lg sm:text-xl leading-relaxed mb-8 max-w-lg">
-                If you&apos;ve been looking for a structured, coached environment where your child actually <em>develops</em> — not just stays busy — this is it.
+                If you&apos;ve been looking for a structured, coached environment where your child actually <em>develops</em>. Not just stays busy. This is it.
               </p>
               <p className="text-white/55 text-base leading-relaxed mb-10 max-w-lg">
                 Strata Strength Lab is opening in Oroville and we&apos;re offering 30 founding memberships to families who want to get in before the public launch.
@@ -226,13 +218,13 @@ export default function Founding30Page() {
                 <span className="text-brand-orange">Strata Strength Lab?</span>
               </h2>
               <p className="text-white/65 text-lg leading-relaxed mb-5">
-                Strata is a structured strength and athletic development facility for kids and teens ages 3–18. It&apos;s not a gym where kids show up and use equipment on their own.
+                Strata is a structured strength and athletic development facility for kids and teens ages 3 to 18. It&apos;s not a gym where kids show up and use equipment on their own.
               </p>
               <p className="text-white/65 text-lg leading-relaxed mb-5">
-                Every session is coached, progressive, and built around what your child actually needs — real strength, body control, coordination, and the kind of confidence that shows up outside the gym too.
+                Every session is coached, progressive, and built around what your child actually needs: real strength, body control, coordination, and the kind of confidence that shows up outside the gym too.
               </p>
               <p className="text-white/65 text-lg leading-relaxed">
-                Whether your child plays sports, needs more structure, or just needs a better outlet for their energy — Strata is built to give you something you can actually see progress in.
+                Whether your child plays sports, needs more structure, or just needs a better outlet for their energy. Strata is built to give you something you can actually see progress in.
               </p>
             </div>
 
@@ -263,7 +255,7 @@ export default function Founding30Page() {
             <span className="text-brand-orange">Your Family?</span>
           </h2>
           <p className="text-white/55 text-lg max-w-xl mx-auto leading-relaxed mb-14">
-            Most parents who reach out are looking for the same thing — a place where their child is genuinely coached, held to a standard, and comes home better for it.
+            Most parents who reach out are looking for the same thing: a place where their child is genuinely coached, held to a standard, and comes home better for it.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
@@ -288,14 +280,14 @@ export default function Founding30Page() {
 
             {/* Left */}
             <div>
-              <span className="section-label text-brand-orange">Founding 30 — Pre-Opening Offer</span>
+              <span className="section-label text-brand-orange">Founding 30: Pre-Opening Offer</span>
               <div className="w-14 h-1 bg-brand-orange rounded-full mb-7" />
               <h2 className="font-heading font-black text-4xl md:text-5xl text-white leading-tight uppercase mb-5">
                 What Founding<br />
                 <span className="text-brand-orange">30 Members Get</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                We&apos;re opening enrollment early for the first 30 families only. This is your opportunity to lock in your spot, your pricing, and your place in the founding group — before we open to the public.
+                We&apos;re opening enrollment early for the first 30 families only. This is your opportunity to lock in your spot, your pricing, and your place in the founding group. Before we open to the public.
               </p>
 
               <ul className="space-y-4 mb-8">
@@ -325,7 +317,7 @@ export default function Founding30Page() {
                 Programs for<br />Every Age
               </h3>
               <p className="text-white/45 text-sm leading-relaxed mb-6">
-                Every program is grouped by age and built around what kids can actually do — and what they need to develop next.
+                Every program is grouped by age and built around what kids can actually do and what they need to develop next.
               </p>
 
               <ul className="space-y-3 mb-6">
@@ -406,10 +398,10 @@ export default function Founding30Page() {
                   <span className="text-brand-orange">Gets Kids Ready for the Mat.</span>
                 </h2>
                 <p className="text-white/65 text-lg leading-relaxed mb-5">
-                  If your child trains jiu-jitsu, wrestling, judo, or MMA — or is thinking about it — generic strength training isn&apos;t enough. Combat sports place unique demands on the body: explosive hip power, grip endurance, neck and trunk stability, the ability to generate force from awkward positions under real pressure.
+                  If your child trains jiu-jitsu, wrestling, judo, or MMA, or is thinking about it, generic strength training isn&apos;t enough. Combat sports place unique demands on the body: explosive hip power, grip endurance, neck and trunk stability, the ability to generate force from awkward positions under real pressure.
                 </p>
                 <p className="text-white/65 text-lg leading-relaxed">
-                  Most programs don&apos;t train for any of that. Strata does. The strength system here is built by coaches who come from the mat — and who understand that the goal isn&apos;t just a stronger kid. It&apos;s a kid who is harder to take down, harder to hold, and harder to stop.
+                  Most programs don&apos;t train for any of that. Strata does. The strength system here is built by coaches who come from the mat and who understand that the goal isn&apos;t just a stronger kid. It&apos;s a kid who is harder to take down, harder to hold, and harder to stop.
                 </p>
               </div>
 
@@ -439,7 +431,7 @@ export default function Founding30Page() {
                 ))}
 
                 <p className="text-white/35 text-sm pt-2 leading-relaxed">
-                  Darrell Thompson and the Strata coaching team come directly from the combat sports world. This isn&apos;t strength training adapted for fighters — it&apos;s strength training designed for them from the ground up.
+                  Darrell Thompson and the Strata coaching team come directly from the combat sports world. This isn&apos;t strength training adapted for fighters. It&apos;s strength training designed for them from the ground up.
                 </p>
               </div>
 
@@ -473,10 +465,10 @@ export default function Founding30Page() {
               </h2>
 
               <p className="text-white/65 text-lg leading-relaxed mb-5">
-                Strata Strength Lab is founded by Darrell Thompson — the same coach behind Cultivate Power Fighting Arts, which has grown to over 120 active members right here in Oroville.
+                Strata Strength Lab is founded by Darrell Thompson, the same coach behind Cultivate Power Fighting Arts, which has grown to over 120 active members right here in Oroville.
               </p>
               <p className="text-white/65 text-lg leading-relaxed mb-5">
-                The coaching team at Strata brings real experience working with kids and teens — not just athletic knowledge, but an understanding of how to coach young people in a way that actually sticks. That means holding a standard without intimidating, challenging kids without crushing them, and building the kind of culture parents feel good leaving their child in.
+                The coaching team at Strata brings real experience working with kids and teens. Not just athletic knowledge, but an understanding of how to coach young people in a way that actually sticks. That means holding a standard without intimidating, challenging kids without crushing them, and building the kind of culture parents feel good leaving their child in.
               </p>
               <p className="text-white/65 text-lg leading-relaxed mb-8">
                 Families who already trust the system at Cultivate Power know what that coaching culture looks like. Strata brings that same standard into a dedicated youth strength and development setting.
@@ -535,14 +527,14 @@ export default function Founding30Page() {
 
             {/* Left: Copy */}
             <div>
-              <span className="section-label text-brand-orange">Founding 30 — Claim Your Spot</span>
+              <span className="section-label text-brand-orange">Founding 30: Claim Your Spot</span>
               <div className="w-14 h-1 bg-brand-orange rounded-full mb-7" />
               <h2 className="font-heading font-black text-4xl md:text-5xl text-white leading-tight uppercase mb-5">
                 This Is How<br />
                 <span className="text-brand-orange">You Get In.</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Fill out the form below and we&apos;ll reach out directly — before public enrollment opens — to walk you through availability, answer your questions, and lock in your spot.
+                Fill out the form below and we&apos;ll reach out directly before public enrollment opens to walk you through availability, answer your questions, and lock in your spot.
               </p>
               <p className="text-white/45 text-base leading-relaxed mb-10">
                 There&apos;s no payment today. Just let us know you&apos;re interested and we&apos;ll take it from there.
@@ -552,8 +544,8 @@ export default function Founding30Page() {
                 {[
                   'No payment required to reserve your spot',
                   'We\'ll reach out directly with full details and next steps',
-                  'Spots are held in the order received — first 30 families only',
-                  'Your information stays private — never shared or sold',
+                  'Spots are held in the order received. First 30 families only.',
+                  'Your information stays private. Never shared or sold.',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-white/55 text-[15px]">
                     <span className="mt-1.5 w-2 h-2 bg-brand-orange rounded-full flex-shrink-0" />
@@ -565,7 +557,7 @@ export default function Founding30Page() {
 
             <div className="bg-navy-dark border border-white/10 rounded-2xl p-8 sm:p-10 flex flex-col items-center justify-center text-center gap-6">
               <p className="text-white/60 text-lg leading-relaxed">
-                Click below to request your founding spot. A coach will reach out directly with next steps — no payment required today.
+                Click below to request your founding spot. A coach will reach out directly with next steps. No payment required today.
               </p>
               <a href="#trial" className="btn-primary w-full text-center text-base py-5">
                 Request My Founding Spot

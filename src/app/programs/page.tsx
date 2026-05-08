@@ -18,13 +18,13 @@ const programs = [
     emoji: '🏃',
     title: 'Ninja Warrior Obstacle Course',
     tagline: 'Move through the challenge.',
-    description: `Our Ninja Warrior obstacle course is the centerpiece of what makes Strata unique. Athletes navigate a structured obstacle course system that develops coordination, grip strength, agility, body control, and mental resilience simultaneously. This is not an open play area — it is coached, progressive, and purposeful. Each obstacle teaches a physical skill, and athletes advance through progressions as they master each challenge. The result is a genuinely capable, confident athlete who knows how to move under pressure.`,
+    description: `Our Ninja Warrior obstacle course is the centerpiece of what makes Strata unique. Athletes navigate a structured obstacle course system that develops coordination, grip strength, agility, body control, and mental resilience simultaneously. This is not an open play area. It is coached, progressive, and purposeful. Each obstacle teaches a physical skill, and athletes advance through progressions as they master each challenge. The result is a genuinely capable, confident athlete who knows how to move under pressure.`,
     details: [
       'Full obstacle course with progressive challenge levels',
       'Develops grip, agility, coordination, and body control',
-      'Coached technique — not just free play',
+      'Coached technique. Not just free play.',
       'Mental resilience built through structured challenge',
-      'For toddlers through teens — all experience levels welcome',
+      'For toddlers through teens. All experience levels welcome.',
     ],
     color: 'border-navy',
     accent: 'bg-navy',
@@ -37,7 +37,7 @@ const programs = [
     image: '/images/kid-climber.webp',
     title: 'Climbing Rock Wall',
     tagline: 'Grip strength. Problem-solving. Real capability.',
-    description: `The climbing rock wall at Strata is not a bonus — it is a core training tool. Rock climbing builds grip strength, upper-body pulling power, core stability, and spatial awareness in ways that no machine or barbell can replicate. Athletes learn to read the wall, plan their movement, and execute under fatigue. This climbing-inspired approach to grip and movement development carries over directly to every other thing we train. Beginners start with fundamentals. Advanced athletes tackle technical routes and timed challenges. Everyone improves.`,
+    description: `The climbing rock wall at Strata is not a bonus. It is a core training tool. Rock climbing builds grip strength, upper-body pulling power, core stability, and spatial awareness in ways that no machine or barbell can replicate. Athletes learn to read the wall, plan their movement, and execute under fatigue. This climbing-inspired approach to grip and movement development carries over directly to every other thing we train. Beginners start with fundamentals. Advanced athletes tackle technical routes and timed challenges. Everyone improves.`,
     details: [
       'Coached climbing sessions for all levels',
       'Grip strength and pulling power development',
@@ -55,13 +55,13 @@ const programs = [
     emoji: '⚒️',
     title: 'Forge Protocol / Sports Attribute Development',
     tagline: 'Strength earned through structure. Performance built to transfer.',
-    description: `The Forge Protocol is Strata's structured strength and athletic development system. Built around the foundational movement patterns — squat, hinge, push, pull, and carry — it applies discipline, repetition, and progressive overload to develop real-world functional strength. Sports attribute development layers on top: speed mechanics, explosive power, agility, and multi-directional conditioning that transfers directly to game day performance. This is not a circuit class or generic gym workout. It is a system where movement quality comes first, load and intensity are earned, and every athlete leaves more capable than when they walked in.`,
+    description: `The Forge Protocol is Strata's structured strength and athletic development system. Built around the foundational movement patterns: squat, hinge, push, pull, and carry. It applies discipline, repetition, and progressive overload to develop real-world functional strength. Sports attribute development layers on top: speed mechanics, explosive power, agility, and multi-directional conditioning that transfers directly to game day performance. This is not a circuit class or generic gym workout. It is a system where movement quality comes first, load and intensity are earned, and every athlete leaves more capable than when they walked in.`,
     details: [
-      'Squat, hinge, push, pull, carry — foundational movement patterns',
+      'Squat, hinge, push, pull, carry: foundational movement patterns',
       'Speed, agility, and explosive power development',
-      'Progressive overload — movement quality before load',
+      'Progressive overload. Movement quality before load.',
       'Age-appropriate programming from toddlers through teens',
-      'Applicable to any sport — builds athletes, not just fitness',
+      'Applicable to any sport. Builds athletes, not just fitness.',
     ],
     color: 'border-brand-orange',
     accent: 'bg-brand-orange',
@@ -73,13 +73,13 @@ const programs = [
     emoji: '🎉',
     title: 'Birthday Parties',
     tagline: 'The most active party in Oroville.',
-    description: `Skip the bounce house. Celebrate at Strata — where kids get to run the obstacle course, climb the wall, compete in relay races, and experience a birthday party that is genuinely different. We provide the activity and the coaching. You enjoy the celebration. Private facility use for 2 hours with a coached experience your group will not forget.`,
+    description: `Skip the bounce house. Celebrate at Strata. Kids get to run the obstacle course, climb the wall, compete in relay races, and experience a birthday party that is genuinely different. We provide the activity and the coaching. You enjoy the celebration. Private facility use for 2 hours with a coached experience your group will not forget.`,
     details: [
       'Private 2-hour facility rental',
       'Coached obstacle course and climbing activities',
       'Relay challenges and group games included',
       'Safe, clean, fully supervised environment',
-      'Available on weekends — contact us for availability',
+      'Available on weekends. Contact us for availability.',
     ],
     color: 'border-brand-blue',
     accent: 'bg-brand-blue',
@@ -103,7 +103,7 @@ export default function ProgramsPage() {
             Every program at Strata is structured, coached, and built with
             purpose. No random workouts. No filler. Ninja Warrior obstacle
             training, climbing rock wall, the Forge Protocol, and birthday
-            parties — toddlers to teens, every level.
+            parties. Toddlers to teens, every level.
           </p>
         </div>
       </section>
@@ -187,7 +187,7 @@ export default function ProgramsPage() {
             The Strata Levels System
           </h2>
           <p className="text-white/60 text-base max-w-2xl mx-auto mb-12">
-            Every athlete progresses through the Strata system at their own pace — no shortcuts, no ceiling.
+            Every athlete progresses through the Strata system at their own pace. No shortcuts, no ceiling.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -196,7 +196,7 @@ export default function ProgramsPage() {
                 name: 'Foundation',
                 color: 'border-brand-blue',
                 accent: 'text-brand-blue',
-                body: 'Movement fundamentals, body awareness, and coordination basics. This is where every athlete starts — regardless of age or experience.',
+                body: 'Movement fundamentals, body awareness, and coordination basics. This is where every athlete starts. Regardless of age or experience.',
               },
               {
                 level: 'Level 2',
@@ -229,7 +229,7 @@ export default function ProgramsPage() {
         items={[
           {
             q: 'What is the Forge Protocol?',
-            a: "The Forge Protocol is Strata's structured strength training system. It is built around the foundational movement patterns — squat, hinge, push, pull, carry — applied with progressive overload and a strict movement quality standard. Strength is earned through structure and repetition, not shortcuts.",
+            a: "The Forge Protocol is Strata's structured strength training system. It is built around the foundational movement patterns: squat, hinge, push, pull, carry. Applied with progressive overload and a strict movement quality standard. Strength is earned through structure and repetition, not shortcuts.",
           },
           {
             q: 'Is the Ninja Warrior training just for kids?',
@@ -241,15 +241,15 @@ export default function ProgramsPage() {
           },
           {
             q: 'Is climbing safe for children?',
-            a: 'Yes. All climbing sessions are coach-supervised with age-appropriate progressions and safety standards. Climbing is one of the most complete physical development activities available to young athletes — building grip, pulling strength, core stability, and spatial awareness simultaneously.',
+            a: 'Yes. All climbing sessions are coach-supervised with age-appropriate progressions and safety standards. Climbing is one of the most complete physical development activities available to young athletes: building grip, pulling strength, core stability, and spatial awareness simultaneously.',
           },
           {
             q: 'Can my child or I participate in more than one program?',
-            a: 'Yes — and most serious athletes do. Combining the obstacle course, climbing wall, and Forge Protocol strength training creates a complete development system. We will help you build the right weekly schedule based on goals and recovery.',
+            a: 'Yes. Most serious athletes do. Combining the obstacle course, climbing wall, and Forge Protocol strength training creates a complete development system. We will help you build the right weekly schedule based on goals and recovery.',
           },
           {
             q: 'What equipment is in the facility?',
-            a: 'Strata includes a full Ninja Warrior obstacle course, a climbing wall, and a strength training area with barbells, dumbbells, kettlebells, resistance bands, and bodyweight equipment — all available through coached classes and Open Mat.',
+            a: 'Strata includes a full Ninja Warrior obstacle course, a climbing wall, and a strength training area with barbells, dumbbells, kettlebells, resistance bands, and bodyweight equipment, all available through coached classes and Open Mat.',
           },
           {
             q: 'How do I book a birthday party?',

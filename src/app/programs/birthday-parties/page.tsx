@@ -61,7 +61,7 @@ export default function BirthdayPartiesPage() {
             </div>
             <div className="space-y-4">
               {[
-                { icon: '⚡', text: 'Active and high-energy — not just free play' },
+                { icon: '⚡', text: 'Active and high-energy, not just free play' },
                 { icon: '👨‍🏫', text: 'Coach-led and supervised the entire time' },
                 { icon: '🏁', text: 'Structured games and movement activities' },
                 { icon: '🏆', text: 'Great for kids who love action and challenges' },
@@ -150,7 +150,7 @@ export default function BirthdayPartiesPage() {
               {[
                 'Each coach can supervise up to 12 kids.',
                 'Extra kids (beyond 12) are $15 each.',
-                'Once you go over 12 kids, a second coach is required — that\'s an additional $75.',
+                'Once you go over 12 kids, a second coach is required at an additional $75.',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-white/70 text-sm">
                   <span className="text-brand-orange mt-0.5 shrink-0">→</span>
@@ -162,7 +162,7 @@ export default function BirthdayPartiesPage() {
               <div className="bg-white/5 rounded-xl p-4">
                 <p className="font-heading font-bold text-white text-sm mb-1">Example 1</p>
                 <p className="text-brand-orange font-heading font-black text-base">12 kids</p>
-                <p className="text-white/50 text-xs mt-1">Standard Party only — $299 total</p>
+                <p className="text-white/50 text-xs mt-1">Standard Party only, $299 total</p>
               </div>
               <div className="bg-white/5 rounded-xl p-4">
                 <p className="font-heading font-bold text-white text-sm mb-1">Example 2</p>
@@ -222,15 +222,15 @@ export default function BirthdayPartiesPage() {
             {[
               {
                 day: 'Friday',
-                slots: ['3:00 PM – 5:00 PM'],
+                slots: ['3:00 PM to 5:00 PM'],
               },
               {
                 day: 'Saturday',
-                slots: ['10:00 AM – 12:00 PM', '12:30 PM – 2:30 PM', '3:00 PM – 5:00 PM'],
+                slots: ['10:00 AM to 12:00 PM', '12:30 PM to 2:30 PM', '3:00 PM to 5:00 PM'],
               },
               {
                 day: 'Sunday',
-                slots: ['10:00 AM – 12:00 PM', '12:30 PM – 2:30 PM', '3:00 PM – 5:00 PM'],
+                slots: ['10:00 AM to 12:00 PM', '12:30 PM to 2:30 PM', '3:00 PM to 5:00 PM'],
               },
             ].map((day) => (
               <div key={day.day} className="card p-6">
@@ -261,7 +261,7 @@ export default function BirthdayPartiesPage() {
               <h2 className="section-heading">What&apos;s <span className="text-brand-orange">Included</span></h2>
               <ul className="mt-6 space-y-4">
                 {[
-                  'Active party space — the full facility is yours',
+                  'Active party space, the full facility is yours',
                   'Guided games and movement activities',
                   'Coach-led fun from start to finish',
                   'Organized flow so nothing feels chaotic',

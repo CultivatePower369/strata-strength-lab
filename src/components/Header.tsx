@@ -49,7 +49,7 @@ export default function Header() {
         href="/founding-30"
         className="block w-full bg-brand-orange text-white text-center py-2 px-4 text-xs font-heading font-semibold tracking-wide hover:bg-brand-orange/90 transition-colors"
       >
-        Now Pre-Launching: Founding 30 — Be Among the First Families to Join →
+        Now Pre-Launching: Founding 30. Be Among the First Families to Join →
       </Link>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
@@ -62,14 +62,6 @@ export default function Header() {
             className="transition-transform duration-200 group-hover:scale-105"
             priority
           />
-          <div className="leading-tight">
-            <span className="block font-heading font-black text-white text-lg tracking-wide">
-              STRATA
-            </span>
-            <span className="block font-heading font-semibold text-brand-orange text-xs tracking-widest uppercase">
-              Strength Lab
-            </span>
-          </div>
         </Link>
 
         {/* Desktop Nav */}

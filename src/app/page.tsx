@@ -21,7 +21,7 @@ const programs = [
     icon: '🏃',
     title: 'Ninja Warrior Obstacle Training',
     description:
-      'Structured obstacle training that builds coordination, grip strength, body control, and confidence. Coached and progressive from toddlers to teens — your child will surprise themselves.',
+      'Structured obstacle training that builds coordination, grip strength, body control, and confidence. Coached and progressive from toddlers to teens. Your child will surprise themselves.',
     href: '/programs/ninja-warrior',
     color: 'bg-navy/5 border-navy/10',
     accent: 'text-navy',
@@ -37,9 +37,9 @@ const programs = [
   },
   {
     icon: '⚒️',
-    title: 'The Forge Protocol — Strength',
+    title: 'The Forge Protocol: Strength',
     description:
-      '20+ years in the making. Structured strength built on foundational movement patterns — squat, hinge, push, pull, carry — with progressive overload and real standards. Ages 6 through 18.',
+      '20+ years in the making. Structured strength built on foundational movement patterns: squat, hinge, push, pull, carry, with progressive overload and real standards. Ages 6 through 18.',
     href: '/programs/forge-protocol',
     color: 'bg-brand-orange/5 border-brand-orange/10',
     accent: 'text-brand-orange',
@@ -48,7 +48,7 @@ const programs = [
     icon: '⚡',
     title: 'Functional Fitness for Sports',
     description:
-      'Speed, power, agility, and coordination training that shows up on game day — whatever sport your child plays. Build the athletic foundation that makes them better at everything.',
+      'Speed, power, agility, and coordination training that shows up on game day, whatever sport your child plays. Build the athletic foundation that makes them better at everything.',
     href: '/programs/sports-performance',
     color: 'bg-navy/5 border-navy/10',
     accent: 'text-navy',
@@ -66,7 +66,7 @@ const programs = [
     icon: '🎉',
     title: 'Birthday Parties',
     description:
-      'Private 2-hour facility rental — obstacle course, climbing wall, relay races, and a coach running everything. The most active birthday party in Oroville.',
+      'Private 2-hour facility rental with obstacle course, climbing wall, relay races, and a coach running everything. The most active birthday party in Oroville.',
     href: '/programs/birthday-parties',
     color: 'bg-brand-orange/5 border-brand-orange/10',
     accent: 'text-brand-orange',
@@ -77,12 +77,12 @@ const pillars = [
   {
     number: '01',
     title: 'Structure Over Chaos',
-    body: 'Every session at Strata has a purpose. Progressive programming, movement standards, and coached progressions — not random workouts.',
+    body: 'Every session at Strata has a purpose. Progressive programming, movement standards, and coached progressions. Not random workouts.',
   },
   {
     number: '02',
     title: 'Capability Over Appearance',
-    body: 'We measure success in what athletes can do — control, sustain, and execute under pressure. Strength that works in the real world.',
+    body: 'We measure success in what athletes can do: control, sustain, and execute under pressure. Strength that works in the real world.',
   },
   {
     number: '03',
@@ -96,7 +96,7 @@ const testimonials = [
   {
     name: 'Ric "Daddy5" Vaj',
     quote:
-      "What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do — not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn't expecting. This place is different.",
+      "What surprised me most is how my kids have started taking real ownership of their health. The coaches here teach them to take pride in what their bodies can do. Not how they look. My kids come home talking about what they accomplished, what they lifted, what obstacle they finally got through. It has built a kind of confidence and discipline in them that I wasn't expecting. This place is different.",
   },
   {
     name: 'John Thompson',
@@ -136,10 +136,10 @@ export default function HomePage() {
             <span className="text-brand-orange">from the Start.</span>
           </h1>
           <p className="mt-6 text-white/75 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            Finally, a training environment your kid will actually want to come back to — structured strength, climbing, and Ninja Warrior obstacle development for toddlers through teens.
+            Finally, a training environment your kid will actually want to come back to. Structured strength, climbing, and Ninja Warrior obstacle development for toddlers through teens.
           </p>
           <p className="mt-3 text-white/45 text-sm font-medium tracking-wide">
-            Built by Coach Darrell Thompson — 20+ years training athletes in Butte County
+            Built by Coach Darrell Thompson, 20+ years training athletes in Butte County
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-5">
@@ -223,7 +223,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed mb-6">
-            Before we open our doors, we are reserving spots for 30 founding families —
+            Before we open our doors, we are reserving spots for 30 founding families:
             early access, founding member pricing locked in before public enrollment,
             and priority placement as class schedules are built.{' '}
             <strong className="text-white">All-access to every program.</strong>{' '}
@@ -253,7 +253,7 @@ export default function HomePage() {
               {
                 icon: '🔒',
                 title: 'Founding Rate: $129/mo',
-                body: '$64.50 holds your spot today. Rate locked for life — never goes up, no matter what public pricing becomes.',
+                body: '$64.50 holds your spot today. Rate locked for life. Never goes up, no matter what public pricing becomes.',
               },
               {
                 icon: '📅',
@@ -263,7 +263,7 @@ export default function HomePage() {
               {
                 icon: '🏅',
                 title: 'All-Access Membership',
-                body: 'Ninja Warrior, Climbing Wall, Forge Protocol, Sports Performance — every program, one rate.',
+                body: 'Ninja Warrior, Climbing Wall, Forge Protocol, Sports Performance. Every program, one rate.',
               },
             ].map((item) => (
               <div key={item.title} className="bg-white/5 border border-white/10 rounded-xl p-6">
@@ -329,12 +329,12 @@ export default function HomePage() {
               <p className="text-gray-600 leading-relaxed mt-5">
                 Strata Strength Lab is built on 20+ years of coaching athletes across Butte County.
                 Coach Darrell Thompson developed the Forge Protocol to fill a gap he kept
-                seeing — kids who were active but untrained, and programs that didn&apos;t hold
+                seeing kids who were active but untrained, and programs that didn&apos;t hold
                 their attention long enough to build anything real.
               </p>
               <p className="text-gray-600 leading-relaxed mt-4">
-                If your kid has tried leagues, classes, or other programs and didn&apos;t stick —
-                this is a different environment entirely. Ninja Warrior obstacle training
+                If your kid has tried leagues, classes, or other programs and didn&apos;t stick.
+                This is a different environment entirely. Ninja Warrior obstacle training
                 and a climbing wall aren&apos;t workouts kids dread. They&apos;re challenges kids
                 come back for. The strength and development happen in the process.
               </p>
@@ -402,7 +402,7 @@ export default function HomePage() {
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <span className="text-navy font-heading font-bold text-sm">
-                  — {t.name}
+                  {t.name}
                 </span>
               </div>
             ))}
@@ -417,11 +417,11 @@ export default function HomePage() {
         items={[
           {
             q: 'What is Strata Strength Lab?',
-            a: 'Strata Strength Lab is a youth strength and movement training facility in Oroville, CA. We offer Ninja Warrior obstacle training, climbing wall development, and the Forge Protocol structured strength system for toddlers through teens. This is not a traditional gym — it is a development environment built around real-world capability.',
+            a: 'Strata Strength Lab is a youth strength and movement training facility in Oroville, CA. We offer Ninja Warrior obstacle training, climbing wall development, and the Forge Protocol structured strength system for toddlers through teens. This is not a traditional gym. It is a development environment built around real-world capability.',
           },
           {
             q: 'What if my kid has never stayed with a program before?',
-            a: "Most of the kids who come to Strata have tried other programs — leagues, gym classes, martial arts — and didn't stick. The difference here is the environment. Obstacle training and climbing are inherently engaging. Kids don't feel like they're working out — they feel like they're conquering something. The discipline and strength build in the process.",
+            a: "Most of the kids who come to Strata have tried other programs: leagues, gym classes, martial arts. And didn't stick. The difference here is the environment. Obstacle training and climbing are inherently engaging. Kids don't feel like they're working out. They feel like they're conquering something. The discipline and strength build in the process.",
           },
           {
             q: 'What is the Founding 30 offer?',
@@ -429,11 +429,11 @@ export default function HomePage() {
           },
           {
             q: 'What is the Forge Protocol?',
-            a: "The Forge Protocol is Strata's structured strength training system. Built around foundational movement patterns — squat, hinge, push, pull, carry — with progressive overload and a strict movement quality standard. Strength earned through structure, not shortcuts.",
+            a: "The Forge Protocol is Strata's structured strength training system. Built around foundational movement patterns: squat, hinge, push, pull, carry. With progressive overload and a strict movement quality standard. Strength earned through structure, not shortcuts.",
           },
           {
             q: 'What age groups do you serve?',
-            a: 'Strata serves ages 1 through teens. Our Little Builders program is designed for ages 1–4 with age-appropriate movement development. From there, we group athletes by age and ability all the way through high school so every athlete trains at the right level.',
+            a: 'Strata serves ages 1 through teens. Our Little Builders program is designed for ages 1 to 4 with age-appropriate movement development. From there, we group athletes by age and ability all the way through high school so every athlete trains at the right level.',
           },
           {
             q: 'Is strength training safe for kids?',
@@ -445,7 +445,7 @@ export default function HomePage() {
           },
           {
             q: 'Where is Strata Strength Lab located?',
-            a: 'We are located at 1726 Montgomery Street, Unit 8, Oroville, CA 95965 — serving athletes and families across Oroville and Butte County.',
+            a: 'We are located at 1726 Montgomery Street, Unit 8, Oroville, CA 95965, serving athletes and families across Oroville and Butte County.',
           },
           {
             q: 'Do you offer birthday parties?',
@@ -462,8 +462,8 @@ export default function HomePage() {
             Get Opening Updates &amp; Early Pricing Info
           </h2>
           <p className="text-gray-500 text-base mb-8">
-            We&apos;ll send you class schedules, program details, and founding spot availability —
-            no pressure, no spam.
+            We&apos;ll send you class schedules, program details, and founding spot availability.
+            No pressure, no spam.
           </p>
           <a href={GHL_UPDATES_LINK} className="btn-outline-navy text-base px-10 py-4">
             Send Me Updates
@@ -492,7 +492,7 @@ export default function HomePage() {
             Your Athlete&apos;s Journey Starts Here.
           </h2>
           <p className="mt-4 text-white/80 text-lg">
-            Only {spotsRemaining} founding spots available. Lock in $129/mo all-access before we open — for life.
+            Only {spotsRemaining} founding spots available. Lock in $129/mo all-access before we open, for life.
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-outline mt-10 text-lg px-12 py-5">
             Claim My Child&apos;s Founding Spot

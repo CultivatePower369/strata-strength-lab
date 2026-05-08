@@ -6,7 +6,7 @@ export default function BirthdayPartyForm() {
   return (
     <div className="card p-8 sm:p-10 text-center">
       <p className="text-gray-500 text-base mb-8">
-        Click below to choose your date, time, and party details — it only takes a couple of minutes.
+        Click below to choose your date, time, and party details. It only takes a couple of minutes.
       </p>
       <a
         href={GHL_BOOKING_URL}

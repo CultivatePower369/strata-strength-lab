@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Class Schedule — Coming Soon',
+  title: 'Class Schedule: Coming Soon',
   description:
     'Strata Strength Lab is opening soon in Oroville, CA. Class schedule will be published before we open. Claim your founding spot now.',
 }
@@ -24,7 +24,7 @@ export default function SchedulePage() {
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
             We&apos;re still building out our space. Full class times will be published
-            before we open — founding members get first pick.
+            before we open. Founding members get first pick.
           </p>
         </div>
       </section>
@@ -33,7 +33,7 @@ export default function SchedulePage() {
       <div className="bg-brand-orange/10 border-b border-brand-orange/20 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-brand-orange-dark text-sm font-heading font-semibold text-center sm:text-left">
-            Founding members get priority placement — first pick of class times before public enrollment opens.
+            Founding members get priority placement. First pick of class times before public enrollment opens.
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-primary text-sm px-6 py-2 shrink-0">
             Claim My Child&apos;s Founding Spot

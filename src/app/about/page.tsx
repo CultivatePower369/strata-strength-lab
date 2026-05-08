@@ -16,7 +16,7 @@ const pillars = [
     icon: '🏃',
     label: 'Pillar One',
     title: 'Ninja Warrior Obstacle Training',
-    body: 'Our obstacle course system develops the full athletic spectrum — coordination, grip, agility, body control, and mental grit. Athletes learn to move through challenge, not around it. Every obstacle is a lesson in what the body is capable of when trained with purpose.',
+    body: 'Our obstacle course system develops the full athletic spectrum: coordination, grip, agility, body control, and mental grit. Athletes learn to move through challenge, not around it. Every obstacle is a lesson in what the body is capable of when trained with purpose.',
     accent: 'border-navy text-navy',
     bg: 'bg-navy/5',
   },
@@ -24,7 +24,7 @@ const pillars = [
     icon: '🧗',
     label: 'Pillar Two',
     title: 'Climbing Wall & Grip Development',
-    body: 'The climbing wall is not a novelty — it is one of the most effective strength and movement tools in the facility. Climbing builds grip strength, pulling power, core stability, spatial awareness, and problem-solving under pressure. It is foundational to everything we train.',
+    body: 'The climbing wall is not a novelty. It is one of the most effective strength and movement tools in the facility. Climbing builds grip strength, pulling power, core stability, spatial awareness, and problem-solving under pressure. It is foundational to everything we train.',
     accent: 'border-brand-blue text-brand-blue-dark',
     bg: 'bg-brand-blue/5',
   },
@@ -32,7 +32,7 @@ const pillars = [
     icon: '⚒️',
     label: 'Pillar Three',
     title: 'The Forge Protocol',
-    body: 'Our structured strength training system built on discipline, repetition, and progressive overload. The Forge Protocol teaches real-world strength through the foundational movement patterns — squat, hinge, push, pull, carry — applied with structure and intentional progression. Strength earned through the work, not shortcut.',
+    body: 'Our structured strength training system built on discipline, repetition, and progressive overload. The Forge Protocol teaches real-world strength through the foundational movement patterns: squat, hinge, push, pull, carry. Applied with structure and intentional progression. Strength earned through the work, not shortcut.',
     accent: 'border-brand-orange text-brand-orange-dark',
     bg: 'bg-brand-orange/5',
   },
@@ -77,25 +77,25 @@ export default function AboutPage() {
             <div>
               <span className="section-label">What Makes Us Different</span>
               <h2 className="section-heading">
-                Youth Strength &amp; Movement —{' '}
+                Youth Strength &amp; Movement.{' '}
                 <span className="text-brand-orange">Done Right.</span>
               </h2>
               <p className="text-gray-600 leading-relaxed mt-5">
                 Most gyms offer access to equipment. Strata offers a system. We
-                are not a fitness center with a children&apos;s corner bolted on —
-                we are a development environment built from the ground up around
+                are not a fitness center with a children&apos;s corner bolted on.
+                We are a development environment built from the ground up around
                 how the body actually learns to move, perform, and grow stronger
                 under structured pressure.
               </p>
               <p className="text-gray-600 leading-relaxed mt-4">
                 Every session at Strata has a purpose. Every movement has a
-                standard. Every athlete — whether they are 7 years old or 40 —
+                standard. Every athlete, whether they are 7 years old or 40,
                 is held to the same principle: earn your strength through the work.
                 No shortcuts. No gimmicks. No random workouts dressed up with
                 motivational language.
               </p>
               <p className="text-gray-600 leading-relaxed mt-4">
-                The name Strata comes from geology — the study of layers. The
+                The name Strata comes from geology, the study of layers. The
                 earth&apos;s strongest formations are built under pressure, over time,
                 one layer on top of another. That is exactly how we build athletes.
                 Layer by layer. Rep by rep. Until the structure holds up under
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 &ldquo;Capability over appearance. Progression over random
                 workouts. Structure over chaos.&rdquo;
               </blockquote>
-              <p className="mt-5 text-white/40 text-sm">— Strata Strength Lab</p>
+              <p className="mt-5 text-white/40 text-sm">Strata Strength Lab</p>
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@ export default function AboutPage() {
             </h2>
             <p className="section-subheading max-w-2xl mx-auto">
               Strata is built around three interconnected training disciplines.
-              Together they develop the full athlete — not just one quality in
+              Together they develop the full athlete. Not just one quality in
               isolation.
             </p>
           </div>
@@ -172,7 +172,7 @@ export default function AboutPage() {
               <p className="text-white/60 leading-relaxed mt-5">
                 Training at Strata is not a rotating collection of random
                 workouts. It is a structured system where each session builds
-                on the last — movement patterns are taught before load is added,
+                on the last. Movement patterns are taught before load is added,
                 load is added before intensity is pushed, and intensity is only
                 pushed when the foundation is solid.
               </p>
@@ -183,8 +183,8 @@ export default function AboutPage() {
                 is earned, not assumed.
               </p>
               <p className="text-white/60 leading-relaxed mt-4">
-                We measure progress in capability — what athletes can do,
-                control, and sustain — not in how they look or how much they
+                We measure progress in capability: what athletes can do,
+                control, and sustain. Not in how they look or how much they
                 can lift before they&apos;re ready.
               </p>
             </div>
@@ -213,7 +213,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <span className="section-label">Who We Serve</span>
             <h2 className="section-heading">
-              Toddlers to Teens —{' '}
+              Toddlers to Teens,{' '}
               <span className="text-brand-orange">Every Stage, Every Level.</span>
             </h2>
           </div>
@@ -225,12 +225,12 @@ export default function AboutPage() {
                 body: 'The earlier a child learns to move well, the longer that foundation serves them. We introduce the youngest athletes to structured movement, body awareness, and coordination in an environment built for their stage of development.',
               },
               {
-                group: 'Kids (Ages 6–12)',
+                group: 'Kids (Ages 6 to 12)',
                 icon: '🏃',
-                body: 'This is the prime window for athletic development. Kids at Strata build real strength, movement skills, and confidence through structured obstacle training, climbing, and the Forge Protocol — coached and progressive, never random.',
+                body: 'This is the prime window for athletic development. Kids at Strata build real strength, movement skills, and confidence through structured obstacle training, climbing, and the Forge Protocol. Coached and progressive, never random.',
               },
               {
-                group: 'Teens (Ages 13–18)',
+                group: 'Teens (Ages 13 to 18)',
                 icon: '💪',
                 body: 'Teenagers who train with structure and purpose during these years carry that capability for life. Our teen programs develop serious strength, coordination, and discipline at the exact moment the body is most ready to absorb it.',
               },
@@ -258,7 +258,7 @@ export default function AboutPage() {
             </h2>
             <p className="mt-4 text-white/70 text-lg max-w-xl mx-auto">
               Not a number on a scale. Not a before-and-after photo.
-              Real capability — built through real work.
+              Real capability. Built through real work.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -289,7 +289,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
             {/* Photo — Darrell */}
             <div className="w-64 h-64 rounded-full overflow-hidden mx-auto lg:mx-0">
-              <img src="/images/coach-darrell.jpg" alt="Darrell Thompson — Head Coach" className="w-full h-full object-cover object-top" />
+              <img src="/images/coach-darrell.jpg" alt="Darrell Thompson, Head Coach" className="w-full h-full object-cover object-top" />
             </div>
 
             {/* Bio */}
@@ -299,7 +299,7 @@ export default function AboutPage() {
                 Darrell Thompson
               </h3>
               <div className="flex flex-wrap gap-2 mb-7">
-                {['20+ Years Experience', 'Creator of The Forge Protocol', 'Co-Founder, Cultivate Power Fighting Arts', 'Black Belt — Erik Paulson CSW'].map((tag) => (
+                {['20+ Years Experience', 'Creator of The Forge Protocol', 'Co-Founder, Cultivate Power Fighting Arts', 'Black Belt, Erik Paulson CSW'].map((tag) => (
                   <span key={tag} className="text-xs font-heading font-bold uppercase tracking-wide bg-brand-orange/10 text-brand-orange-dark border border-brand-orange/20 rounded-full px-3 py-1">
                     {tag}
                   </span>
@@ -309,7 +309,7 @@ export default function AboutPage() {
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   Darrell Thompson has been training and developing strength since
-                  2006 — over two decades of hands-on experience in strength
+                  2006. Over two decades of hands-on experience in strength
                   training, movement, and athletic performance. His background
                   extends beyond the gym into a lifetime of athletic disciplines,
                   including soccer, basketball, snowboarding, skateboarding, and
@@ -318,16 +318,16 @@ export default function AboutPage() {
                 <p>
                   As the co-founder of Cultivate Power Fighting Arts and the
                   creator of The Forge Protocol, Darrell&apos;s approach to training
-                  is built on structure, discipline, and real-world capability —
-                  not trends or gimmicks. His system focuses on developing strength
+                  is built on structure, discipline, and real-world capability.
+                  Not trends or gimmicks. His system focuses on developing strength
                   that transfers: grip, coordination, balance, and power under
                   pressure.
                 </p>
                 <p>
                   Through Strata Strength Lab, he brings that philosophy into a
-                  new environment — blending obstacle training, climbing-based
+                  new environment. Blending obstacle training, climbing-based
                   movement, and structured strength work to build resilient,
-                  capable young athletes — toddlers to teens.
+                  capable young athletes, toddlers to teens.
                 </p>
                 <p className="font-heading font-semibold text-navy">
                   His mission is simple: develop strength that holds up in the
@@ -346,7 +346,7 @@ export default function AboutPage() {
                 Amory Thompson
               </h3>
               <div className="flex flex-wrap gap-2 mb-7">
-                {['Lifelong Athlete', 'BJJ Black Belt — Erik Paulson CSW', 'Kids\' Head Coach, Cultivate Power Fighting Arts'].map((tag) => (
+                {['Lifelong Athlete', 'BJJ Black Belt, Erik Paulson CSW', 'Kids\' Head Coach, Cultivate Power Fighting Arts'].map((tag) => (
                   <span key={tag} className="text-xs font-heading font-bold uppercase tracking-wide bg-brand-blue/10 text-brand-blue-dark border border-brand-blue/20 rounded-full px-3 py-1">
                     {tag}
                   </span>
@@ -372,7 +372,7 @@ export default function AboutPage() {
                   specializes in developing young athletes through structured
                   training that builds real strength, confidence, and discipline.
                   At Strata Strength Lab, she brings that same approach into
-                  strength and movement training — helping the next generation
+                  strength and movement training, helping the next generation
                   develop capability that carries beyond the gym.
                 </p>
                 <p className="font-heading font-semibold text-navy">
@@ -384,7 +384,7 @@ export default function AboutPage() {
 
             {/* Photo — Amory */}
             <div className="lg:order-2 w-64 h-64 rounded-full overflow-hidden mx-auto lg:mx-0">
-              <img src="/images/coach-amory.jpg" alt="Amory Thompson — Kids Head Coach" className="w-full h-full object-cover object-top" />
+              <img src="/images/coach-amory.jpg" alt="Amory Thompson, Kids Head Coach" className="w-full h-full object-cover object-top" />
             </div>
           </div>
 
@@ -449,11 +449,11 @@ export default function AboutPage() {
         items={[
           {
             q: 'What makes Strata Strength Lab different from a regular gym?',
-            a: "Strata is not a general gym. It is a structured training environment built around three specific disciplines — Ninja Warrior obstacle training, climbing wall and grip development, and the Forge Protocol strength system. Every session has structure, progression, and a coaching standard. There are no random workouts.",
+            a: "Strata is not a general gym. It is a structured training environment built around three specific disciplines: Ninja Warrior obstacle training, climbing wall and grip development, and the Forge Protocol strength system. Every session has structure, progression, and a coaching standard. There are no random workouts.",
           },
           {
             q: 'What is the Forge Protocol?',
-            a: "The Forge Protocol is Strata's structured strength training system. It is built on foundational movement patterns — squat, hinge, push, pull, carry — applied with discipline and progressive overload. Strength is earned through repetition and structure, not shortcuts.",
+            a: "The Forge Protocol is Strata's structured strength training system. It is built on foundational movement patterns: squat, hinge, push, pull, carry. Applied with discipline and progressive overload. Strength is earned through repetition and structure, not shortcuts.",
           },
           {
             q: 'What age groups do you train?',
@@ -461,7 +461,7 @@ export default function AboutPage() {
           },
           {
             q: 'Is strength training safe for children?',
-            a: 'Yes — when properly coached, youth strength training is one of the most effective and safest forms of physical development available to children. Our coaches are trained specifically in age-appropriate programming and movement quality standards.',
+            a: 'Yes. When properly coached, youth strength training is one of the most effective and safest forms of physical development available to children. Our coaches are trained specifically in age-appropriate programming and movement quality standards.',
           },
           {
             q: 'Do athletes need prior experience to start?',

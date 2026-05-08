@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ'
 export const metadata: Metadata = {
   title: 'Youth Sports Performance Training in Oroville, CA',
   description:
-    'Sports performance training for youth athletes in Oroville, CA. Speed, agility, power, and coordination training that shows up on game day — for any sport, any level.',
+    'Sports performance training for youth athletes in Oroville, CA. Speed, agility, power, and coordination training that shows up on game day. For any sport, any level.',
 }
 
 const GHL_TRIAL_LINK = '#trial'
@@ -24,7 +24,7 @@ export default function SportsPerformancePage() {
             Train Here. <span className="text-brand-orange">Win There.</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
-            Speed, power, agility, and coordination training built specifically for youth athletes. Whatever sport your child plays, Strata builds the athletic foundation that makes them better at it — and more resilient through an entire season.
+            Speed, power, agility, and coordination training built specifically for youth athletes. Whatever sport your child plays, Strata builds the athletic foundation that makes them better at it. And more resilient through an entire season.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Book a Free Trial Class</a>
@@ -72,10 +72,10 @@ export default function SportsPerformancePage() {
         heading="Sports Performance FAQ"
         label="Questions"
         items={[
-          { q: 'What sports does this program support?', a: 'All of them. The athletic qualities we develop — speed, power, agility, coordination, and strength — are the foundation of every sport. Soccer, basketball, baseball, wrestling, martial arts, football, track — Strata athletes perform better in all of them.' },
+          { q: 'What sports does this program support?', a: 'All of them. The athletic qualities we develop: speed, power, agility, coordination, and strength are the foundation of every sport. Soccer, basketball, baseball, wrestling, martial arts, football, track. Strata athletes perform better in all of them.' },
           { q: 'How young can athletes start sports performance training?', a: 'We work with athletes starting at age 6. Younger athletes focus on foundational movement, coordination, and body control. Older athletes progressively add speed work, power development, and sport-specific conditioning.' },
-          { q: 'How often should my athlete train?', a: '2–3 sessions per week produces consistent, measurable gains. We recommend training year-round with adjusted intensity during competitive seasons.' },
-          { q: 'Can this program run alongside my child\'s sport season?', a: 'Yes — and it should. In-season training maintains the gains your athlete built in the off-season and keeps them healthy. We adjust volume and intensity to complement, not compete with, their sport schedule.' },
+          { q: 'How often should my athlete train?', a: '2 to 3 sessions per week produces consistent, measurable gains. We recommend training year-round with adjusted intensity during competitive seasons.' },
+          { q: 'Can this program run alongside my child\'s sport season?', a: 'Yes. And it should. In-season training maintains the gains your athlete built in the off-season and keeps them healthy. We adjust volume and intensity to complement, not compete with, their sport schedule.' },
         ]}
       />
     </>

@@ -42,7 +42,7 @@ export default function MobilityPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: '🦴', title: 'Joint Health & Control', body: 'Active mobility work builds the tissue strength around joints that passive stretching alone cannot develop — protecting against the overuse injuries that sideline young athletes.' },
+              { icon: '🦴', title: 'Joint Health & Control', body: 'Active mobility work builds the tissue strength around joints that passive stretching alone cannot develop. This protects against the overuse injuries that sideline young athletes.' },
               { icon: '🏃', title: 'Better Movement Patterns', body: 'Athletes who move well perform better. Proper hip mobility, shoulder range, and ankle stability make every athletic movement more efficient and powerful.' },
               { icon: '🛡️', title: 'Injury Prevention', body: 'The majority of non-contact youth sports injuries are preventable with proper movement preparation. This program specifically addresses the areas most at risk for young athletes.' },
             ].map((item) => (
@@ -73,10 +73,10 @@ export default function MobilityPage() {
         heading="Mobility & Movement FAQ"
         label="Questions"
         items={[
-          { q: 'Is this program just stretching?', a: 'No. Active mobility work is fundamentally different from passive stretching. We develop the strength and control to move joints through their full range under load — which is what actually protects athletes and improves performance.' },
+          { q: 'Is this program just stretching?', a: 'No. Active mobility work is fundamentally different from passive stretching. We develop the strength and control to move joints through their full range under load. That is what actually protects athletes and improves performance.' },
           { q: 'What age is this appropriate for?', a: 'All ages. The earlier athletes develop good movement patterns and joint mobility, the better their long-term athletic trajectory. Toddlers through teens all benefit from intentional movement training.' },
           { q: 'Can this help my child recover from a minor injury?', a: 'We are not a physical therapy clinic and do not treat injuries. However, athletes recovering from minor issues often find that proper mobility work supports their return to full training. Always consult your healthcare provider first.' },
-          { q: 'How does this fit with my child\'s other training?', a: 'Mobility training complements all other training. We recommend it alongside strength work, obstacle training, and sports participation — not instead of them. It is the maintenance that keeps the machine running.' },
+          { q: 'How does this fit with my child\'s other training?', a: 'Mobility training complements all other training. We recommend it alongside strength work, obstacle training, and sports participation, not instead of them. It is the maintenance that keeps the machine running.' },
         ]}
       />
     </>

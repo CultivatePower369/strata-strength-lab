@@ -25,7 +25,7 @@ export default function ClimbingWallPage() {
             Strength That <span className="text-brand-orange">Starts at the Wall</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
-            The climbing wall is one of the most effective athletic development tools available for young athletes. It builds grip strength, pulling power, core stability, spatial awareness, and mental focus — all at once, all through play that feels like anything but training.
+            The climbing wall is one of the most effective athletic development tools available for young athletes. It builds grip strength, pulling power, core stability, spatial awareness, and mental focus. All at once, all through play that feels like anything but training.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Claim My Child&apos;s Founding Spot</a>
@@ -44,7 +44,7 @@ export default function ClimbingWallPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: '✊', title: 'Grip & Forearm Strength', body: 'Holding, traversing, and climbing develops grip strength that directly carries over to every sport and every obstacle.' },
-              { icon: '🏋️', title: 'Upper Body & Core', body: 'Every pull on the wall recruits back, shoulders, biceps, and core — full-body strength built through natural movement.' },
+              { icon: '🏋️', title: 'Upper Body & Core', body: 'Every pull on the wall recruits back, shoulders, biceps, and core. Full-body strength built through natural movement.' },
               { icon: '📐', title: 'Spatial Awareness', body: 'Reading a wall, planning a route, and executing it develops three-dimensional thinking and body positioning that no machine can teach.' },
               { icon: '🎯', title: 'Focus & Persistence', body: 'Climbing routes demand attention and patience. Athletes learn to stay calm, think clearly, and push through when it gets hard.' },
             ].map((item) => (
@@ -66,9 +66,9 @@ export default function ClimbingWallPage() {
               <span className="section-label">Why Climbing</span>
               <h2 className="section-heading">No Machine <span className="text-brand-orange">Replicates This</span></h2>
               <div className="space-y-4 text-gray-600 leading-relaxed mt-6">
-                <p>A lat pulldown machine trains one pattern in one plane. A climbing wall trains grip, pulling, core bracing, hip mobility, footwork, balance, and route planning — simultaneously, every single rep.</p>
-                <p>For young athletes, the wall is not just exercise. It is a problem-solving environment that builds physical and mental capability together. Kids who climb consistently develop stronger hands, more athletic bodies, and a willingness to tackle hard things — because they have done it on the wall.</p>
-                <p>At Strata, climbing is a core training tool — not an afterthought. Every session is coached with progressions tailored to your child&apos;s current ability and clear goals for what comes next.</p>
+                <p>A lat pulldown machine trains one pattern in one plane. A climbing wall trains grip, pulling, core bracing, hip mobility, footwork, balance, and route planning. Simultaneously. Every single rep.</p>
+                <p>For young athletes, the wall is not just exercise. It is a problem-solving environment that builds physical and mental capability together. Kids who climb consistently develop stronger hands, more athletic bodies, and a willingness to tackle hard things. Because they have done it on the wall.</p>
+                <p>At Strata, climbing is a core training tool. Not an afterthought. Every session is coached with progressions tailored to your child&apos;s current ability and clear goals for what comes next.</p>
               </div>
             </div>
             <div className="space-y-4">
@@ -103,7 +103,7 @@ export default function ClimbingWallPage() {
       <section className="py-16 bg-brand-blue">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading font-black text-3xl md:text-4xl text-white leading-tight mb-4">
-            Let Your Child Try the Wall — Free
+            Let Your Child Try the Wall for Free
           </h2>
           <p className="text-white/80 text-lg mb-8">Book a free trial class. No experience needed. Coaches handle everything.</p>
           <a href={GHL_TRIAL_LINK} className="inline-block bg-white text-brand-blue font-heading font-black text-lg px-12 py-4 rounded-xl hover:bg-navy-dark hover:text-white transition-colors duration-200">
@@ -118,7 +118,7 @@ export default function ClimbingWallPage() {
         items={[
           { q: 'Does my child need climbing experience?', a: 'No experience needed. Our coaches start every new athlete with foundational grips, footwork, and body positioning before progressing to more advanced techniques.' },
           { q: 'Is climbing safe for young children?', a: 'Yes. Our wall is specifically designed and maintained for youth athletes. Coaches supervise every session and use age-appropriate progressions. Safety is the first standard at Strata.' },
-          { q: 'What does a climbing session look like?', a: 'Sessions include a warm-up, specific skill work (grip technique, footwork, route reading), structured climbing time on the wall, and a cool-down. Every session is coached — not free climb time.' },
+          { q: 'What does a climbing session look like?', a: 'Sessions include a warm-up, specific skill work (grip technique, footwork, route reading), structured climbing time on the wall, and a cool-down. Every session is coached. Not free climb time.' },
           { q: 'Will this help my child in other sports?', a: 'Yes. Grip strength, upper body pulling strength, core stability, and spatial awareness all transfer directly into sports performance. Many of our athletes train climbing specifically to become better athletes in their primary sport.' },
           { q: 'What should my child wear to climbing class?', a: 'Comfortable athletic clothes that allow full range of motion. Athletic shoes are fine. No sandals. We recommend grip socks if available.' },
         ]}

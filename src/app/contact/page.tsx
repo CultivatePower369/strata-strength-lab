@@ -39,7 +39,7 @@ export default function ContactPage() {
               </h2>
               <div className="mb-8 bg-brand-orange/10 border border-brand-orange/20 rounded-xl p-5">
                 <p className="text-brand-orange-dark text-sm font-heading font-semibold leading-relaxed">
-                  We&apos;re currently building out our space — the facility is coming together fast. Join the Founding 30 to lock in early access and founding member pricing before we open to the public.
+                  We&apos;re currently building out our space. The facility is coming together fast. Join the Founding 30 to lock in early access and founding member pricing before we open to the public.
                 </p>
                 <Link href="/founding-30" className="inline-block mt-3 text-sm font-heading font-bold text-brand-orange hover:underline">
                   Learn about the Founding 30 →
@@ -114,8 +114,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-heading font-bold text-navy text-base mb-1">Hours</h3>
                     <div className="text-gray-600 text-sm space-y-1">
-                      <p>Monday – Friday: 3:00 PM – 7:00 PM</p>
-                      <p>Saturday: 9:00 AM – 1:00 PM</p>
+                      <p>Monday to Friday: 3:00 PM to 7:00 PM</p>
+                      <p>Saturday: 9:00 AM to 1:00 PM</p>
                       <p>Sunday: Closed</p>
                     </div>
                   </div>
@@ -161,7 +161,7 @@ export default function ContactPage() {
           },
           {
             q: 'What are your hours?',
-            a: 'Monday through Friday 3:00 PM – 7:00 PM, Saturday 9:00 AM – 1:00 PM. Closed Sundays. Hours may expand as we grow — check back or follow us on social media for updates.',
+            a: 'Monday through Friday 3:00 PM to 7:00 PM, Saturday 9:00 AM to 1:00 PM. Closed Sundays. Hours may expand as we grow. Check back or follow us on social media for updates.',
           },
           {
             q: 'Do I need to schedule a visit or can I just walk in?',
@@ -179,7 +179,7 @@ export default function ContactPage() {
           </h2>
           <p className="mt-4 text-white/60 text-base max-w-xl mx-auto">
             Book Strata for an active, unforgettable celebration. Use the
-            contact form above and mention &ldquo;Birthday Party&rdquo; — we&apos;ll reach
+            contact form above and mention &ldquo;Birthday Party&rdquo; and we&apos;ll reach
             out to coordinate a time and get details to you.
           </p>
         </div>

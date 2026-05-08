@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'Terms of Service for Strata Strength Lab — Cultivate Power Fighting Arts, LLC DBA Strata Strength Lab.',
+  description: 'Terms of Service for Strata Strength Lab. Cultivate Power Fighting Arts, LLC DBA Strata Strength Lab.',
 }
 
 export default function TermsPage() {
@@ -51,7 +51,7 @@ export default function TermsPage() {
 
           <h2 className="font-heading font-bold text-navy text-xl mt-10 mb-3">5. Intellectual Property</h2>
           <p className="text-gray-600 leading-relaxed">
-            All content on this website — including text, logos, graphics, and design — is the property of Cultivate Power Fighting Arts, LLC DBA Strata Strength Lab and protected by applicable intellectual property laws.
+            All content on this website, including text, logos, graphics, and design, is the property of Cultivate Power Fighting Arts, LLC DBA Strata Strength Lab and protected by applicable intellectual property laws.
           </p>
 
           <h2 className="font-heading font-bold text-navy text-xl mt-10 mb-3">6. Disclaimer of Warranties</h2>

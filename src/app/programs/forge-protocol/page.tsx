@@ -3,7 +3,7 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'The Forge Protocol — Youth Strength Training in Oroville, CA',
+  title: 'The Forge Protocol: Youth Strength Training in Oroville, CA',
   description:
     'The Forge Protocol is a structured youth strength training system for kids and teens in Oroville, CA. Built on foundational movement patterns with progressive overload and strict standards.',
 }
@@ -41,7 +41,7 @@ export default function ForgeProtocolPage() {
           <div className="text-center mb-14">
             <span className="section-label">The System</span>
             <h2 className="section-heading">Five Patterns. <span className="text-brand-orange">Every Athlete.</span></h2>
-            <p className="section-subheading max-w-2xl mx-auto">The Forge Protocol builds strength on five foundational movement patterns that every human body is designed to perform — and that every sport demands.</p>
+            <p className="section-subheading max-w-2xl mx-auto">The Forge Protocol builds strength on five foundational movement patterns that every human body is designed to perform and that every sport demands.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
@@ -72,8 +72,8 @@ export default function ForgeProtocolPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              { title: 'Progressive Overload', body: 'Every athlete trains on a progression plan. Loads, volume, and complexity increase systematically — not randomly. Your child is never doing the same workout as they did six weeks ago.' },
-              { title: 'Movement Quality First', body: 'Before weight is added, movement is owned. The Forge Protocol enforces a strict movement quality standard because a movement done poorly does not make athletes stronger — it makes them injured.' },
+              { title: 'Progressive Overload', body: 'Every athlete trains on a progression plan. Loads, volume, and complexity increase systematically. Not randomly. Your child is never doing the same workout as they did six weeks ago.' },
+              { title: 'Movement Quality First', body: 'Before weight is added, movement is owned. The Forge Protocol enforces a strict movement quality standard because a movement done poorly does not make athletes stronger. It makes them injured.' },
               { title: 'Age-Appropriate Programming', body: 'Toddlers do not train like teens. Every age group has a specifically designed progression track. Darrell Thompson has 20+ years of experience building programs that match the developmental stage of each athlete.' },
               { title: 'No Random Workouts', body: 'Every session is planned with purpose. Athletes know what they are working on, why, and what comes next. The randomness that passes for training at other gyms has no place in the Forge Protocol.' },
             ].map((item) => (
@@ -103,7 +103,7 @@ export default function ForgeProtocolPage() {
         heading="Forge Protocol FAQ"
         label="Questions"
         items={[
-          { q: 'Is strength training safe for kids?', a: 'Yes. Decades of sports science research confirm that properly coached youth strength training is safe, effective, and one of the best investments in a young athlete\'s long-term health. The key word is properly coached — which is exactly what the Forge Protocol delivers.' },
+          { q: 'Is strength training safe for kids?', a: 'Yes. Decades of sports science research confirm that properly coached youth strength training is safe, effective, and one of the best investments in a young athlete\'s long-term health. The key word is properly coached. Which is exactly what the Forge Protocol delivers.' },
           { q: 'What age can kids start strength training?', a: 'The Forge Protocol starts with athletes as young as 6. Younger athletes focus on bodyweight patterns and movement quality. Loading is introduced progressively as athletes demonstrate control and readiness.' },
           { q: 'Will strength training stunt my child\'s growth?', a: 'No. This is a persistent myth with no scientific basis. Research consistently shows that properly coached youth strength training does not affect growth plates and actually promotes bone density and joint health.' },
           { q: 'How is this different from a high school weight room?', a: 'The Forge Protocol is a structured system with progressive programming, movement quality standards, and age-appropriate loading. A high school weight room is typically unsupervised access to equipment with no programming. The difference is the difference between development and risk.' },
