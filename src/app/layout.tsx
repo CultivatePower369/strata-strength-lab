@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/logo.png',
+        url: '/images/logo.jpg',
         width: 1200,
         height: 630,
         alt: 'Strata Strength Lab',
@@ -63,8 +63,8 @@ export const metadata: Metadata = {
     canonical: 'https://stratastrengthlab.com',
   },
   icons: {
-    icon: '/images/logo.png',
-    apple: '/images/logo.png',
+    icon: '/images/logo.jpg',
+    apple: '/images/logo.jpg',
   },
 }
 
@@ -104,7 +104,7 @@ const localBusinessSchema = {
     },
   ],
   priceRange: '$$',
-  image: 'https://stratastrengthlab.com/images/logo.png',
+  image: 'https://stratastrengthlab.com/images/logo.jpg',
   sameAs: [],
 }
 
