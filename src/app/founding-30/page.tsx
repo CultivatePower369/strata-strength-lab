@@ -111,7 +111,7 @@ export default function Founding30Page() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="Strata Strength Lab"
               width={44}
               height={44}
@@ -603,7 +603,7 @@ export default function Founding30Page() {
       <footer className="border-t border-white/[0.07] py-7">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-2.5">
-            <Image src="/images/logo.jpg" alt="" width={28} height={28} className="rounded-md opacity-70" aria-hidden="true" />
+            <Image src="/images/logo.png" alt="" width={28} height={28} className="rounded-md opacity-70" aria-hidden="true" />
             <span className="font-heading font-extrabold text-sm tracking-wide text-white/40">
               STRATA STRENGTH LAB
             </span>

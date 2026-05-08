@@ -106,7 +106,7 @@ export default function AboutPage() {
             <div className="bg-navy-dark rounded-2xl p-10 text-white relative overflow-hidden">
               <div className="absolute top-0 right-0 w-48 h-48 bg-brand-orange/10 rounded-full blur-2xl" />
               <Image
-                src="/images/logo.jpg"
+                src="/images/logo.png"
                 alt="Strata Strength Lab"
                 width={90}
                 height={90}

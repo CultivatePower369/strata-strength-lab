@@ -55,7 +55,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <Image
-            src="/images/logo.jpg"
+            src="/images/logo.png"
             alt="Strata Strength Lab"
             width={90}
             height={90}

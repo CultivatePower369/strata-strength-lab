@@ -482,7 +482,7 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
           <Image
-            src="/images/logo.jpg"
+            src="/images/logo.png"
             alt="Strata Strength Lab"
             width={80}
             height={80}
