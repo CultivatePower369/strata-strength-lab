@@ -218,16 +218,13 @@ export default function HomePage() {
 
           {/* Price anchor */}
           <div className="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-5 bg-white/5 border border-white/10 rounded-xl px-6 py-3 mb-6">
-            <span className="text-white/45 text-sm line-through">Regular all-access rate: $199/mo</span>
-            <span className="text-brand-orange font-heading font-black text-lg">Founding rate: $129/mo — locked for life</span>
+            <span className="text-brand-orange font-heading font-black text-lg">Founding rates from $79/mo. Locked in permanently. Never offered to the public again.</span>
           </div>
 
           <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed mb-6">
-            Before we open our doors, we are reserving spots for 30 founding families:
-            early access, founding member pricing locked in before public enrollment,
-            and priority placement as class schedules are built.{' '}
-            <strong className="text-white">All-access to every program.</strong>{' '}
-            Once the 30 are filled, this offer closes.
+            We are opening 30 founding memberships before our doors open in July. Founding members lock in their rate permanently, get priority class placement, and train exclusively at Strata for two weeks before the public launch.{' '}
+            <strong className="text-white">This offer closes June 15 or when all 30 spots are filled.</strong>{' '}
+            These prices will not be offered again.
           </p>
 
           {/* Spots counter */}
@@ -245,15 +242,15 @@ export default function HomePage() {
             </Link>
           </div>
           <p className="text-white/40 text-sm mb-10">
-            $64.50 holds your spot today · $129/mo starts at opening · All-access · Locked for life
+            Founding rates from $79/mo · Locked in permanently · Offer closes June 15
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-4 text-left">
             {[
               {
                 icon: '🔒',
-                title: 'Founding Rate: $129/mo',
-                body: '$64.50 holds your spot today. Rate locked for life. Never goes up, no matter what public pricing becomes.',
+                title: 'Founding Rates: $79 to $169/mo',
+                body: 'Rates are locked in permanently. These prices will never be offered to the public. Once you are in, your rate never changes.',
               },
               {
                 icon: '📅',
@@ -262,8 +259,8 @@ export default function HomePage() {
               },
               {
                 icon: '🏅',
-                title: 'All-Access Membership',
-                body: 'Ninja Warrior, Climbing Wall, Forge Protocol, Sports Performance. Every program, one rate.',
+                title: 'Exclusive Pre-Opening Access',
+                body: 'Founding members train at Strata for two full weeks before we open to the public. June 15 through June 30, yours exclusively.',
               },
             ].map((item) => (
               <div key={item.title} className="bg-white/5 border border-white/10 rounded-xl p-6">
@@ -311,7 +308,7 @@ export default function HomePage() {
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-5">
               Claim My Child&apos;s Founding Spot
             </a>
-            <p className="mt-3 text-white/35 text-sm">$129/mo · All-access · Locked for life</p>
+            <p className="mt-3 text-white/35 text-sm">Founding rates from $79/mo · Locked in permanently · Offer closes June 15</p>
           </div>
         </div>
       </section>
@@ -425,7 +422,7 @@ export default function HomePage() {
           },
           {
             q: 'What is the Founding 30 offer?',
-            a: 'The Founding 30 is a pre-opening offer for 30 families who want to lock in before we open our doors. Founding members get all-access to every program at $129/mo — locked for life regardless of what public pricing becomes. A $64.50 deposit holds your spot. No additional charges until we open.',
+            a: 'The Founding 30 is a pre-opening offer for the first 30 families who want to lock in before we open in July. Founding member rates are $79/mo for Little Builders, $119/mo for Foundation, $149/mo for Forge, and $169/mo for the Athlete track. These rates are locked in permanently and will never be offered to the public again. Founding members also get exclusive training access June 15 through June 30, the two weeks before we open our doors to the public. This offer closes June 15 or when all 30 spots are filled.',
           },
           {
             q: 'What is the Forge Protocol?',
@@ -492,7 +489,7 @@ export default function HomePage() {
             Your Athlete&apos;s Journey Starts Here.
           </h2>
           <p className="mt-4 text-white/80 text-lg">
-            Only {spotsRemaining} founding spots available. Lock in $129/mo all-access before we open, for life.
+            Only {spotsRemaining} founding spots available. Founding rates locked in permanently. Offer closes June 15.
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-outline mt-10 text-lg px-12 py-5">
             Claim My Child&apos;s Founding Spot

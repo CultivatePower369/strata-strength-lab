@@ -15,18 +15,19 @@ export const metadata: Metadata = {
 const GHL_FOUNDING_LINK = '#claim'
 
 const offerPoints = [
-  'Access as one of our first 30 families as part of the founding group',
-  'Founding member pricing locked in before public enrollment opens',
+  'Access as one of the first 30 families as part of the founding group',
+  'Founding member pricing locked in permanently. These rates will never be offered to the public again.',
+  'Exclusive pre-opening training: June 15 through June 30, only founding members train before we open our doors in July',
   'Priority placement as class schedules are built and finalized',
-  'First pick of available time slots before we open to the public',
+  'First pick of available time slots before public enrollment opens',
   'Recognition as part of the original group that helped launch Strata',
 ]
 
 const programs = [
-  { name: 'Little Movers',   detail: 'Ages 1 to 3' },
-  { name: 'Little Builders', detail: 'Ages 3 to 5' },
-  { name: 'Youth Athletes',  detail: 'Ages 6 to 12' },
-  { name: 'Teen Athletes',   detail: 'Ages 13 to 17' },
+  { name: 'Little Builders', detail: '$79/mo' },
+  { name: 'Foundation',      detail: '$119/mo' },
+  { name: 'Forge',           detail: '$149/mo' },
+  { name: 'Athlete',         detail: '$169/mo' },
 ]
 
 const audience = [
@@ -154,7 +155,7 @@ export default function Founding30Page() {
                 If you&apos;ve been looking for a structured, coached environment where your child actually <em>develops</em>. Not just stays busy. This is it.
               </p>
               <p className="text-white/55 text-base leading-relaxed mb-10 max-w-lg">
-                Strata Strength Lab is opening in Oroville and we&apos;re offering 30 founding memberships to families who want to get in before the public launch.
+                Strata Strength Lab opens in July. We are offering 30 founding memberships to families who want to lock in before the public launch. This offer closes June 15. Founding member rates will not be offered again.
               </p>
 
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -179,10 +180,10 @@ export default function Founding30Page() {
 
               <div className="space-y-3 mb-8">
                 {[
-                  'Founding member pricing locked in',
-                  'Priority class placement',
-                  'Early access before public launch',
-                  'Part of the original founding group',
+                  'Founding member pricing locked in permanently',
+                  'These rates will never be offered to the public again',
+                  'Exclusive pre-opening training: June 15 to June 30',
+                  'Priority class placement before public enrollment opens',
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3 text-white/70 text-sm">
                     <span className="w-1.5 h-1.5 bg-brand-orange rounded-full flex-shrink-0" />
@@ -193,7 +194,7 @@ export default function Founding30Page() {
 
               <div className="border-t border-white/[0.08] pt-6">
                 <p className="text-white/40 text-xs leading-relaxed mb-5">
-                  Once the 30 founding spots are filled, this offer closes and standard enrollment opens at regular pricing.
+                  This offer closes June 15 or when all 30 spots are filled. Whichever comes first.
                 </p>
                 <a href={GHL_FOUNDING_LINK} className="btn-primary w-full text-center block text-sm">
                   Reserve My Spot Now
@@ -304,20 +305,20 @@ export default function Founding30Page() {
               </ul>
 
               <div className="border-l-4 border-brand-orange bg-brand-orange/[0.07] rounded-r-lg px-5 py-4 text-white/65 text-[15px] leading-relaxed">
-                This offer is for the first 30 families only. Once those spots are filled, the offer closes and standard enrollment opens at regular pricing.
+                This offer closes June 15 or when all 30 spots are filled. These founding rates will not be offered again after this offer closes.
               </div>
             </div>
 
             {/* Right: Program card */}
             <div className="bg-navy-dark border border-brand-orange/20 rounded-2xl p-10 shadow-[0_0_60px_rgba(245,146,42,0.07)]">
               <p className="font-heading font-bold text-[10px] tracking-[0.22em] uppercase text-brand-orange mb-1">
-                Age-Based Programming
+                Founding Member Rates
               </p>
               <h3 className="font-heading font-black text-3xl text-white uppercase leading-tight mb-2">
-                Programs for<br />Every Age
+                4 Program<br />Tracks
               </h3>
               <p className="text-white/45 text-sm leading-relaxed mb-6">
-                Every program is grouped by age and built around what kids can actually do and what they need to develop next.
+                Rates below are founding member only. Locked in permanently. These prices will not be available after June 15.
               </p>
 
               <ul className="space-y-3 mb-6">
@@ -335,7 +336,7 @@ export default function Founding30Page() {
               </ul>
 
               <p className="text-white/35 text-sm leading-relaxed mb-7 pt-5 border-t border-white/[0.06]">
-                <span className="text-brand-orange font-semibold">Founding member pricing</span> and full program details will be shared when we reach out after you claim your spot.
+                <span className="text-brand-orange font-semibold">These are founding member rates, locked in permanently.</span> They will not be offered to the public after June 15.
               </p>
 
               <a href={GHL_FOUNDING_LINK} className="btn-primary w-full text-center block">
@@ -585,14 +586,14 @@ export default function Founding30Page() {
             <span className="text-brand-orange">30 Is Full,<br />It&apos;s Gone</span>
           </h2>
           <p className="text-white/55 text-lg leading-relaxed mb-10">
-            We&apos;re keeping this first group intentionally small so we can launch strong, give every family the attention they deserve, and build the kind of culture that makes this place worth coming back to.
+            We are keeping this first group intentionally small so we can launch strong, give every family the attention they deserve, and build the kind of culture that makes this place worth coming back to. Founding members also get two full weeks of exclusive training before we open our doors to the public on July 1.
           </p>
           <div className="flex flex-col items-center gap-4">
             <a href={GHL_FOUNDING_LINK} className="btn-primary text-base px-12 py-5">
               Join the Founding 30
             </a>
             <span className="font-heading font-bold text-xs tracking-widest uppercase text-white/30">
-              Only 30 founding memberships available
+              30 spots total · Offer closes June 15
             </span>
           </div>
         </div>
