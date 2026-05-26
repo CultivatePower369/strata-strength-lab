@@ -122,12 +122,13 @@ export default function HomePage() {
           src="/images/climbing-wall-hero.jpg"
           alt=""
           fill
-          className="object-cover object-center"
+          className="object-cover"
+          style={{ objectPosition: 'center 15%' }}
           priority
           aria-hidden="true"
         />
         {/* Dark overlay — keeps text readable over the photo */}
-        <div className="absolute inset-0 bg-navy-dark/72" />
+        <div className="absolute inset-0 bg-navy-dark/82" />
 
         {/* Geometric accent shapes */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
