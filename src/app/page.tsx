@@ -128,7 +128,7 @@ export default function HomePage() {
           aria-hidden="true"
         />
         {/* Dark overlay — keeps text readable over the photo */}
-        <div className="absolute inset-0 bg-navy-dark/82" />
+        <div className="absolute inset-0 bg-navy-dark/88" />
 
         {/* Geometric accent shapes */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -165,9 +165,7 @@ export default function HomePage() {
               See Our Programs
             </Link>
           </div>
-          <p className="mt-4 text-white/40 text-sm">
-            $64.50 holds your spot · $129/mo locked for life · All-access to every program
-          </p>
+
         </div>
       </section>
 
