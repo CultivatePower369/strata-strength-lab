@@ -114,7 +114,7 @@ export default function Header() {
           </div>
 
           <Link href="/schedule" className="text-white/80 hover:text-white font-heading font-semibold text-sm uppercase tracking-wider transition-colors duration-200 relative group">
-            Schedule (Coming Soon)
+            Schedule
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-200 group-hover:w-full" />
           </Link>
           <Link href="/contact" className="text-white/80 hover:text-white font-heading font-semibold text-sm uppercase tracking-wider transition-colors duration-200 relative group">
@@ -149,7 +149,7 @@ export default function Header() {
           {[
             { label: 'Home', href: '/' },
             { label: 'About', href: '/about' },
-            { label: 'Schedule (Coming Soon)', href: '/schedule' },
+            { label: 'Schedule', href: '/schedule' },
             { label: 'Contact', href: '/contact' },
           ].map((link) => (
             <Link
