@@ -117,6 +117,18 @@ export default function HomePage() {
     <>
       {/* ─── HERO ─────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-hero-pattern">
+        {/* Background photo */}
+        <Image
+          src="/images/climbing-wall-hero.jpg"
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+          aria-hidden="true"
+        />
+        {/* Dark overlay — keeps text readable over the photo */}
+        <div className="absolute inset-0 bg-navy-dark/72" />
+
         {/* Geometric accent shapes */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-32 -right-32 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl" />

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
@@ -32,6 +33,20 @@ export default function NinjaWarriorPage() {
           </div>
         </div>
       </section>
+
+      {/* Featured Photo */}
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-14">
+          <Image
+            src="/images/ninja-warrior-rings.jpg"
+            alt="Young athlete on the Ninja Warrior rings at Strata Strength Lab"
+            width={1200}
+            height={800}
+            className="rounded-2xl object-cover w-full shadow-lg"
+            priority
+          />
+        </div>
+      </div>
 
       {/* What Your Child Builds */}
       <section className="py-20 bg-white">
