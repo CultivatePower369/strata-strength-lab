@@ -16,6 +16,18 @@ export default function ClimbingWallPage() {
     <>
       {/* Hero */}
       <section className="bg-hero-pattern pt-32 pb-20 relative overflow-hidden">
+        {/* Background photo */}
+        <Image
+          src="/images/climbing-wall-facility.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          style={{ objectPosition: 'center 40%' }}
+          priority
+          aria-hidden="true"
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-navy-dark/88" />
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%)' }} />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <Link href="/programs" className="text-brand-blue text-sm font-heading font-semibold hover:underline">← All Programs</Link>
