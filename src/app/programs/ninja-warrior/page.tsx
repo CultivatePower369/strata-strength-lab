@@ -4,9 +4,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Ninja Warrior Training for Kids in Oroville, CA',
+  title: 'Ninja Warrior Obstacle Training for Kids in Oroville, CA | Strata Strength Lab',
   description:
-    'Structured Ninja Warrior obstacle training for toddlers through teens in Oroville, CA. Your child builds coordination, grip strength, body control, and real confidence. Coached and progressive.',
+    'Structured Ninja Warrior-style obstacle training for kids and teens in Oroville, CA. Coach-led obstacle courses that build coordination, grip strength, body control, agility, and real confidence. A great active kids activity for toddlers through teens.',
 }
 
 const GHL_TRIAL_LINK = '#trial'
@@ -145,7 +145,7 @@ export default function NinjaWarriorPage() {
           { q: 'Does my child need prior experience?', a: 'No experience needed. All athletes start with foundational movements and progress at their own pace. Coaches scale every challenge to the individual.' },
           { q: 'What age can my child start?', a: 'We work with toddlers as young as 2 through teens up to 18. Classes are grouped by age and ability so every athlete trains with peers at the right level.' },
           { q: 'Is Ninja Warrior training safe for young kids?', a: 'Yes. Our obstacle course progressions are specifically designed for young athletes with appropriate challenge levels at every age. Coaches supervise every movement.' },
-          { q: 'How is this different from a regular gymnastics or PE class?', a: 'Ninja Warrior training at Strata is coached and progressive, not recreational. Every session has a structured plan, measurable progressions, and a movement quality standard. It is athletic development, not free play.' },
+          { q: 'How is this different from a gymnastics or PE class?', a: 'Ninja Warrior obstacle training at Strata is coached and progressive, not recreational. Every session has a structured plan, measurable progressions, and a movement quality standard. It is athletic development, not free play. If you are searching for gymnastics-adjacent movement for kids in Oroville, Strata is a great option: we develop balance, coordination, climbing, and obstacle skills in a fun, coach-led environment without the competitive gymnastics structure.' },
           { q: 'What should my child wear?', a: 'Comfortable athletic clothes and athletic shoes (or grip socks). No sandals or open-toed shoes. No jewelry on the obstacle course.' },
           { q: 'How often should my child train?', a: '2 to 3 times per week is ideal for consistent progress. Once per week maintains skills. We offer flexible scheduling to fit your family.' },
         ]}

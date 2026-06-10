@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Founding 30: Join Strata Strength Lab Before We Open | Oroville, CA',
   description:
-    'Be one of the first 30 families to join Strata Strength Lab in Oroville, CA. Claim founding member access, early pricing, and priority placement before public enrollment opens.',
+    'Be one of the first 30 families to join Strata Strength Lab in Oroville, CA, a youth climbing, obstacle, and strength development facility for kids and teens. Claim founding member pricing, early access, and priority class placement before public enrollment opens.',
   alternates: {
     canonical: 'https://stratastrengthlab.com/founding-30',
   },
@@ -219,13 +219,13 @@ export default function Founding30Page() {
                 <span className="text-brand-orange">Strata Strength Lab?</span>
               </h2>
               <p className="text-white/65 text-lg leading-relaxed mb-5">
-                Strata is a structured strength and athletic development facility for kids and teens ages 3 to 18. It&apos;s not a gym where kids show up and use equipment on their own.
+                Strata Strength Lab is a youth climbing, obstacle, movement, and strength development facility for kids and teens in Oroville, CA. It is not a gym where kids show up and use equipment on their own.
               </p>
               <p className="text-white/65 text-lg leading-relaxed mb-5">
-                Every session is coached, progressive, and built around what your child actually needs: real strength, body control, coordination, and the kind of confidence that shows up outside the gym too.
+                Every session is coached, progressive, and built around what your child actually needs: real strength, body control, coordination, and the kind of confidence that shows up outside the facility too. A great option for kids who need a healthy outlet, want to improve in sports, or simply need something active, structured, and fun to do in Oroville.
               </p>
               <p className="text-white/65 text-lg leading-relaxed">
-                Whether your child plays sports, needs more structure, or just needs a better outlet for their energy. Strata is built to give you something you can actually see progress in.
+                Whether your child plays sports, needs more structure, or is looking for an exciting kids activity in Oroville, Strata is built to give you something you can actually see progress in.
               </p>
             </div>
 
@@ -359,7 +359,7 @@ export default function Founding30Page() {
             <span className="text-brand-orange">Staying Busy.</span>
           </h2>
           <p className="text-white/55 text-lg leading-relaxed max-w-2xl mb-14">
-            A lot of kids play sports, stay active, and still never build the physical and mental foundation that makes them move better, stay healthier, and perform with real confidence. Strata is built to change that.
+            A lot of kids stay active and still never build the physical and mental foundation that makes them move better, stay healthier, and perform with real confidence. Strata is built to change that through youth climbing, obstacle training, and structured strength development.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">

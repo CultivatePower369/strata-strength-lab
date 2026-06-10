@@ -3,9 +3,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'The Forge Protocol: Youth Strength Training in Oroville, CA',
+  title: 'The Forge Protocol: Youth Strength Training for Kids in Oroville, CA',
   description:
-    'The Forge Protocol is a structured youth strength training system for kids and teens in Oroville, CA. Built on foundational movement patterns with progressive overload and strict standards.',
+    'The Forge Protocol is a structured youth strength training system for kids and teens in Oroville, CA. Age-appropriate strength development built on foundational movement patterns with progressive overload. Real strength training, done right for young athletes.',
 }
 
 const GHL_TRIAL_LINK = '#trial'
@@ -24,7 +24,7 @@ export default function ForgeProtocolPage() {
             Real Strength. <span className="text-brand-orange">Built Right.</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
-            Built from 20+ years of training athletes and martial artists to move, perform, and compete at a higher level.
+            Built from 20+ years of training young athletes to move, perform, and develop real-world strength. Age-appropriate, structured, and progressive for kids and teens.
           </p>
           <p className="mt-3 text-white/50 text-sm max-w-xl mx-auto">
             Every Strata coach is trained in this method to deliver consistent, high-quality instruction.
@@ -106,7 +106,7 @@ export default function ForgeProtocolPage() {
           { q: 'Is strength training safe for kids?', a: 'Yes. Decades of sports science research confirm that properly coached youth strength training is safe, effective, and one of the best investments in a young athlete\'s long-term health. The key word is properly coached. Which is exactly what the Forge Protocol delivers.' },
           { q: 'What age can kids start strength training?', a: 'The Forge Protocol starts with athletes as young as 6. Younger athletes focus on bodyweight patterns and movement quality. Loading is introduced progressively as athletes demonstrate control and readiness.' },
           { q: 'Will strength training stunt my child\'s growth?', a: 'No. This is a persistent myth with no scientific basis. Research consistently shows that properly coached youth strength training does not affect growth plates and actually promotes bone density and joint health.' },
-          { q: 'How is this different from a high school weight room?', a: 'The Forge Protocol is a structured system with progressive programming, movement quality standards, and age-appropriate loading. A high school weight room is typically unsupervised access to equipment with no programming. The difference is the difference between development and risk.' },
+          { q: 'How is this different from a high school weight room or a standard gym class?', a: 'The Forge Protocol is a structured system with progressive programming, movement quality standards, and age-appropriate loading. A high school weight room is typically unsupervised access to equipment with no programming. The difference is the difference between youth strength development and just showing up to lift. At Strata, every rep has a purpose.' },
           { q: 'Do I need to buy any equipment?', a: 'No. All equipment is provided at Strata Strength Lab. Athletes show up in athletic clothes and shoes.' },
         ]}
       />

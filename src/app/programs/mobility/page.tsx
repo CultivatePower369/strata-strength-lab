@@ -3,9 +3,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Kids Mobility & Movement Training in Oroville, CA',
+  title: 'Youth Mobility & Movement Classes for Kids in Oroville, CA',
   description:
-    'Youth mobility and movement training in Oroville, CA. Active flexibility, joint control, and body awareness that keeps young athletes healthy and performing at their best.',
+    'Youth mobility and movement training for kids and teens in Oroville, CA. Active flexibility, joint control, body awareness, and injury prevention that keeps young athletes healthy and performing at their best.',
 }
 
 const GHL_TRIAL_LINK = '#trial'

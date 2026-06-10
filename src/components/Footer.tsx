@@ -43,7 +43,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed max-w-sm">
-              Building strong, confident, and capable kids.
+              Youth climbing, obstacle training, and strength development for kids and teens in Oroville, CA. Building strong, capable kids through fun, coach-led challenges.
             </p>
             <div className="flex gap-4 mt-6">
               {/* Social placeholders — add real links when ready */}

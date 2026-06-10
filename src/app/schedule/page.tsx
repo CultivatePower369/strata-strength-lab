@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Class Schedule | Strata Strength Lab',
+  title: 'Class Schedule | Youth Climbing, Obstacle & Strength Classes in Oroville, CA',
   description:
-    'Weekly class schedule for Strata Strength Lab in Oroville, CA. Age group classes, open gym, and birthday party availability.',
+    'Weekly class schedule for Strata Strength Lab in Oroville, CA. Youth climbing, Ninja Warrior obstacle, and strength training classes for kids and teens. Age group classes, open training, and birthday party availability.',
 }
 
 const GHL_TRIAL_LINK = '#trial'
@@ -39,7 +39,7 @@ const scheduleRows: ScheduleRow[] = [
     slots: { mon: '5:45 - 6:45 PM', tue: '6:30 - 7:30 PM', wed: '5:45 - 6:45 PM', thu: '6:30 - 7:30 PM' },
   },
   {
-    label: 'Open Gym', category: 'gym',
+    label: 'Open Mat', category: 'gym',
     slots: {
       mon: '6:45 - 8:30 PM',
       tue: '7:30 - 8:30 PM',
@@ -141,7 +141,7 @@ export default function SchedulePage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-3 h-3 rounded-sm bg-brand-blue inline-block" />
-              <span className="text-sm text-gray-600">Open Gym</span>
+              <span className="text-sm text-gray-600">Open Mat</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-3 h-3 rounded-sm bg-brand-orange inline-block" />

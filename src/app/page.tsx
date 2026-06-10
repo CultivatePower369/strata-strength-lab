@@ -4,9 +4,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Youth Strength & Fitness Classes in Oroville, CA',
+  title: 'Youth Climbing, Obstacle Training & Kids Fitness in Oroville, CA | Strata Strength Lab',
   description:
-    'Strata Strength Lab builds strong, confident young athletes through strength training, climbing, mobility, and sports performance classes in Oroville, CA. Book your free trial today.',
+    'Strata Strength Lab is a youth climbing, obstacle, movement, and strength development facility in downtown Oroville, CA. Kids and teens build strength, confidence, coordination, and real-world capability through fun, coach-led challenges. A great kids activity in Oroville for ages 1 to 18.',
 }
 
 const GHL_TRIAL_LINK = '#trial'
@@ -142,14 +142,14 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-40 sm:pt-32 md:pt-24 pb-32">
           <span className="section-label text-brand-blue">
-            Oroville, CA · Ninja Warrior &amp; Climbing Wall
+            Oroville, CA · Youth Climbing · Ninja Warrior · Obstacle Training
           </span>
           <h1 className="font-heading font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight mt-2">
-            Built Strong<br />
-            <span className="text-brand-orange">from the Start.</span>
+            Where Kids Build<br />
+            <span className="text-brand-orange">Strength, Confidence &amp; Capability.</span>
           </h1>
           <p className="mt-6 text-white/75 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            Finally, a training environment your kid will actually want to come back to. Structured strength, climbing, and Ninja Warrior obstacle development for toddlers through teens.
+            Climbing, Ninja Warrior-style obstacles, movement, and age-appropriate strength training for kids and teens in Oroville. Fun, coach-led challenges that build real-world athleticism.
           </p>
           <p className="mt-3 text-white/45 text-sm font-medium tracking-wide">
             Built by Coach Darrell Thompson, 20+ years training athletes in Butte County
@@ -331,20 +331,21 @@ export default function HomePage() {
             <div>
               <span className="section-label">Our Story</span>
               <h2 className="section-heading">
-                Oroville&apos;s Strength &amp;<br />
-                <span className="text-brand-orange">Movement Training Facility</span>
+                Oroville&apos;s Youth Climbing,<br />
+                <span className="text-brand-orange">Obstacle &amp; Strength Facility</span>
               </h2>
               <p className="text-gray-600 leading-relaxed mt-5">
-                Strata Strength Lab is built on 20+ years of coaching athletes across Butte County.
-                Coach Darrell Thompson developed the Forge Protocol to fill a gap he kept
-                seeing kids who were active but untrained, and programs that didn&apos;t hold
+                Strata Strength Lab is a youth climbing, obstacle, movement, and strength development
+                facility in downtown Oroville, built on 20+ years of coaching young athletes across
+                Butte County. Coach Darrell Thompson developed the Forge Protocol to fill a gap he kept
+                seeing: kids who were active but untrained, and programs that didn&apos;t hold
                 their attention long enough to build anything real.
               </p>
               <p className="text-gray-600 leading-relaxed mt-4">
-                If your kid has tried leagues, classes, or other programs and didn&apos;t stick.
-                This is a different environment entirely. Ninja Warrior obstacle training
-                and a climbing wall aren&apos;t workouts kids dread. They&apos;re challenges kids
-                come back for. The strength and development happen in the process.
+                If your child has tried leagues, classes, or other activities and didn&apos;t stick,
+                this is a different environment entirely. Youth climbing and Ninja Warrior-style obstacles
+                aren&apos;t workouts kids dread. They&apos;re challenges kids come back for.
+                The strength, confidence, and coordination build in the process.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link href="/about" className="btn-outline-navy">
@@ -425,11 +426,11 @@ export default function HomePage() {
         items={[
           {
             q: 'What is Strata Strength Lab?',
-            a: 'Strata Strength Lab is a youth strength and movement training facility in Oroville, CA. We offer Ninja Warrior obstacle training, climbing wall development, and the Forge Protocol structured strength system for toddlers through teens. This is not a traditional gym. It is a development environment built around real-world capability.',
+            a: 'Strata Strength Lab is a youth climbing, obstacle, movement, and strength development facility in downtown Oroville, CA. We offer Ninja Warrior-style obstacle training, a climbing wall, and the Forge Protocol structured strength system for kids and teens ages 1 to 18. This is not a traditional gym. It is a great option for families looking for fun, active, structured kids activities in Oroville where children build strength, confidence, coordination, and real-world capability through coach-led challenges.',
           },
           {
-            q: 'What if my kid has never stayed with a program before?',
-            a: "Most of the kids who come to Strata have tried other programs: leagues, gym classes, martial arts. And didn't stick. The difference here is the environment. Obstacle training and climbing are inherently engaging. Kids don't feel like they're working out. They feel like they're conquering something. The discipline and strength build in the process.",
+            q: 'What if my child has never stayed with a program before?',
+            a: "Most of the kids who come to Strata have tried other activities: leagues, gym classes, martial arts. And didn't stick. The difference here is the environment. Obstacle training and climbing are inherently engaging. Kids don't feel like they're working out. They feel like they're conquering something. Strata is great for kids who need a healthy outlet, want to improve in sports, or simply need something active and fun to do. The discipline, strength, and confidence build in the process.",
           },
           {
             q: 'What is the Founding 30 offer?',
@@ -453,11 +454,11 @@ export default function HomePage() {
           },
           {
             q: 'Where is Strata Strength Lab located?',
-            a: 'We are located at 1726 Montgomery Street, Unit 8, Oroville, CA 95965, serving athletes and families across Oroville and Butte County.',
+            a: 'We are located at 1726 Montgomery Street, Unit 8, in downtown Oroville, CA 95965. We serve kids and families across Oroville and Butte County, including Chico, Paradise, Gridley, and surrounding communities.',
           },
           {
             q: 'Do you offer birthday parties?',
-            a: 'Yes. Private 2-hour facility rentals with coached obstacle course activities, climbing wall access, and relay games. Contact us to check weekend availability.',
+            a: 'Yes. Strata hosts active, coach-led birthday parties for kids in Oroville. Private 2-hour events with obstacle course activities, climbing wall access, and relay games. A great alternative to bounce houses for families who want something exciting and active. Contact us to check weekend availability.',
           },
         ]}
       />
@@ -467,11 +468,11 @@ export default function HomePage() {
         <div className="max-w-2xl mx-auto px-4 text-center">
           <span className="section-label">Not Ready to Commit Yet?</span>
           <h2 className="font-heading font-black text-2xl sm:text-3xl text-navy leading-tight mt-2 mb-3">
-            Get Opening Updates &amp; Early Pricing Info
+            Get Opening Updates &amp; Early Access Info
           </h2>
           <p className="text-gray-500 text-base mb-8">
             We&apos;ll send you class schedules, program details, and founding spot availability.
-            No pressure, no spam.
+            No pressure, no spam. A great way to learn more about kids activities at Strata before we open.
           </p>
           <a href={GHL_UPDATES_LINK} className="btn-outline-navy text-base px-10 py-4">
             Send Me Updates

@@ -3,9 +3,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Youth Sports Performance Training in Oroville, CA',
+  title: 'Youth Athletic Development & Sports Performance Training in Oroville, CA',
   description:
-    'Sports performance training for youth athletes in Oroville, CA. Speed, agility, power, and coordination training that shows up on game day. For any sport, any level.',
+    'Functional fitness and athletic development for youth athletes in Oroville, CA. Speed, agility, power, coordination, and movement skills that show up on game day. Structured training for kids and teens in any sport.',
 }
 
 const GHL_TRIAL_LINK = '#trial'

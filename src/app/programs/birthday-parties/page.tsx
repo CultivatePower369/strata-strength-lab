@@ -5,9 +5,9 @@ import FAQ from '@/components/FAQ'
 import BirthdayPartyForm from '@/components/BirthdayPartyForm'
 
 export const metadata: Metadata = {
-  title: 'Kids Birthday Parties in Oroville, CA | Strata Strength Lab',
+  title: 'Kids Birthday Parties in Oroville, CA | Active Parties at Strata Strength Lab',
   description:
-    'Active, coach-led birthday parties for kids in Oroville, CA. Simple pricing, structured fun, and easy to book. Standard parties from $299.',
+    'Active, coach-led birthday parties for kids in Oroville, CA. Obstacle course, climbing wall, relay races, and structured fun. A great alternative to bounce houses for active kids. Standard parties from $299.',
 }
 
 // ─── Replace with your GoHighLevel funnel URL when ready ──────────────────────
@@ -301,7 +301,7 @@ export default function BirthdayPartiesPage() {
             Who These Parties Are <span className="text-brand-orange">Great For</span>
           </h2>
           <p className="text-white/60 text-base max-w-2xl mx-auto mb-10">
-            Perfect for birthdays, celebrations, team events, or any time you want to bring kids together for a high-energy, unforgettable experience.
+            Perfect for birthdays, celebrations, and any time you want to bring kids together for a high-energy, active experience in Oroville. One of the most unique and memorable kids birthday party options in Butte County.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
             {[

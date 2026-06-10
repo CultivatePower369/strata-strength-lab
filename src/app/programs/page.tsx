@@ -4,9 +4,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Programs',
+  title: 'Youth Programs | Kids Climbing, Ninja Warrior Obstacles & Strength Training in Oroville, CA',
   description:
-    'Strata Strength Lab offers Ninja Warrior obstacle training, climbing wall classes, and the Forge Protocol strength program for toddlers through teens in Oroville, CA. Book a free trial.',
+    'Strata Strength Lab offers youth climbing, Ninja Warrior-style obstacle training, and the Forge Protocol strength program for kids and teens in Oroville, CA. Fun, coach-led kids activities with structured development for ages 1 to 18.',
 }
 
 const GHL_TRIAL_LINK = '#trial'
@@ -37,7 +37,7 @@ const programs = [
     image: '/images/kid-climber.webp',
     title: 'Climbing Rock Wall',
     tagline: 'Grip strength. Problem-solving. Real capability.',
-    description: `The climbing rock wall at Strata is not a bonus. It is a core training tool. Rock climbing builds grip strength, upper-body pulling power, core stability, and spatial awareness in ways that no machine or barbell can replicate. Athletes learn to read the wall, plan their movement, and execute under fatigue. This climbing-inspired approach to grip and movement development carries over directly to every other thing we train. Beginners start with fundamentals. Advanced athletes tackle technical routes and timed challenges. Everyone improves.`,
+    description: `The climbing wall at Strata is not a bonus. It is a core training tool. Youth climbing builds grip strength, upper-body pulling power, core stability, and spatial awareness in ways that no machine or barbell can replicate. Kids learn to read the wall, plan their movement, and execute under fatigue. This approach to grip and movement development carries over directly to every other thing we train. Beginners start with fundamentals. Advanced athletes tackle technical routes and timed challenges. Everyone improves.`,
     details: [
       'Coached climbing sessions for all levels',
       'Grip strength and pulling power development',
@@ -101,9 +101,9 @@ export default function ProgramsPage() {
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
             Every program at Strata is structured, coached, and built with
-            purpose. No random workouts. No filler. Ninja Warrior obstacle
-            training, climbing rock wall, the Forge Protocol, and birthday
-            parties. Toddlers to teens, every level.
+            purpose. No random workouts. No filler. Youth climbing, Ninja Warrior-style
+            obstacle training, the Forge Protocol strength system, and birthday
+            parties for kids in Oroville. Toddlers to teens, every level.
           </p>
         </div>
       </section>
@@ -232,20 +232,20 @@ export default function ProgramsPage() {
             a: "The Forge Protocol is Strata's structured strength training system. It is built around the foundational movement patterns: squat, hinge, push, pull, carry. Applied with progressive overload and a strict movement quality standard. Strength is earned through structure and repetition, not shortcuts.",
           },
           {
-            q: 'Is the Ninja Warrior training just for kids?',
-            a: 'No. The obstacle course system at Strata serves toddlers through teens. The progressions scale to meet each athlete where they are. Every age group benefits from developing coordination, grip strength, agility, and body control through structured obstacle training.',
+            q: 'Is Ninja Warrior obstacle training just for older kids?',
+            a: 'No. The obstacle course system at Strata serves toddlers through teens. The progressions scale to meet each child where they are. Every age group benefits from developing coordination, grip strength, agility, and body control through structured obstacle training. It is one of the most engaging and effective kids activities we offer.',
           },
           {
-            q: 'Do athletes need prior experience to start?',
-            a: 'No experience is required for any program. All training begins with movement fundamentals. Whether someone is 6 years old or 45, we start with what they can do and build from there.',
+            q: 'Does my child need prior experience to start?',
+            a: 'No experience is required for any program. All training begins with movement fundamentals. Whether your child is 3 years old or 17, we start with what they can do and build from there.',
           },
           {
             q: 'Is climbing safe for children?',
             a: 'Yes. All climbing sessions are coach-supervised with age-appropriate progressions and safety standards. Climbing is one of the most complete physical development activities available to young athletes: building grip, pulling strength, core stability, and spatial awareness simultaneously.',
           },
           {
-            q: 'Can my child or I participate in more than one program?',
-            a: 'Yes. Most serious athletes do. Combining the obstacle course, climbing wall, and Forge Protocol strength training creates a complete development system. We will help you build the right weekly schedule based on goals and recovery.',
+            q: 'Can my child participate in more than one program?',
+            a: 'Yes. Most dedicated athletes do. Combining the obstacle course, climbing wall, and Forge Protocol strength training creates a complete development system for kids. We will help you build the right weekly schedule based on age, goals, and recovery.',
           },
           {
             q: 'What equipment is in the facility?',

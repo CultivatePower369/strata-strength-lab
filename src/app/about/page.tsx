@@ -4,9 +4,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'About Strata Strength Lab | Youth Climbing & Obstacle Training in Oroville, CA',
   description:
-    'Strata Strength Lab is a youth strength and movement training facility in Oroville, CA offering Ninja Warrior obstacle training, climbing wall, and structured strength programs for toddlers through teens.',
+    'Strata Strength Lab is a youth climbing, obstacle, movement, and strength development facility in Oroville, CA. Learn about our coaches, our training philosophy, and why kids and teens in Butte County build real strength, confidence, and coordination at Strata.',
 }
 
 const GHL_TRIAL_LINK = '#trial'
@@ -62,10 +62,11 @@ export default function AboutPage() {
             <span className="text-brand-orange">Traditional Gym.</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
-            Strata Strength Lab is a strength and movement training environment
-            built around Ninja Warrior obstacle training, climbing wall development,
-            and structured strength programming for toddlers through teens in
-            Oroville, CA.
+            Strata Strength Lab is a youth climbing, obstacle, movement, and strength
+            development facility in Oroville, CA. We help kids and teens ages 1 to 18
+            build strength, confidence, coordination, and real-world capability through
+            fun, coach-led challenges including Ninja Warrior-style obstacles, a climbing
+            wall, and structured strength training.
           </p>
         </div>
       </section>
@@ -81,15 +82,15 @@ export default function AboutPage() {
                 <span className="text-brand-orange">Done Right.</span>
               </h2>
               <p className="text-gray-600 leading-relaxed mt-5">
-                Most gyms offer access to equipment. Strata offers a system. We
-                are not a fitness center with a children&apos;s corner bolted on.
-                We are a development environment built from the ground up around
-                how the body actually learns to move, perform, and grow stronger
-                under structured pressure.
+                Most programs offer access to equipment or a class schedule.
+                Strata offers a system. We are not a fitness center with a children&apos;s
+                corner bolted on. We are a development environment built from the
+                ground up around how young bodies actually learn to move, perform,
+                and grow stronger through structured, progressive training.
               </p>
               <p className="text-gray-600 leading-relaxed mt-4">
                 Every session at Strata has a purpose. Every movement has a
-                standard. Every athlete, whether they are 7 years old or 40,
+                standard. Every athlete, whether they are 7 years old or 17,
                 is held to the same principle: earn your strength through the work.
                 No shortcuts. No gimmicks. No random workouts dressed up with
                 motivational language.
@@ -403,9 +404,11 @@ export default function AboutPage() {
                 <span className="text-brand-orange">Oroville, CA</span>
               </h2>
               <p className="text-white/60 mt-5 leading-relaxed">
-                Strata Strength Lab is located in Oroville, California, serving
-                athletes and families across Butte County. We are a local
-                facility built for this community.
+                Strata Strength Lab is located in downtown Oroville, California,
+                serving kids, teens, and families across Butte County. We are a
+                local facility built specifically for this community, and a great
+                option for parents in Oroville looking for fun, active, structured
+                kids activities.
               </p>
               <div className="mt-8 space-y-4">
                 <div className="flex gap-4 items-start">
@@ -449,7 +452,7 @@ export default function AboutPage() {
         items={[
           {
             q: 'What makes Strata Strength Lab different from a regular gym?',
-            a: "Strata is not a general gym. It is a structured training environment built around three specific disciplines: Ninja Warrior obstacle training, climbing wall and grip development, and the Forge Protocol strength system. Every session has structure, progression, and a coaching standard. There are no random workouts.",
+            a: "Strata is not a general gym. It is a youth climbing, obstacle, movement, and strength development facility where kids and teens build real-world capability through structured, coach-led training. Every session is built around three core disciplines: Ninja Warrior-style obstacle training, climbing wall and grip development, and the Forge Protocol strength system. Every session has structure, progression, and a coaching standard. There are no random workouts. A great fit for families looking for kids activities in Oroville that are active, structured, and genuinely developmental.",
           },
           {
             q: 'What is the Forge Protocol?',
@@ -468,8 +471,8 @@ export default function AboutPage() {
             a: 'No experience is required. All programs begin with foundational movement and progress from there. Whether someone has never trained before or is a multi-sport athlete, we meet them where they are.',
           },
           {
-            q: 'Do you serve athletes from outside Oroville?',
-            a: 'Yes. We welcome athletes and families from across Butte County, including Chico, Paradise, Gridley, and surrounding communities.',
+            q: 'Do you serve kids from outside Oroville?',
+            a: 'Yes. We welcome kids, teens, and families from across Butte County, including Chico, Paradise, Gridley, and surrounding communities. If you are looking for youth climbing, obstacle training, or kids fitness classes near you, Strata is worth the drive.',
           },
         ]}
       />

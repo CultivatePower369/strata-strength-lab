@@ -3,9 +3,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
+  title: 'Contact Strata Strength Lab | Youth Climbing & Kids Activities in Oroville, CA',
   description:
-    'Contact Strata Strength Lab in Oroville, CA. Find our location, ask questions about programs, or book your first free trial class.',
+    'Contact Strata Strength Lab in Oroville, CA. Find our location, ask questions about youth climbing, Ninja Warrior obstacle training, kids birthday parties, or founding membership.',
 }
 
 
@@ -18,10 +18,10 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <span className="section-label text-brand-orange">Now Pre-Launching in Oroville</span>
           <h1 className="font-heading font-black text-4xl sm:text-5xl md:text-6xl text-white mt-2 leading-tight">
-            Something Powerful <span className="text-brand-orange">Is Being Built</span>
+            Something Exciting <span className="text-brand-orange">Is Coming to Oroville</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-xl mx-auto">
-            We&apos;re currently building out our space. Join the Founding 30 to be among the first families inside.
+            We&apos;re currently building out our space. Join the Founding 30 to be among the first families inside Oroville&apos;s newest youth climbing, obstacle, and strength development facility.
           </p>
         </div>
       </section>
@@ -175,11 +175,11 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-4xl block mb-4">🎉</span>
           <h2 className="font-heading font-black text-3xl md:text-4xl text-white leading-tight">
-            Planning a Birthday Party?
+            Looking for a Kids Birthday Party in Oroville?
           </h2>
           <p className="mt-4 text-white/60 text-base max-w-xl mx-auto">
-            Book Strata for an active, unforgettable celebration. Use the
-            contact form above and mention &ldquo;Birthday Party&rdquo; and we&apos;ll reach
+            Book Strata for an active, coach-led celebration on the obstacle course and climbing wall.
+            Call or email us and mention &ldquo;Birthday Party&rdquo; and we&apos;ll reach
             out to coordinate a time and get details to you.
           </p>
         </div>

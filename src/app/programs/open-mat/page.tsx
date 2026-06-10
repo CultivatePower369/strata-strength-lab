@@ -3,9 +3,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Open Mat Training in Oroville, CA | Strata Strength Lab',
+  title: 'Open Mat Training for Youth Athletes in Oroville, CA | Strata Strength Lab',
   description:
-    'Open Mat at Strata Strength Lab in Oroville, CA. Structured open training time for youth athletes to practice skills, work on progressions, and train independently with coaching available.',
+    'Open Mat at Strata Strength Lab in Oroville, CA. Structured open training time for kids and teens to practice climbing, obstacle, and strength skills with coaches on-site.',
 }
 
 const GHL_TRIAL_LINK = '#trial'

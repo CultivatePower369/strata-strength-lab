@@ -4,9 +4,9 @@ import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Kids Climbing Wall & Grip Training in Oroville, CA',
+  title: 'Youth Climbing Classes for Kids & Teens in Oroville, CA | Strata Strength Lab',
   description:
-    'Climbing wall and grip development training for kids and teens in Oroville, CA. Build upper body strength, core stability, focus, and spatial awareness through coached progressive climbing.',
+    'Youth climbing classes for kids and teens in Oroville, CA. Build grip strength, upper body pulling power, core stability, spatial awareness, and focus through coached, progressive kids climbing at Strata Strength Lab.',
 }
 
 const GHL_TRIAL_LINK = '#trial'
@@ -25,7 +25,7 @@ export default function ClimbingWallPage() {
             Strength That <span className="text-brand-orange">Starts at the Wall</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
-            The climbing wall is one of the most effective athletic development tools available for young athletes. It builds grip strength, pulling power, core stability, spatial awareness, and mental focus. All at once, all through play that feels like anything but training.
+            Youth climbing is one of the most effective athletic development tools available for kids and teens. It builds grip strength, pulling power, core stability, spatial awareness, and mental focus. All at once, in a way that feels exciting and challenging rather than like a workout.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Claim My Child&apos;s Founding Spot</a>
@@ -66,9 +66,9 @@ export default function ClimbingWallPage() {
               <span className="section-label">Why Climbing</span>
               <h2 className="section-heading">No Machine <span className="text-brand-orange">Replicates This</span></h2>
               <div className="space-y-4 text-gray-600 leading-relaxed mt-6">
-                <p>A lat pulldown machine trains one pattern in one plane. A climbing wall trains grip, pulling, core bracing, hip mobility, footwork, balance, and route planning. Simultaneously. Every single rep.</p>
-                <p>For young athletes, the wall is not just exercise. It is a problem-solving environment that builds physical and mental capability together. Kids who climb consistently develop stronger hands, more athletic bodies, and a willingness to tackle hard things. Because they have done it on the wall.</p>
-                <p>At Strata, climbing is a core training tool. Not an afterthought. Every session is coached with progressions tailored to your child&apos;s current ability and clear goals for what comes next.</p>
+                <p>A pulldown machine trains one pattern in one plane. Youth climbing trains grip, pulling, core bracing, hip mobility, footwork, balance, and route planning. Simultaneously. Every single rep.</p>
+                <p>For kids, the wall is not just exercise. It is a problem-solving environment that builds physical and mental capability together. Children who climb consistently develop stronger hands, more athletic bodies, and a willingness to tackle hard things. Because they have done it on the wall.</p>
+                <p>At Strata, youth climbing is a core training tool. Not an afterthought. Every session is coached with progressions tailored to your child&apos;s current ability and clear goals for what comes next.</p>
               </div>
             </div>
             <div className="space-y-4">
@@ -119,7 +119,7 @@ export default function ClimbingWallPage() {
           { q: 'Does my child need climbing experience?', a: 'No experience needed. Our coaches start every new athlete with foundational grips, footwork, and body positioning before progressing to more advanced techniques.' },
           { q: 'Is climbing safe for young children?', a: 'Yes. Our wall is specifically designed and maintained for youth athletes. Coaches supervise every session and use age-appropriate progressions. Safety is the first standard at Strata.' },
           { q: 'What does a climbing session look like?', a: 'Sessions include a warm-up, specific skill work (grip technique, footwork, route reading), structured climbing time on the wall, and a cool-down. Every session is coached. Not free climb time.' },
-          { q: 'Will this help my child in other sports?', a: 'Yes. Grip strength, upper body pulling strength, core stability, and spatial awareness all transfer directly into sports performance. Many of our athletes train climbing specifically to become better athletes in their primary sport.' },
+          { q: 'Will youth climbing help my child in other sports?', a: 'Yes. Grip strength, upper body pulling strength, core stability, and spatial awareness all transfer directly into sports performance. Many of our athletes train climbing specifically to become better athletes in their primary sport. It also makes kids stronger, more coordinated, and more confident across all physical activities.' },
           { q: 'What should my child wear to climbing class?', a: 'Comfortable athletic clothes that allow full range of motion. Athletic shoes are fine. No sandals. We recommend grip socks if available.' },
         ]}
       />
