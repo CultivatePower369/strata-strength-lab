@@ -5,7 +5,7 @@ import FAQ from '@/components/FAQ'
 export const metadata: Metadata = {
   title: 'Contact Strata Strength Lab | Youth Climbing & Kids Activities in Oroville, CA',
   description:
-    'Contact Strata Strength Lab in Oroville, CA. Find our location, ask questions about youth climbing, Ninja Warrior obstacle training, kids birthday parties, or founding membership.',
+    'Contact Strata Strength Lab in Oroville, CA. Find our location, ask questions about youth climbing, Ninja Warrior obstacle training, kids birthday parties, or membership options.',
 }
 
 
@@ -16,12 +16,12 @@ export default function ContactPage() {
       <section className="bg-hero-pattern pt-32 pb-20 relative overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 0, 100% 100%)' }} />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <span className="section-label text-brand-orange">Now Pre-Launching in Oroville</span>
+          <span className="section-label text-brand-orange">Now Open in Oroville</span>
           <h1 className="font-heading font-black text-4xl sm:text-5xl md:text-6xl text-white mt-2 leading-tight">
-            Something Exciting <span className="text-brand-orange">Is Coming to Oroville</span>
+            We&apos;re Open <span className="text-brand-orange">in Oroville</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-xl mx-auto">
-            We&apos;re currently building out our space. Join the Founding 30 to be among the first families inside Oroville&apos;s newest youth climbing, obstacle, and strength development facility.
+            Come visit Oroville&apos;s newest youth climbing, obstacle, and strength development facility. Regular classes are running now.
           </p>
         </div>
       </section>
@@ -39,10 +39,10 @@ export default function ContactPage() {
               </h2>
               <div className="mb-8 bg-brand-orange/10 border border-brand-orange/20 rounded-xl p-5">
                 <p className="text-brand-orange-dark text-sm font-heading font-semibold leading-relaxed">
-                  We&apos;re currently building out our space. The facility is coming together fast. Join the Founding 30 to lock in early access and founding member pricing before we open to the public.
+                  We&apos;re open and regular classes are running now for toddlers through teens. Book a free trial class to come see the space and try a session.
                 </p>
-                <Link href="/founding-30" className="inline-block mt-3 text-sm font-heading font-bold text-brand-orange hover:underline">
-                  Learn about the Founding 30 →
+                <Link href="/schedule" className="inline-block mt-3 text-sm font-heading font-bold text-brand-orange hover:underline">
+                  View Class Schedule →
                 </Link>
               </div>
 

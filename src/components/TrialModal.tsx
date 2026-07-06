@@ -52,7 +52,7 @@ export default function TrialModal() {
         {/* Header */}
         <div className="bg-navy-dark px-6 pt-6 pb-4">
           <p className="text-brand-orange font-heading font-bold text-xs uppercase tracking-widest mb-1">Get Started</p>
-          <h2 className="font-heading font-black text-white text-2xl">Request My Founding Spot</h2>
+          <h2 className="font-heading font-black text-white text-2xl">Book Your Free Trial Class</h2>
         </div>
 
         {/* GHL Form iframe */}

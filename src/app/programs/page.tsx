@@ -133,7 +133,7 @@ export default function ProgramsPage() {
                   ) : (
                     <>
                       <a href={GHL_TRIAL_LINK} className="btn-primary inline-block">
-                        Claim My Child&apos;s Founding Spot
+                        Book Free Trial Class
                       </a>
                       <Link href={p.href} className="btn-outline-navy inline-block">
                         Learn More →
@@ -265,12 +265,12 @@ export default function ProgramsPage() {
             Not Sure Where to Start?
           </h2>
           <p className="mt-4 text-white/80 text-lg">
-            Claim your founding spot and we&apos;ll help you find the perfect program
+            Book a free trial class and we&apos;ll help you find the perfect program
             for your athlete.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a href={GHL_TRIAL_LINK} className="btn-outline text-lg px-10 py-5">
-              Claim My Child&apos;s Founding Spot
+              Book Free Trial Class
             </a>
             <Link href="/schedule" className="btn-outline text-lg px-10 py-5">
               View Schedule

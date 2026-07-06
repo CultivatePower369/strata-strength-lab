@@ -28,7 +28,7 @@ export default function NinjaWarriorPage() {
             Structured obstacle training that builds coordination, grip strength, body control, and the kind of confidence that carries into every part of your child&apos;s life. Coached and progressive from toddlers through teens.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Claim My Child&apos;s Founding Spot</a>
+            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Book Free Trial Class</a>
             <Link href="/schedule" className="btn-outline text-base px-10 py-4">View Class Schedule</Link>
           </div>
         </div>
@@ -133,7 +133,7 @@ export default function NinjaWarriorPage() {
           </h2>
           <p className="text-white/80 text-lg mb-8">Book a free trial class. No commitment. No equipment needed. Just show up.</p>
           <a href={GHL_TRIAL_LINK} className="inline-block bg-white text-brand-orange font-heading font-black text-lg px-12 py-4 rounded-xl hover:bg-navy-dark hover:text-white transition-colors duration-200">
-            Claim My Child&apos;s Founding Spot
+            Book Free Trial Class
           </a>
         </div>
       </section>

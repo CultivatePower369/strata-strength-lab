@@ -30,7 +30,7 @@ export default function ForgeProtocolPage() {
             Every Strata coach is trained in this method to deliver consistent, high-quality instruction.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Claim My Child&apos;s Founding Spot</a>
+            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Book Free Trial Class</a>
           </div>
         </div>
       </section>
@@ -94,7 +94,7 @@ export default function ForgeProtocolPage() {
           </h2>
           <p className="text-white/80 text-lg mb-8">Book a free trial class and let them experience the Forge Protocol firsthand.</p>
           <a href={GHL_TRIAL_LINK} className="inline-block bg-white text-brand-orange font-heading font-black text-lg px-12 py-4 rounded-xl hover:bg-navy-dark hover:text-white transition-colors duration-200">
-            Claim My Child&apos;s Founding Spot
+            Book Free Trial Class
           </a>
         </div>
       </section>

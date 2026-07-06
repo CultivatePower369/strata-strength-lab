@@ -12,11 +12,11 @@ export default function Footer() {
       <div className="bg-brand-orange py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-heading font-bold text-xl text-white text-center md:text-left">
-            Only 30 founding spots available.{' '}
-            <span className="text-navy-dark">Claim yours before we open.</span>
+            Strata Strength Lab is open!{' '}
+            <span className="text-navy-dark">Book your child&apos;s free trial class today.</span>
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-outline shrink-0">
-            Claim My Child&apos;s Founding Spot
+            Book Free Trial Class
           </a>
         </div>
       </div>
@@ -102,10 +102,10 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="font-heading font-bold text-white text-sm uppercase tracking-widest mb-1">
-              Opening Soon in Oroville
+              Now Open in Oroville
             </h3>
             <p className="text-white/40 text-xs leading-relaxed mb-5">
-              Currently building out our space. Join the Founding 30 for early access and founding member pricing.
+              Regular classes are running now for toddlers through teens. Come try a session.
             </p>
             <ul className="space-y-4">
               <li className="flex gap-3">

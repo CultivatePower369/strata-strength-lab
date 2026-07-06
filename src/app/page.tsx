@@ -13,9 +13,6 @@ const GHL_TRIAL_LINK = '#trial'
 // Separate link for the secondary "updates only" opt-in — connect to a different GHL form when ready
 const GHL_UPDATES_LINK = '#trial'
 
-// Update this number as founding spots are claimed
-const SPOTS_CLAIMED = 0
-
 const programs = [
   {
     icon: '🏃',
@@ -111,8 +108,6 @@ const testimonials = [
 ]
 
 export default function HomePage() {
-  const spotsRemaining = 30 - SPOTS_CLAIMED
-
   return (
     <>
       {/* ─── HERO ─────────────────────────────────────────────── */}
@@ -156,7 +151,7 @@ export default function HomePage() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-5">
-              Claim My Child&apos;s Founding Spot
+              Book Free Trial Class
             </a>
             <Link
               href="/programs"
@@ -214,64 +209,45 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── FOUNDING 30 ──────────────────────────────────────── */}
+      {/* ─── NOW OPEN ─────────────────────────────────────────── */}
       <section className="py-24 bg-navy-dark relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 right-0 w-72 h-72 bg-brand-orange/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-72 h-72 bg-brand-blue/5 rounded-full blur-3xl" />
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="section-label text-brand-orange">Pre-Opening Offer · Limited Availability</span>
+          <span className="section-label text-brand-orange">Now Open in Oroville</span>
           <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white leading-tight mt-2 mb-4">
-            The Founding 30 Is{' '}
-            <span className="text-brand-orange">Now Open.</span>
+            Strata Strength Lab Is{' '}
+            <span className="text-brand-orange">Open Now.</span>
           </h2>
 
-          {/* Price anchor */}
-          <div className="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-5 bg-white/5 border border-white/10 rounded-xl px-6 py-3 mb-6">
-            <span className="text-brand-orange font-heading font-black text-lg">Founding rates from $79/mo. Locked in permanently. Never offered to the public again.</span>
-          </div>
-
-          <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed mb-6">
-            We are opening 30 founding memberships before our doors open in July. Founding members lock in their rate permanently, get priority class placement, and train exclusively at Strata for two weeks before the public launch.{' '}
-            <strong className="text-white">This offer closes June 15 or when all 30 spots are filled.</strong>{' '}
-            These prices will not be offered again.
+          <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
+            Regular classes are running now for toddlers through teens. Book a free trial class and see what your child can do.
           </p>
 
-          {/* Spots counter */}
-          <div className="inline-block bg-white/5 border border-white/10 rounded-lg px-5 py-2 mb-8">
-            <span className="text-white/55 text-sm font-medium">
-              <span className="text-brand-orange font-heading font-black text-base">{SPOTS_CLAIMED}</span>
-              {' '}of 30 spots claimed &nbsp;·&nbsp;{' '}
-              <span className="text-white font-semibold">{spotsRemaining} remaining</span>
-            </span>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-5">
+              Book Free Trial Class
+            </a>
           </div>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-3">
-            <Link href="/founding-30" className="btn-primary text-base px-10 py-5">
-              Claim My Child&apos;s Founding Spot
-            </Link>
-          </div>
-          <p className="text-white/40 text-sm mb-10">
-            Founding rates from $79/mo · Locked in permanently · Offer closes June 15
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-4 text-left">
             {[
               {
-                icon: '🔒',
-                title: 'Founding Rates: $79 to $169/mo',
-                body: 'Rates are locked in permanently. These prices will never be offered to the public. Once you are in, your rate never changes.',
+                icon: '📅',
+                title: 'Flexible Class Times',
+                body: 'Multiple time slots across the week for every age group, from toddlers to teens. Find one that fits your schedule.',
               },
               {
-                icon: '📅',
-                title: 'Priority Placement',
-                body: 'First pick of class times before we open to the public. You build your schedule before anyone else.',
+                icon: '🎯',
+                title: 'Small Class Sizes',
+                body: 'Every class is coached and capped so your child gets real attention, not just a workout.',
               },
               {
                 icon: '🏅',
-                title: 'Exclusive Pre-Opening Access',
-                body: 'Founding members train at Strata for two full weeks before we open to the public. June 15 through June 30, yours exclusively.',
+                title: 'Real Progress You Can See',
+                body: 'Structured progressions mean your child gets stronger, more confident, and more capable every week.',
               },
             ].map((item) => (
               <div key={item.title} className="bg-white/5 border border-white/10 rounded-xl p-6">
@@ -317,9 +293,9 @@ export default function HomePage() {
           {/* CTA at emotional peak — don't let desire cool off */}
           <div className="text-center mt-16">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-5">
-              Claim My Child&apos;s Founding Spot
+              Book Free Trial Class
             </a>
-            <p className="mt-3 text-white/35 text-sm">Founding rates from $79/mo · Locked in permanently · Offer closes June 15</p>
+            <p className="mt-3 text-white/35 text-sm">Regular classes running now · Toddlers through teens</p>
           </div>
         </div>
       </section>
@@ -352,7 +328,7 @@ export default function HomePage() {
                   Meet Our Team
                 </Link>
                 <a href={GHL_TRIAL_LINK} className="btn-primary">
-                  Claim My Child&apos;s Founding Spot
+                  Book Free Trial Class
                 </a>
               </div>
             </div>
@@ -433,8 +409,8 @@ export default function HomePage() {
             a: "Most of the kids who come to Strata have tried other activities: leagues, gym classes, martial arts. And didn't stick. The difference here is the environment. Obstacle training and climbing are inherently engaging. Kids don't feel like they're working out. They feel like they're conquering something. Strata is great for kids who need a healthy outlet, want to improve in sports, or simply need something active and fun to do. The discipline, strength, and confidence build in the process.",
           },
           {
-            q: 'What is the Founding 30 offer?',
-            a: 'The Founding 30 is a pre-opening offer for the first 30 families who want to lock in before we open in July. Founding member rates are $79/mo for Little Builders, $119/mo for Foundation, $149/mo for Forge, and $169/mo for the Athlete track. These rates are locked in permanently and will never be offered to the public again. Founding members also get exclusive training access June 15 through June 30, the two weeks before we open our doors to the public. This offer closes June 15 or when all 30 spots are filled.',
+            q: 'How do I get my child started?',
+            a: 'Book a free trial class through our website or give us a call. We will get your child into the right age group and program track so they can jump into a real class and see what Strata is about.',
           },
           {
             q: 'What is the Forge Protocol?',
@@ -468,11 +444,11 @@ export default function HomePage() {
         <div className="max-w-2xl mx-auto px-4 text-center">
           <span className="section-label">Not Ready to Commit Yet?</span>
           <h2 className="font-heading font-black text-2xl sm:text-3xl text-navy leading-tight mt-2 mb-3">
-            Get Opening Updates &amp; Early Access Info
+            Get Class Schedules &amp; Program Info
           </h2>
           <p className="text-gray-500 text-base mb-8">
-            We&apos;ll send you class schedules, program details, and founding spot availability.
-            No pressure, no spam. A great way to learn more about kids activities at Strata before we open.
+            We&apos;ll send you class schedules, program details, and everything you need to get your child started.
+            No pressure, no spam. A great way to learn more about kids activities at Strata.
           </p>
           <a href={GHL_UPDATES_LINK} className="btn-outline-navy text-base px-10 py-4">
             Send Me Updates
@@ -501,10 +477,10 @@ export default function HomePage() {
             Your Athlete&apos;s Journey Starts Here.
           </h2>
           <p className="mt-4 text-white/80 text-lg">
-            Only {spotsRemaining} founding spots available. Founding rates locked in permanently. Offer closes June 15.
+            Regular classes are running now for every age group, toddlers through teens.
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-outline mt-10 text-lg px-12 py-5">
-            Claim My Child&apos;s Founding Spot
+            Book Free Trial Class
           </a>
           <p className="mt-4 text-white/50 text-sm">
             1726 Montgomery Street, Unit 8 · Oroville, CA 95965 · (530) 922-2600

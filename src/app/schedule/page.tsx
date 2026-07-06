@@ -15,16 +15,16 @@ const DAYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'] as const
 type Day = typeof DAYS[number]
 type Slot = string | string[]
 type Category = 'age' | 'gym' | 'party'
-type ScheduleRow = { label: string; category: Category; slots: Partial<Record<Day, Slot>> }
+type ScheduleRow = { label: string; category: Category; comingSoon?: boolean; slots: Partial<Record<Day, Slot>> }
 
 const scheduleRows: ScheduleRow[] = [
   {
-    label: 'Ages 1-2', category: 'age',
-    slots: { mon: '9:30 - 10:15 AM', wed: '9:30 - 10:15 AM' },
+    label: 'Ages 1-2', category: 'age', comingSoon: true,
+    slots: {},
   },
   {
     label: 'Ages 3-4', category: 'age',
-    slots: { mon: '10:30 - 11:15 AM', wed: '10:30 - 11:15 AM' },
+    slots: { tue: '4:00 - 4:45 PM', thu: '4:00 - 4:45 PM' },
   },
   {
     label: 'Ages 5-7', category: 'age',
@@ -69,9 +69,12 @@ const DAY_SHORT: Record<Day, string> = {
 const mobileDays = DAYS.map((day) => ({
   name: DAY_LABELS[day],
   classes: scheduleRows
-    .filter((row) => row.slots[day] !== undefined)
+    .filter((row) => !row.comingSoon && row.slots[day] !== undefined)
     .map((row) => ({ label: row.label, category: row.category, time: row.slots[day] as Slot })),
 }))
+
+// Classes with no confirmed times yet
+const comingSoonRows = scheduleRows.filter((row) => row.comingSoon)
 
 // ─── Category Styles ──────────────────────────────────────────────────────────
 
@@ -110,8 +113,8 @@ export default function SchedulePage() {
             Class <span className="text-brand-orange">Schedule</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
-            Weekly class times for all age groups. Founding members have priority placement
-            and first pick of time slots before public enrollment opens.
+            Weekly class times for all age groups. Regular classes are running now, book
+            a free trial class to get started.
           </p>
         </div>
       </section>
@@ -120,10 +123,10 @@ export default function SchedulePage() {
       <div className="bg-brand-orange/10 border-b border-brand-orange/20 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-brand-orange-dark text-sm font-heading font-semibold text-center sm:text-left">
-            Founding members get priority placement. First pick of class times before public enrollment opens.
+            Strata Strength Lab is open! Book your child&apos;s free trial class today.
           </p>
           <a href={GHL_TRIAL_LINK} className="btn-primary text-sm px-6 py-2 shrink-0">
-            Claim My Child&apos;s Founding Spot
+            Book Free Trial Class
           </a>
         </div>
       </div>
@@ -178,30 +181,38 @@ export default function SchedulePage() {
                       <td className={`${labelStyle[row.category]} font-heading font-bold text-xs uppercase tracking-wide py-3 px-5 whitespace-nowrap`}>
                         {row.label}
                       </td>
-                      {DAYS.map((day) => {
-                        const slot = row.slots[day]
-                        return (
-                          <td key={day} className="py-2 px-2 text-center align-middle">
-                            {slot ? (
-                              Array.isArray(slot) ? (
-                                <div className="space-y-1">
-                                  {slot.map((s) => (
-                                    <div key={s} className={`text-xs rounded px-2 py-1 leading-snug ${cellStyle[row.category]}`}>
-                                      {s}
-                                    </div>
-                                  ))}
-                                </div>
+                      {row.comingSoon ? (
+                        <td colSpan={DAYS.length} className="py-2 px-2 text-center align-middle">
+                          <span className="text-xs font-heading font-bold uppercase tracking-wide rounded px-3 py-1 bg-brand-orange/10 text-brand-orange-dark">
+                            Coming Soon
+                          </span>
+                        </td>
+                      ) : (
+                        DAYS.map((day) => {
+                          const slot = row.slots[day]
+                          return (
+                            <td key={day} className="py-2 px-2 text-center align-middle">
+                              {slot ? (
+                                Array.isArray(slot) ? (
+                                  <div className="space-y-1">
+                                    {slot.map((s) => (
+                                      <div key={s} className={`text-xs rounded px-2 py-1 leading-snug ${cellStyle[row.category]}`}>
+                                        {s}
+                                      </div>
+                                    ))}
+                                  </div>
+                                ) : (
+                                  <div className={`text-xs rounded px-2 py-1 leading-snug ${cellStyle[row.category]}`}>
+                                    {slot}
+                                  </div>
+                                )
                               ) : (
-                                <div className={`text-xs rounded px-2 py-1 leading-snug ${cellStyle[row.category]}`}>
-                                  {slot}
-                                </div>
-                              )
-                            ) : (
-                              <span className="text-gray-200 select-none">-</span>
-                            )}
-                          </td>
-                        )
-                      })}
+                                <span className="text-gray-200 select-none">-</span>
+                              )}
+                            </td>
+                          )
+                        })
+                      )}
                     </tr>
                   )
                 })}
@@ -211,6 +222,20 @@ export default function SchedulePage() {
 
           {/* ── Mobile: Stacked by Day ─────────────────────────────────────── */}
           <div className="lg:hidden space-y-3">
+            {comingSoonRows.length > 0 && (
+              <div className="rounded-xl border border-brand-orange/20 bg-brand-orange/10 overflow-hidden">
+                {comingSoonRows.map((row) => (
+                  <div key={row.label} className="flex justify-between items-center gap-4 px-4 py-3">
+                    <span className="font-heading font-bold text-xs uppercase tracking-wide text-navy">
+                      {row.label}
+                    </span>
+                    <span className="text-xs font-heading font-bold uppercase tracking-wide rounded px-3 py-1 bg-white text-brand-orange-dark">
+                      Coming Soon
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
             {mobileDays.map((day) => (
               <div key={day.name} className="rounded-xl border border-gray-200 overflow-hidden shadow-sm">
                 <div className="bg-navy-dark text-white font-heading font-bold text-sm uppercase tracking-wider px-4 py-3">
@@ -261,14 +286,14 @@ export default function SchedulePage() {
       <section className="py-20 bg-navy-dark">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-heading font-black text-3xl md:text-4xl text-white">
-            Want to know your class time before anyone else?
+            Ready to find your class time?
           </h2>
           <p className="text-white/60 mt-3 text-base">
-            Founding members choose their schedule before we open to the public.
+            Regular classes are running now. Book a free trial class and pick the time that works for your family.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary">
-              Claim My Child&apos;s Founding Spot
+              Book Free Trial Class
             </a>
             <Link href="/contact" className="btn-outline">
               Have a Question?

@@ -28,7 +28,7 @@ export default function ClimbingWallPage() {
             Youth climbing is one of the most effective athletic development tools available for kids and teens. It builds grip strength, pulling power, core stability, spatial awareness, and mental focus. All at once, in a way that feels exciting and challenging rather than like a workout.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Claim My Child&apos;s Founding Spot</a>
+            <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-4">Book Free Trial Class</a>
             <Link href="/schedule" className="btn-outline text-base px-10 py-4">View Class Schedule</Link>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function ClimbingWallPage() {
           </h2>
           <p className="text-white/80 text-lg mb-8">Book a free trial class. No experience needed. Coaches handle everything.</p>
           <a href={GHL_TRIAL_LINK} className="inline-block bg-white text-brand-blue font-heading font-black text-lg px-12 py-4 rounded-xl hover:bg-navy-dark hover:text-white transition-colors duration-200">
-            Claim My Child&apos;s Founding Spot
+            Book Free Trial Class
           </a>
         </div>
       </section>

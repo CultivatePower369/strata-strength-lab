@@ -425,7 +425,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="mt-10 flex flex-wrap gap-4">
-                <a href={GHL_TRIAL_LINK} className="btn-primary">Request My Founding Spot</a>
+                <a href={GHL_TRIAL_LINK} className="btn-primary">Book Free Trial Class</a>
                 <Link href="/contact" className="btn-outline">Get Directions</Link>
               </div>
             </div>
