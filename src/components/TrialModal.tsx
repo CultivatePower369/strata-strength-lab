@@ -55,11 +55,11 @@ export default function TrialModal() {
           <h2 className="font-heading font-black text-white text-2xl">Book Your Free Trial Class</h2>
         </div>
 
-        {/* GHL Form iframe */}
+        {/* GHL Booking widget iframe */}
         <iframe
-          src="https://link.stratastrengthlab.com/widget/form/PapoGOshL29ct075BXZ7"
+          src="https://link.stratastrengthlab.com/widget/bookings/strata-trial-class"
           style={{ width: '100%', height: '700px', border: 'none' }}
-          id="inline-PapoGOshL29ct075BXZ7"
+          id="inline-strata-trial-class"
           data-layout="{'id':'INLINE'}"
           data-trigger-type="alwaysShow"
           data-trigger-value=""
@@ -69,8 +69,8 @@ export default function TrialModal() {
           data-deactivation-value=""
           data-form-name="Book a trial"
           data-height="727"
-          data-layout-iframe-id="inline-PapoGOshL29ct075BXZ7"
-          data-form-id="PapoGOshL29ct075BXZ7"
+          data-layout-iframe-id="inline-strata-trial-class"
+          data-form-id="strata-trial-class"
           title="Book a trial"
         />
       </div>
