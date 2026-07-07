@@ -317,18 +317,29 @@ export default function AboutPage() {
                   combat sports.
                 </p>
                 <p>
-                  As the co-founder of Cultivate Power Fighting Arts and the
-                  creator of The Forge Protocol, Darrell&apos;s approach to training
-                  is built on structure, discipline, and real-world capability.
-                  Not trends or gimmicks. His system focuses on developing strength
-                  that transfers: grip, coordination, balance, and power under
-                  pressure.
+                  As the co-founder of{' '}
+                  <a href="https://cultivatepower.net" target="_blank" rel="noopener noreferrer" className="text-brand-orange-dark font-semibold hover:underline">
+                    Cultivate Power Fighting Arts
+                  </a>{' '}
+                  and the creator of The Forge Protocol, Darrell&apos;s approach to
+                  training is built on structure, discipline, and real-world
+                  capability. Not trends or gimmicks. His system focuses on
+                  developing strength that transfers: grip, coordination,
+                  balance, and power under pressure.
                 </p>
                 <p>
                   Through Strata Strength Lab, he brings that philosophy into a
                   new environment. Blending obstacle training, climbing-based
                   movement, and structured strength work to build resilient,
                   capable young athletes, toddlers to teens.
+                </p>
+                <p>
+                  Darrell is also a co-founder of{' '}
+                  <a href="https://orovilleyouthforge.org" target="_blank" rel="noopener noreferrer" className="text-brand-orange-dark font-semibold hover:underline">
+                    Oroville Youth Forge
+                  </a>
+                  , a local initiative providing training scholarships to young
+                  athletes in the community.
                 </p>
                 <p className="font-heading font-semibold text-navy">
                   His mission is simple: develop strength that holds up in the

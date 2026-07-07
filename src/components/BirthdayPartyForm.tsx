@@ -1,6 +1,6 @@
 'use client'
 
-const GHL_BOOKING_URL = 'https://go.valentorcrm.com/widget/booking/XHL5q9dB7O1t8guzv1Tr'
+const GHL_BOOKING_URL = 'https://link.stratastrengthlab.com/widget/bookings/stratabirthdays'
 
 export default function BirthdayPartyForm() {
   return (

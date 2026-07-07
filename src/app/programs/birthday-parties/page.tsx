@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 }
 
 // ─── Replace with your GoHighLevel funnel URL when ready ──────────────────────
-const GHL_PARTY_LINK = 'https://go.valentorcrm.com/widget/booking/XHL5q9dB7O1t8guzv1Tr'
+const GHL_PARTY_LINK = 'https://link.stratastrengthlab.com/widget/bookings/stratabirthdays'
 
 export default function BirthdayPartiesPage() {
   return (

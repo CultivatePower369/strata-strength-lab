@@ -57,9 +57,9 @@ export default function TrialModal() {
 
         {/* GHL Form iframe */}
         <iframe
-          src="https://api.leadconnectorhq.com/widget/form/jsz1V4WRf2YZRnjRSAYd"
+          src="https://link.stratastrengthlab.com/widget/form/PapoGOshL29ct075BXZ7"
           style={{ width: '100%', height: '700px', border: 'none' }}
-          id="inline-jsz1V4WRf2YZRnjRSAYd"
+          id="inline-PapoGOshL29ct075BXZ7"
           data-layout="{'id':'INLINE'}"
           data-trigger-type="alwaysShow"
           data-trigger-value=""
@@ -69,8 +69,8 @@ export default function TrialModal() {
           data-deactivation-value=""
           data-form-name="Book a trial"
           data-height="727"
-          data-layout-iframe-id="inline-jsz1V4WRf2YZRnjRSAYd"
-          data-form-id="jsz1V4WRf2YZRnjRSAYd"
+          data-layout-iframe-id="inline-PapoGOshL29ct075BXZ7"
+          data-form-id="PapoGOshL29ct075BXZ7"
           title="Book a trial"
         />
       </div>
