@@ -10,12 +10,14 @@ export const metadata: Metadata = {
 }
 
 const GHL_TRIAL_LINK = '#trial'
+const OPEN_GYM_LINK = 'https://link.stratastrengthlab.com/events/milelongys-open-gym'
 
 const programs = [
   {
     id: 'ninja-warrior',
     href: '/programs/ninja-warrior',
     emoji: '🏃',
+    image: '/images/ninja-rings-swing.jpg',
     title: 'Ninja Warrior Obstacle Course',
     tagline: 'Move through the challenge.',
     description: `Our Ninja Warrior obstacle course is the centerpiece of what makes Strata unique. Athletes navigate a structured obstacle course system that develops coordination, grip strength, agility, body control, and mental resilience simultaneously. This is not an open play area. It is coached, progressive, and purposeful. Each obstacle teaches a physical skill, and athletes advance through progressions as they master each challenge. The result is a genuinely capable, confident athlete who knows how to move under pressure.`,
@@ -34,7 +36,7 @@ const programs = [
     id: 'climbing',
     href: '/programs/climbing-wall',
     emoji: '🧗',
-    image: '/images/kid-climber.webp',
+    image: '/images/climbing-wall-action.jpg',
     title: 'Climbing Rock Wall',
     tagline: 'Grip strength. Problem-solving. Real capability.',
     description: `The climbing wall at Strata is not a bonus. It is a core training tool. Youth climbing builds grip strength, upper-body pulling power, core stability, and spatial awareness in ways that no machine or barbell can replicate. Kids learn to read the wall, plan their movement, and execute under fatigue. This approach to grip and movement development carries over directly to every other thing we train. Beginners start with fundamentals. Advanced athletes tackle technical routes and timed challenges. Everyone improves.`,
@@ -53,6 +55,7 @@ const programs = [
     id: 'forge-protocol',
     href: '/programs/forge-protocol',
     emoji: '⚒️',
+    image: '/images/forge-squats.jpg',
     title: 'Forge Protocol / Sports Attribute Development',
     tagline: 'Strength earned through structure. Performance built to transfer.',
     description: `The Forge Protocol is Strata's structured strength and athletic development system. Built around the foundational movement patterns: squat, hinge, push, pull, and carry. It applies discipline, repetition, and progressive overload to develop real-world functional strength. Sports attribute development layers on top: speed mechanics, explosive power, agility, and multi-directional conditioning that transfers directly to game day performance. This is not a circuit class or generic gym workout. It is a system where movement quality comes first, load and intensity are earned, and every athlete leaves more capable than when they walked in.`,
@@ -85,6 +88,24 @@ const programs = [
     accent: 'bg-brand-blue',
     textAccent: 'text-brand-blue-dark',
   },
+  {
+    id: 'open-gym',
+    href: OPEN_GYM_LINK,
+    emoji: '🔓',
+    title: 'Open Gym',
+    tagline: 'Walk in. No membership required.',
+    description: `Open Gym is walk-in access to the obstacle course, climbing wall, and training area during scheduled Open Mat hours. No enrollment or class commitment. Just show up and train. It is included free for current Strata members, and available to non-members as a drop-in.`,
+    details: [
+      '$20 online in advance (waiver signed automatically) or $25 at the door',
+      'Full access to the obstacle course, climbing wall, and training area',
+      'Included free for current Strata members',
+      'Currently available Saturdays, 9 AM to 1 PM. More hours added as demand grows.',
+      'For kids and teens, ages 1 to 18.',
+    ],
+    color: 'border-brand-blue',
+    accent: 'bg-brand-blue',
+    textAccent: 'text-brand-blue-dark',
+  },
 ]
 
 export default function ProgramsPage() {
@@ -96,14 +117,14 @@ export default function ProgramsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <span className="section-label text-brand-blue">What We Offer</span>
           <h1 className="font-heading font-black text-4xl sm:text-5xl md:text-6xl text-white mt-2 leading-tight">
-            Four Programs.<br />
+            Five Programs.<br />
             <span className="text-brand-orange">One Standard.</span>
           </h1>
           <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
             Every program at Strata is structured, coached, and built with
             purpose. No random workouts. No filler. Youth climbing, Ninja Warrior-style
-            obstacle training, the Forge Protocol strength system, and birthday
-            parties for kids in Oroville. Toddlers to teens, every level.
+            obstacle training, the Forge Protocol strength system, Open Gym drop-ins, and
+            birthday parties for kids in Oroville. Toddlers to teens, every level.
           </p>
         </div>
       </section>
@@ -130,6 +151,10 @@ export default function ProgramsPage() {
                     <Link href={p.href} className="btn-primary inline-block">
                       Book Your Birthday Party
                     </Link>
+                  ) : p.id === 'open-gym' ? (
+                    <a href={OPEN_GYM_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary inline-block">
+                      Reserve Open Gym — $20
+                    </a>
                   ) : (
                     <>
                       <a href={GHL_TRIAL_LINK} className="btn-primary inline-block">
@@ -254,6 +279,10 @@ export default function ProgramsPage() {
           {
             q: 'How do I book a birthday party?',
             a: 'Birthday parties are private bookings, separate from the class schedule. Contact us through the contact page, mention the birthday party, and we will get availability and details to you quickly.',
+          },
+          {
+            q: 'What is Open Gym and how much does it cost?',
+            a: 'Open Gym is walk-in access to the obstacle course, climbing wall, and training area during scheduled Open Mat hours. It costs $20 online in advance, which also signs your waiver automatically, or $25 at the door. It is included free for current Strata members.',
           },
         ]}
       />

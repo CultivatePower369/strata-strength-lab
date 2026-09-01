@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import FAQ from '@/components/FAQ'
 
@@ -34,6 +35,20 @@ export default function ForgeProtocolPage() {
           </div>
         </div>
       </section>
+
+      {/* Featured Photo */}
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-14">
+          <Image
+            src="/images/forge-squats.jpg"
+            alt="Coach leading kids through squat training at Strata Strength Lab"
+            width={1200}
+            height={800}
+            className="rounded-2xl object-cover w-full shadow-lg"
+            priority
+          />
+        </div>
+      </div>
 
       {/* The Five Patterns */}
       <section className="py-20 bg-white">

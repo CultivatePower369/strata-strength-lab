@@ -34,15 +34,23 @@ export default function NinjaWarriorPage() {
         </div>
       </section>
 
-      {/* Featured Photo */}
+      {/* Featured Photos */}
       <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-14">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Image
-            src="/images/ninja-warrior-rings.jpg"
-            alt="Young athlete on the Ninja Warrior rings at Strata Strength Lab"
-            width={1200}
-            height={800}
-            className="rounded-2xl object-cover w-full shadow-lg"
+            src="/images/ninja-rings-swing.jpg"
+            alt="Young athlete swinging on the Ninja Warrior rings at Strata Strength Lab"
+            width={800}
+            height={1000}
+            className="rounded-2xl object-cover w-full h-80 sm:h-96 shadow-lg"
+            priority
+          />
+          <Image
+            src="/images/ninja-rope-ladder.jpg"
+            alt="Young athlete climbing the rope ladder on the obstacle course at Strata Strength Lab"
+            width={800}
+            height={1000}
+            className="rounded-2xl object-cover w-full h-80 sm:h-96 shadow-lg"
             priority
           />
         </div>

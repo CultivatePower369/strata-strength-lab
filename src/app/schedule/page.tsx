@@ -46,7 +46,7 @@ const scheduleRows: ScheduleRow[] = [
       wed: '6:45 - 8:30 PM',
       thu: '7:30 - 8:30 PM',
       fri: '7:00 - 8:30 PM',
-      sat: ['8:00 - 10:00 AM', '5:00 - 8:30 PM'],
+      sat: '9:00 AM - 1:00 PM',
       sun: ['8:00 - 10:00 AM', '5:00 - 8:30 PM'],
     },
   },
@@ -277,6 +277,27 @@ export default function SchedulePage() {
             <p className="text-gray-500 text-sm leading-relaxed">
               Birthday party blocks are reserved and not available for trial class booking.
             </p>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Additional Open Mat hours added as demand grows.
+            </p>
+          </div>
+
+          {/* Open Gym Callout */}
+          <div className="mt-8 bg-brand-blue/10 border border-brand-blue/20 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <p className="font-heading font-bold text-navy text-sm uppercase tracking-wide mb-1">Open Gym Drop-In</p>
+              <p className="text-gray-600 text-sm leading-relaxed max-w-xl">
+                Not a member yet? Walk in during Open Mat hours for $25 at the door, or reserve online for $20 and your waiver gets signed automatically. Included free for current members.
+              </p>
+            </div>
+            <a
+              href="https://link.stratastrengthlab.com/events/milelongys-open-gym"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-sm px-6 py-3 shrink-0 whitespace-nowrap"
+            >
+              Reserve Open Gym — $20
+            </a>
           </div>
 
         </div>

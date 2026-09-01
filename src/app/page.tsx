@@ -114,11 +114,11 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-hero-pattern">
         {/* Background photo */}
         <Image
-          src="/images/climbing-wall-hero.jpg"
+          src="/images/facility-wide.jpg"
           alt=""
           fill
           className="object-cover"
-          style={{ objectPosition: 'center 15%' }}
+          style={{ objectPosition: 'center 35%' }}
           priority
           aria-hidden="true"
         />

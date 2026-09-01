@@ -74,8 +74,8 @@ export default function ClimbingWallPage() {
             <div className="space-y-4">
               <div className="rounded-xl overflow-hidden">
                 <Image
-                  src="/images/kid-climber.webp"
-                  alt="Young athlete climbing the rock wall at Strata Strength Lab"
+                  src="/images/climbing-wall-action.jpg"
+                  alt="Kids climbing the rock wall at Strata Strength Lab"
                   width={800}
                   height={600}
                   className="w-full h-72 object-cover"
