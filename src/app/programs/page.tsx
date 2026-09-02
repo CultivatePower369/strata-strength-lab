@@ -177,7 +177,7 @@ export default function ProgramsPage() {
                       alt={p.title}
                       width={800}
                       height={600}
-                      className="w-full h-64 object-cover"
+                      className="w-full aspect-[3/4] object-cover"
                     />
                   </div>
                 )}
