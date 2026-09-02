@@ -146,7 +146,7 @@ export default function HomePage() {
           <p className="mt-6 text-white/75 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
             Climbing, Ninja Warrior-style obstacles, movement, and age-appropriate strength training for kids and teens in Oroville. Fun, coach-led challenges that build real-world athleticism.
           </p>
-          <p className="mt-3 text-white/45 text-sm font-medium tracking-wide">
+          <p className="mt-3 text-white/70 text-sm font-medium tracking-wide">
             Built by Coach Darrell Thompson, 20+ years training athletes in Butte County
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
