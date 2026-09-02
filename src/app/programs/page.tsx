@@ -33,6 +33,25 @@ const programs = [
     textAccent: 'text-navy',
   },
   {
+    id: 'open-gym',
+    href: OPEN_GYM_LINK,
+    emoji: '🔓',
+    image: '/images/open-gym-action.jpg',
+    title: 'Open Gym',
+    tagline: 'Walk in. No membership required.',
+    description: `Open Gym is walk-in access to the obstacle course, climbing wall, and training area during scheduled Open Mat hours. No enrollment or class commitment. Just show up and train. It is included free for current Strata members, and available to non-members as a drop-in.`,
+    details: [
+      '$20 online in advance (waiver signed automatically) or $25 at the door',
+      'Full access to the obstacle course, climbing wall, and training area',
+      'Included free for current Strata members',
+      'Currently available Saturdays, 9 AM to 1 PM. More hours added as demand grows.',
+      'For kids and teens, ages 1 to 18.',
+    ],
+    color: 'border-brand-blue',
+    accent: 'bg-brand-blue',
+    textAccent: 'text-brand-blue-dark',
+  },
+  {
     id: 'climbing',
     href: '/programs/climbing-wall',
     emoji: '🧗',
@@ -88,24 +107,6 @@ const programs = [
     accent: 'bg-brand-blue',
     textAccent: 'text-brand-blue-dark',
   },
-  {
-    id: 'open-gym',
-    href: OPEN_GYM_LINK,
-    emoji: '🔓',
-    title: 'Open Gym',
-    tagline: 'Walk in. No membership required.',
-    description: `Open Gym is walk-in access to the obstacle course, climbing wall, and training area during scheduled Open Mat hours. No enrollment or class commitment. Just show up and train. It is included free for current Strata members, and available to non-members as a drop-in.`,
-    details: [
-      '$20 online in advance (waiver signed automatically) or $25 at the door',
-      'Full access to the obstacle course, climbing wall, and training area',
-      'Included free for current Strata members',
-      'Currently available Saturdays, 9 AM to 1 PM. More hours added as demand grows.',
-      'For kids and teens, ages 1 to 18.',
-    ],
-    color: 'border-brand-blue',
-    accent: 'bg-brand-blue',
-    textAccent: 'text-brand-blue-dark',
-  },
 ]
 
 export default function ProgramsPage() {
@@ -153,7 +154,7 @@ export default function ProgramsPage() {
                     </Link>
                   ) : p.id === 'open-gym' ? (
                     <a href={OPEN_GYM_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary inline-block">
-                      Reserve Open Gym — $20
+                      Open Gym
                     </a>
                   ) : (
                     <>
