@@ -12,6 +12,8 @@ export const metadata: Metadata = {
 const GHL_TRIAL_LINK = '#trial'
 // Separate link for the secondary "updates only" opt-in — connect to a different GHL form when ready
 const GHL_UPDATES_LINK = '#trial'
+// Same Open Gym booking link already used on the Programs page
+const OPEN_GYM_LINK = 'https://link.stratastrengthlab.com/events/milelongys-open-gym'
 
 const programs = [
   {
@@ -122,8 +124,8 @@ export default function HomePage() {
           priority
           aria-hidden="true"
         />
-        {/* Dark overlay — keeps text readable over the photo */}
-        <div className="absolute inset-0 bg-navy-dark/88" />
+        {/* Dark gradient overlay — keeps text readable over the photo, darkest toward the bottom */}
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-dark/75 via-navy-dark/85 to-navy-dark/95" />
 
         {/* Geometric accent shapes */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -146,19 +148,21 @@ export default function HomePage() {
           <p className="mt-6 text-white/75 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
             Climbing, Ninja Warrior-style obstacles, movement, and age-appropriate strength training for kids and teens in Oroville. Fun, coach-led challenges that build real-world athleticism.
           </p>
-          <p className="mt-3 text-white/70 text-sm font-medium tracking-wide">
+          <p className="mt-3 text-white/85 text-sm font-medium tracking-wide">
             Built by Coach Darrell Thompson, 20+ years training athletes in Butte County
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href={GHL_TRIAL_LINK} className="btn-primary text-base px-10 py-5">
               Book Free Trial Class
             </a>
-            <Link
-              href="/programs"
-              className="text-white/65 hover:text-white text-sm font-heading font-semibold underline underline-offset-4 transition-colors duration-200"
+            <a
+              href={OPEN_GYM_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline text-base px-10 py-5"
             >
-              See Our Programs
-            </Link>
+              Open Gym
+            </a>
           </div>
 
         </div>
