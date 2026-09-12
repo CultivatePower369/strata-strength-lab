@@ -39,15 +39,9 @@ const scheduleRows: ScheduleRow[] = [
     slots: { mon: '5:45 - 6:45 PM', tue: '6:30 - 7:30 PM', wed: '5:45 - 6:45 PM', thu: '6:30 - 7:30 PM' },
   },
   {
-    label: 'Open Mat', category: 'gym',
+    label: 'Open Gym', category: 'gym',
     slots: {
-      mon: '6:45 - 8:30 PM',
-      tue: '7:30 - 8:30 PM',
-      wed: '6:45 - 8:30 PM',
-      thu: '7:30 - 8:30 PM',
-      fri: '7:00 - 8:30 PM',
-      sat: '9:00 AM - 1:00 PM',
-      sun: ['8:00 - 10:00 AM', '5:00 - 8:30 PM'],
+      sat: '10:00 AM - 12:00 PM',
     },
   },
   {
