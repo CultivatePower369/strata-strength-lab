@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 const GHL_TRIAL_LINK = '#trial'
-const OPEN_GYM_LINK = 'https://link.stratastrengthlab.com/events/milelongys-open-gym'
+const OPEN_GYM_LINK = 'https://link.stratastrengthlab.com/payment-link/6ab182369f7ff2c808a76cfb'
 
 const programs = [
   {
