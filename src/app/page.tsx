@@ -13,7 +13,7 @@ const GHL_TRIAL_LINK = '#trial'
 // Separate link for the secondary "updates only" opt-in — connect to a different GHL form when ready
 const GHL_UPDATES_LINK = '#trial'
 // Same Open Gym booking link already used on the Programs page
-const OPEN_GYM_LINK = 'https://link.stratastrengthlab.com/events/milelongys-open-gym'
+const OPEN_GYM_LINK = 'https://link.stratastrengthlab.com/payment-link/6ab182369f7ff2c808a76cfb'
 
 const programs = [
   {
