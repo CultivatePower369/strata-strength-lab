@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Membership Options',
@@ -98,8 +97,7 @@ export default function MembershipOptionsPage() {
 
       {/* ─── MASTHEAD ─────────────────────────────────────────────── */}
       <header className="bg-[#111418] px-6 pt-32">
-        <div className="max-w-[1080px] mx-auto flex items-center gap-6 py-7">
-          <Image src="/images/logo.png" alt="Strata Strength Lab" width={76} height={76} className="object-contain shrink-0" />
+        <div className="max-w-[1080px] mx-auto py-7">
           <div>
             <h1 style={bebas} className="text-[#FCFCFC] text-[42px] leading-none tracking-wide font-normal">
               MEMBERSHIP OPTIONS
@@ -152,6 +150,32 @@ export default function MembershipOptionsPage() {
               </a>
             ))}
           </div>
+        </section>
+
+        {/* ─── LITTLE MOVERS ─────────────────────────────────────── */}
+        <section className="bg-[#FFF0E8] border border-[#F1C8B6] border-t-4 border-t-[#FF4D1A] rounded-[20px] px-6 py-8 sm:px-8 text-center">
+          <div className="flex flex-col items-center gap-2 mb-5">
+            <div className="text-[11px] font-extrabold tracking-[1.5px] text-[#B73E1D]">A FIRST STEP INTO MOVEMENT</div>
+            <h2 style={bebas} className="text-[34px] tracking-wide font-normal">LITTLE MOVERS</h2>
+            <span className="text-[13px] font-bold text-[#FF4D1A] tracking-[1.4px]">AGES 1&ndash;2</span>
+            <p className="text-[14px] text-[#474D55] max-w-[560px] mt-2">
+              Big movement starts small. A welcoming class for our youngest athletes, with a parent or caregiver participating as needed.
+            </p>
+            <p className="text-[13px] font-semibold text-[#2B3138] mt-2">Tuesdays &bull; 3:15&ndash;3:45 PM &bull; 1 class/week</p>
+          </div>
+          <a
+            href="https://link.stratastrengthlab.com/documents/doc-form/6ad0077bb761c05f8d91b595?locale=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-auto flex max-w-[320px] flex-col items-center text-center bg-[#FCFCFC] border border-[#E3DFD3] text-[#0B0D10] rounded-2xl px-5 py-6 shadow-[0_4px_14px_rgba(11,13,16,0.06)] transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_26px_rgba(11,13,16,0.12)] hover:border-[#FF4D1A]"
+          >
+            <span className="text-[11px] font-bold tracking-[1.6px] text-[#5b6068]">MONTH-TO-MONTH</span>
+            <span className="text-[40px] font-extrabold tabular-nums mt-2 leading-none">
+              $99<span className="text-base font-semibold text-[#5b6068]">/mo</span>
+            </span>
+            <span className="text-[13px] mt-2 text-[#5b6068]">No long-term commitment</span>
+            <span className="mt-5 text-[13px] font-bold tracking-[0.4px] px-6 py-3 rounded-lg bg-[#111418] text-[#FCFCFC]">Sign Up</span>
+          </a>
         </section>
 
         {/* ─── FAMILY DISCOUNT ────────────────────────────────────── */}
